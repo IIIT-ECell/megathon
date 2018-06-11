@@ -78,7 +78,7 @@ html {
 .landing .overlay {
   opacity: 0.9;
 }
-
+/* 
 .landing h1, h2 {
   line-height: 0.7;
   margin: 0;
@@ -101,5 +101,5 @@ html {
 
 .landing h4 {
   font-size: 2vw;
-}
+} */
 /* end landing cover */
