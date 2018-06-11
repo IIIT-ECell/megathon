@@ -27,6 +27,15 @@ html {
   opacity: 0.7;
 }
 
+.bebas-neue {
+  font-family: "Bebas Neue","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+.d-flex.space-between {
+  justify-content: space-between;
+}
+
 .align-box {
   margin: 0;
   padding: 0;
@@ -63,8 +72,6 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 
-  font-family: "Bebas Neue","Helvetica Neue",Helvetica,Arial,sans-serif;
-
   color: white;
 }
 
@@ -90,5 +97,9 @@ html {
 
 .landing h3 {
   font-size: 4vw;
+}
+
+.landing h4 {
+  font-size: 2vw;
 }
 /* end landing cover */
