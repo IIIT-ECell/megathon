@@ -68,6 +68,10 @@ html {
   color: white;
 }
 
+.landing .overlay {
+  opacity: 0.9;
+}
+
 .landing h1, h2 {
   line-height: 0.7;
   margin: 0;
