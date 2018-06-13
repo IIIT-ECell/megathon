@@ -4,6 +4,7 @@ let nav = $('.navbar');
 let cov = $('.landing');
 let jump = $('#jump');
 let jumpicon = $('#jumpicon');
+let down = $('#down')
 
 let shiftY = (cov.height())/2;
 
@@ -55,5 +56,11 @@ if(cov.length > 0) {
 jump.click(function() { // When arrow is clicked
     $('body,html').animate({
         scrollTop : 0 // Scroll to top of body
-    }, 500);
+    }, 600);
+});
+
+down.click(function() { // On clicking the down arrow
+  $('body,html').animate({
+      scrollTop : cov.height() // go down just past the cover
+  }, 600);
 });
