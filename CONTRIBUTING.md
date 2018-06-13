@@ -11,4 +11,4 @@ fit our look and feel.
 3. GENERIC CLASSES: Bootstrap-like classes to define styles that can be applied
 to generic elements to behave in particular ways. Contains custom colour definitions,
 font-stacks, opacity, alignment boxes, and so on.
-4. REST: General CSS to (generally) style elements that occur only once 
+4. REST: General CSS to (generally) style elements that occur only once
