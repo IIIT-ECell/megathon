@@ -67,7 +67,7 @@ if(cov.length > 0) {
     }
 
     if(smoothScroll.allow) {
-
+      console.log('looking at smoothScroll');
       if(win.scrollTop() < change) {
         hero_overlay.css({
           opacity: function() {
