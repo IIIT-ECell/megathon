@@ -1,4 +1,10 @@
 $(document).ready(function() {
   $('.dropdown-trigger').dropdown({ hover: true });
-  $('.sidenav').sidenav();
+
+  $('.sidenav').sidenav({
+    edge: 'right',
+    draggable: true
+  });
+
+  $('.scrollspy').scrollSpy();
 });
