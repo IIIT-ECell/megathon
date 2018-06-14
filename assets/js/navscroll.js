@@ -4,8 +4,11 @@ let nav = $('nav');
 let cov = $('.landing');
 let jump = $('#jump');
 let jumpicon = $('#jumpicon');
-let down = $('#down')
+let down = $('#down');
+let hero_overlay = $('.hero-overlay');
 
+
+let change = (cov.height() - nav.height()) * 0.8;
 let shiftY = (cov.height())/2 - nav.height();
 
 // To make sure the JS is optimal, i.e. There's no performance issue
@@ -16,6 +19,15 @@ let scrollHandler = {
     scrollHandler.allow = true;
   },
   delay: 200
+}
+
+// To disable, set allow = false;
+let smoothScroll = {
+  allow: true,
+  reallow: function() {
+    smoothScroll.allow = true;
+  },
+  delay: 20
 }
 
 // Function executing on detecting a scroll
@@ -53,9 +65,25 @@ if(cov.length > 0) {
       scrollHandler.allow = false;
       setTimeout(scrollHandler.reallow, scrollHandler.delay);
     }
+
+    if(smoothScroll.allow) {
+
+      if(win.scrollTop() < change) {
+        hero_overlay.css({
+          opacity: function() {
+            let opacity = 0.5 + 0.5 * (1 - (change - win.scrollTop())/change);
+
+            return opacity;
+          }
+        });
+      }
+
+      smoothScroll.allow = false;
+
+      setTimeout(smoothScroll.reallow, smoothScroll.delay);
+    }
   });
 }
-
 
 jump.click(function() { // When arrow is clicked
     $('body,html').animate({
