@@ -1,27 +1,35 @@
-<header>
-  <nav class="navbar navbar-expand-md navbar-light fixed-top wash">
+<header class="">
 
-    <a class="navbar-brand" href="{{site.baseurl}}">{{site.title}}</a>
+  <!-- Content to be placed in dropdown -->
+  <!-- Scrap the dropdown -->
+  <!-- <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+  </ul> -->
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
+  <nav class="grey darken-4">
+    <div class="nav-wrapper">
+      <a href="{{site.baseurl}}" class="brand-logo">Logo</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li class="active"><a href="{{site.baseurl}}">Home</a></li>
+        <li><a href="">Components</a></li>
+        <li><a href="">Javascript</a></li>
+        <li><a href="">Mobile</a></li>
 
-      <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link active" href="{{site.baseurl}}">Home <span class="sr-only">(current)</span></a>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="" id="dropdown10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown10">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <a class="nav-item nav-link" href="#">Link</a>
-
-      </div>
-
+        <!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li> -->
+      </ul>
     </div>
   </nav>
+
 </header>
+<!-- Can't keep this inside header -->
+<ul class="sidenav" id="mobile-demo">
+  <li class="active"><a href="{{site.baseurl}}">Home</a></li>
+  <li><a href="badges.html">Components</a></li>
+  <li><a href="collapsible.html">Javascript</a></li>
+  <li><a href="mobile.html">Mobile</a></li>
+  <!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li> -->
+</ul>

@@ -1,12 +1,12 @@
 // Caching? the variables
 let win = $(window);
-let nav = $('.navbar');
+let nav = $('nav');
 let cov = $('.landing');
 let jump = $('#jump');
 let jumpicon = $('#jumpicon');
 let down = $('#down')
 
-let shiftY = (cov.height())/2;
+let shiftY = (cov.height())/3 - nav.height();
 
 // To make sure the JS is optimal, i.e. There's no performance issue
 // Accomplished by making the scrollThing wait
@@ -22,9 +22,13 @@ let scrollHandler = {
 function checkScroll() {
   console.log("Detected scroll, checking to see if classes should change")
   if(win.scrollTop() > shiftY) {
+    nav.addClass('grey');
+    nav.addClass('darken-4');
     nav.removeClass('transparent');
   }
   else {
+    nav.removeClass('grey');
+    nav.removeClass('darken-4');
     nav.addClass('transparent');
   }
 
