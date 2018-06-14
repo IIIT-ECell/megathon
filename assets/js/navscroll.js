@@ -1,10 +1,11 @@
 // Caching? the variables
 let win = $(window);
-let nav = $('.navbar');
+let nav = $('nav');
+let nav_wrapper = $('.nav-wrapper');
 let cov = $('.landing');
-let jump = $('#jump');
-let jumpicon = $('#jumpicon');
-let down = $('#down')
+// let jump = $('#jump');
+// let jumpicon = $('#jumpicon');
+// let down = $('#down')
 
 let shiftY = (cov.height())/2;
 
@@ -23,19 +24,23 @@ function checkScroll() {
   console.log("Detected scroll, checking to see if classes should change")
   if(win.scrollTop() > shiftY) {
     nav.removeClass('transparent');
+    nav_wrapper.addClass('grey');
+    nav_wrapper.addClass('darken-4');
   }
   else {
     nav.addClass('transparent');
+    nav_wrapper.removeClass('grey');
+    nav_wrapper.removeClass('darken-4');
   }
 
-  if(win.scrollTop() > shiftY) {
-    jump.removeClass('transparent');
-    jumpicon.removeClass('transparent');
-  }
-  else {
-    jump.addClass('transparent');
-    jumpicon.addClass('transparent');
-  }
+  // if(win.scrollTop() > shiftY) {
+  //   jump.removeClass('transparent');
+  //   jumpicon.removeClass('transparent');
+  // }
+  // else {
+  //   jump.addClass('transparent');
+  //   jumpicon.addClass('transparent');
+  // }
 
 }
 
@@ -53,14 +58,14 @@ if(cov.length > 0) {
 }
 
 
-jump.click(function() { // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0 // Scroll to top of body
-    }, 600);
-});
-
-down.click(function() { // On clicking the down arrow
-  $('body,html').animate({
-      scrollTop : cov.height() // go down just past the cover
-  }, 600);
-});
+// jump.click(function() { // When arrow is clicked
+//     $('body,html').animate({
+//         scrollTop : 0 // Scroll to top of body
+//     }, 600);
+// });
+//
+// down.click(function() { // On clicking the down arrow
+//   $('body,html').animate({
+//       scrollTop : cov.height() // go down just past the cover
+//   }, 600);
+// });

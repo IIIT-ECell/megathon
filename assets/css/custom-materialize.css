@@ -60,7 +60,16 @@
 
 
 
+/* BEGIN MODIFYING MATERIALIZE */
+nav {
+  position: fixed;
+}
 
+.transparent {
+  background-color: transparent !important;
+  color: transparent !important;
+}
+/* END MODIFYING MATERIALIZE */
 
 
 
