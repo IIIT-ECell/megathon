@@ -158,6 +158,19 @@ nav {
   z-index: 1100;
   box-shadow: 0;
 }
+nav ul {
+  transition: all 0.5s ease;
+}
+nav ul a {
+  transition: all 0.5s ease;
+}
+
+.btn-line {
+  background-color: transparent !important;
+  border: solid 1px red;
+}
+
+
 .sidenav {
   z-index: 1200;
 }
@@ -165,6 +178,10 @@ nav {
 .transparent {
   background-color: transparent !important;
   color: transparent !important;
+}
+
+.waves-effect {
+  z-index: 1000;
 }
 /* END MODIFYING MATERIALIZE */
 
