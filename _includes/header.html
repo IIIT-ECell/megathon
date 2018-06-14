@@ -1,24 +1,25 @@
 <header class="">
 
   <!-- Content to be placed in dropdown -->
-  <ul id="dropdown1" class="dropdown-content">
+  <!-- Scrap the dropdown -->
+  <!-- <ul id="dropdown1" class="dropdown-content">
     <li><a href="#!">one</a></li>
     <li><a href="#!">two</a></li>
     <li class="divider"></li>
     <li><a href="#!">three</a></li>
-  </ul>
+  </ul> -->
 
   <nav class="grey darken-4">
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
+      <a href="{{site.baseurl}}" class="brand-logo">Logo</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li class="active"><a href="">Home</a></li>
+        <li class="active"><a href="{{site.baseurl}}">Home</a></li>
         <li><a href="">Components</a></li>
         <li><a href="">Javascript</a></li>
         <li><a href="">Mobile</a></li>
 
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+        <!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li> -->
       </ul>
     </div>
   </nav>
@@ -26,7 +27,7 @@
 </header>
 <!-- Can't keep this inside header -->
 <ul class="sidenav" id="mobile-demo">
-  <li><a href="sass.html">Sass</a></li>
+  <li class="active"><a href="{{site.baseurl}}">Home</a></li>
   <li><a href="badges.html">Components</a></li>
   <li><a href="collapsible.html">Javascript</a></li>
   <li><a href="mobile.html">Mobile</a></li>

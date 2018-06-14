@@ -1,13 +1,12 @@
 // Caching? the variables
 let win = $(window);
 let nav = $('nav');
-let nav_wrapper = $('.nav-wrapper');
 let cov = $('.landing');
 let jump = $('#jump');
 let jumpicon = $('#jumpicon');
 let down = $('#down')
 
-let shiftY = (cov.height())/2;
+let shiftY = (cov.height())/3 - nav.height();
 
 // To make sure the JS is optimal, i.e. There's no performance issue
 // Accomplished by making the scrollThing wait
