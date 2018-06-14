@@ -148,11 +148,15 @@
 a {
   transition: 0.5s ease;
 }
+a:hover {
+  color: #f44336;
+}
 
 nav {
   position: fixed;
   transition: all 0.5s ease;
   z-index: 1100;
+  box-shadow: 0;
 }
 .sidenav {
   z-index: 1200;
