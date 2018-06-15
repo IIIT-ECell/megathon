@@ -155,15 +155,7 @@
   color: white;
 }
 
-.fixed-action-btn{
-  z-index:1300;
-  top:23px;
-  bottom: unset;
-}
-.btn-floating{
-  border-radius: unset;
-  width:80px;
-}
+
 /* END home scroll styling */
 
 
