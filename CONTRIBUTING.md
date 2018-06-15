@@ -30,6 +30,11 @@ There are two custom single-row/column classes based on flexbox, with align-cont
 #### Fixed height image container
 `.fixh-container`: has a default height of *15rem*, with overflow hidden and overflow-wrap as break-word. Options to change height should be added
 
+#### Fixed width and height image container
+`.fixwh-container`: has a default height of *4rem* and default width of *16rem*, with overflow hidden and overflow-wrap as break-word. Options to change height should be added
+
+Has a `stout` option to reduce width
+
 #### Object-fit generic image classes for upper
 `.of`: Default, fits as a contain
 `.of .cover`: Object fit as cover, like in background-image
