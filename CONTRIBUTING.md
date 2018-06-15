@@ -2,8 +2,9 @@
 # CSS Documentation
 Materialize CSS has been used as the backing framework, with a custom-materialize.css stylesheet to:
 1. Modify default materialize look and feel
-2. Setup own materialize-like [OOCSS][] mini framework as per needs. [Link](#Custom)
+2. Setup own materialize-like [OOCSS][] mini framework as per needs. [Link](#custom)
 3. Regular conventional styling of elements
+
 [OOCSS]: http://clubmate.fi/oocss-acss-bem-smacss-what-are-they-what-should-i-use/#Object_Oriented_CSS_OOCSS
 
 ## Custom
