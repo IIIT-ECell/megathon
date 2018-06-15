@@ -1,18 +1,17 @@
 <header class="">
 
   <!-- Content to be placed in dropdown -->
-  <!-- Scrap the dropdown -->
-  <!-- <ul id="dropdown1" class="dropdown-content">
-    <li><a href="#!">one</a></li>
-    <li><a href="#!">two</a></li>
-    <li class="divider"></li>
-    <li><a href="#!">three</a></li>
-  </ul> -->
+  <ul id="dropdown1" class="dropdown-content grey darken-4">
+    <li><a href="{{site.baseurl}}/road" class="white-text">Road to Megathon</a></li>
+    <li><a href="{{site.baseurl}}/megathon-online" class="white-text">Megathon Online</a></li>
+    <li><a href="{{site.baseurl}}/megathon" class="white-text">Megathon</a></li>
+    <li><a href="{{site.baseurl}}/b-hack" class="white-text">B-Hack</a></li>
+  </ul>
 
   <nav class="grey darken-4">
     <div class="nav-wrapper">
 
-      <a href="{{site.baseurl}}" class="brand-logo">
+      <a href="{{site.baseurl}}/" class="brand-logo">
 
         <div class="fixwh-container">
           <img class="of" src="{{site.baseurl}}/assets/images/logos/logo.png" alt="{{site.baseurl}}">
@@ -24,17 +23,13 @@
         <li><a href="{{site.baseurl}}/#About">About Us</a></li>
         <li><a href="{{site.baseurl}}/#Format">Format</a></li>
 
-        <!-- <li><a href="{{site.baseurl}}/road">Road to megathon</a></li>
-        <li><a href="{{site.baseurl}}/megathon-online">Megathon Online</a></li>
-        <li><a href="{{site.baseurl}}/megathon">Megathon</a></li>
-        <li><a href="{{site.baseurl}}/b-hack">B-Hack</a></li> -->
-        <li><a href="">Events</a></li>
+        <li><a class="dropdown-trigger" data-target="dropdown1" href="">Events<i class="material-icons right">arrow_drop_down</i></a></li>
 
         <li><a href="{{site.baseurl}}/#Schedule">Schedule</a></li>
         <li><a href="{{site.baseurl}}/#Apply">Apply Now</a></li>
         <li><a href="{{site.baseurl}}/#Contact">Contact Us</a></li>
         <li><a href="{{site.baseurl}}/#Sponsors">Sponsors</a></li>
-        <li><a href="{{site.baseurl}}/faq">FAQ</a></li>
+        <li><a href="{{site.baseurl}}/#FAQ">FAQ</a></li>
 
         <!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li> -->
       </ul>
@@ -45,11 +40,13 @@
       <li><a class="sidenav-close" href="#!"><i class="material-icons">close</i></a></li>
     </div>
 
-    <li class="active"><a href="{{site.baseurl}}">Home</a></li>
+    <li class="active"><a href="{{site.baseurl}}/">Home</a></li>
     <li><a href="{{site.baseurl}}/#About">About Us</a></li>
-    <li><a href="{{site.baseurl}}/#Online">Megathon Online</a></li>
-    <li><a href="{{site.baseurl}}/#Offline">Megathon</a></li>
-    <li><a href="{{site.baseurl}}/#BHack">B-Hack</a></li>
+    <li><a href="{{site.baseurl}}/#Format">Format</a></li>
+    <li><a href="{{site.baseurl}}/road">Road to Megathon</a></li>
+    <li><a href="{{site.baseurl}}/megathon-online">Megathon Online</a></li>
+    <li><a href="{{site.baseurl}}/megathon">Megathon</a></li>
+    <li><a href="{{site.baseurl}}/b-hack">B-Hack</a></li>
     <li><a href="{{site.baseurl}}/#Schedule">Schedule</a></li>
     <li><a href="{{site.baseurl}}/#Apply">Apply Now</a></li>
     <li><a href="{{site.baseurl}}/#FAQ">FAQ</a></li>

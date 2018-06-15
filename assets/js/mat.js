@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.dropdown-trigger').dropdown({ hover: true });
+  $('.dropdown-trigger').dropdown({ hover: false });
 
   $('.sidenav').sidenav({
   	edge: 'right',
@@ -9,6 +9,7 @@ $(document).ready(function() {
 
   $('.scrollspy').scrollSpy();
 });
+
 $(document).scroll(function(){
 	$('.scrollspy').each(function(){
 	  	if($(this).is(':visible'))
