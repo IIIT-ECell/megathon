@@ -1,11 +1,26 @@
 <div class = "scrollspy" id="online">
-<div class = "container">
-
-{% for data in site.data.sections %}
-<div id={{data.name}}>
-<h3>{{data.name}}</h3><br>
-</div>
-{% endfor %}
-
-</div>
+	<div class = "container">
+		<div class="card">
+			<div class="card-content">
+				<h2>  Events </h2>
+			</div>
+			<div class="card-tabs">
+				<ul class="tabs tabs-fixed-width">
+					{% for data in site.data.sections %}
+					<li class="tab"><a href="#{{data.name}}">{{data.name}}</a></li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="card-content grey lighten-4">
+				{% for data in site.data.sections %}
+				<div id="{{data.name}} content">{{data.name}}</div>
+				{% endfor %}
+			</div>
+		</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#content').hide();
+	})
+</script>
+	</div>
 </div>
