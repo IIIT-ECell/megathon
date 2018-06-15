@@ -365,6 +365,9 @@ nav ul a {
   object-fit: cover;
 }
 
+.hide-overflow {
+  overflow: hidden;
+}
 /* END DEFINE GENERIC CLASSES */
 /* END DEFINE GENERIC CLASSES */
 /* END DEFINE GENERIC CLASSES */
