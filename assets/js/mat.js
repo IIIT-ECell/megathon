@@ -18,6 +18,14 @@ $(document).scroll(function(){
 	  	}
 	  	else{
   			$(this).removeClass('active');
+        console.log(this);
   		}
   	});
 });
+$(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton({
+      direction: 'bottom',
+      hoverEnabled: false,
+    });
+  });
+        
