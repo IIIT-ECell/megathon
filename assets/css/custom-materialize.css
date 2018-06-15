@@ -64,12 +64,16 @@
 
   transition: all 0.05s linear;
 }
-.hero img {
-  /* very hacky right now */
+.align-fill {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   height: 100%;
-  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .landing .align-box h1 {
   font-size: 12vw;
   font-weight: lighter;
@@ -153,26 +157,6 @@
 
 /* START sponsor styling */
 
-.fixh-container {
-  width: 100%;
-  height: 15rem;
-}
-.fixh-container img{
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
-
-.of {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
-.of.cover{
-  object-fit: cover;
-}
-
-
 /* END sponsor styling */
 
 /* END REGULAR ELEMENT STYLING */
@@ -193,11 +177,27 @@
 /* BEGIN MODIFYING MATERIALIZE */
 /* BEGIN MODIFYING MATERIALIZE */
 /* BEGIN MODIFYING MATERIALIZE */
+
+/* ------z-indices as per bootstrap------ */
 * {
   z-index: 1000;
   overflow-wrap: break-word;
 }
 
+.sidenav {
+  z-index: 1200;
+}
+
+.waves-effect {
+  z-index: 1000;
+}
+
+nav {
+  z-index: 1100;
+}
+
+/* ------Hover animations and transitions------ */
+/* Link */
 a {
   transition: 0.5s ease;
 }
@@ -205,11 +205,10 @@ a:hover {
   color: #f44336;
 }
 
+/* Navbar */
 nav {
   position: fixed;
   transition: all 0.5s ease;
-  z-index: 1100;
-  box-shadow: 0;
 }
 nav ul {
   transition: all 0.5s ease;
@@ -218,24 +217,20 @@ nav ul a {
   transition: all 0.5s ease;
 }
 
+
+/* ------New helper classes------ */
+/* Buttons */
 .btn-line {
   background-color: transparent !important;
   border: solid 1px red;
 }
 
-
-.sidenav {
-  z-index: 1200;
-}
-
+/* Transparency */
 .transparent {
   background-color: transparent !important;
   color: transparent !important;
 }
 
-.waves-effect {
-  z-index: 1000;
-}
 /* END MODIFYING MATERIALIZE */
 /* END MODIFYING MATERIALIZE */
 /* END MODIFYING MATERIALIZE */
@@ -297,7 +292,7 @@ nav ul a {
   opacity: 0.9;
 }
 
-/* ------Alignment------ */
+/* ------Layout: Single Column------ */
 .align-box {
   display: flex;
   flex-direction: column;
@@ -309,33 +304,51 @@ nav ul a {
   align-items: center;
   justify-content: center;
 }
-.align-fill {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.align-box.right, .align-box-h.right {
+  align-items: flex-end;
 }
-.align-box .right, .align-fill .right {
+.align-box.left, .align-box-h.left{
+  align-items: flex-start;
+}
+.align-box .right, .align-box-h .right{
   align-self: flex-end;
 }
-.align-box .left .align-fill .left{
+.align-box .left, .align-box-h .left{
   align-self: flex-start;
 }
+.align-box-h.right {
+  justify-content: flex-end;
+}
+.align-box-h.left {
+  justify-content: flex-start;
+}
+
 
 /* Custom line heights */
 .lh-15 {
   line-height: 0.15;
 }
-
-
 .ico {
   padding: 1rem;
 }
 /* ------components------ */
+
+
+.fixh-container {
+  width: 100%;
+  height: 15rem;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.of {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.of.cover{
+  object-fit: cover;
+}
 
 /* END DEFINE GENERIC CLASSES */
 /* END DEFINE GENERIC CLASSES */
