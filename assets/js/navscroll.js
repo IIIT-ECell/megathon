@@ -14,7 +14,7 @@ let shiftY = (cov.height())/2 - nav.height();
 // To make sure the JS is optimal, i.e. There's no performance issue
 // Accomplished by making the scrollThing wait
 let scrollHandler = {
-  allow: false,
+  allow: true,
   reallow: function() {
     scrollHandler.allow = true;
   },
@@ -23,7 +23,7 @@ let scrollHandler = {
 
 // To disable, set allow = false;
 let smoothScroll = {
-  allow: true,
+  allow: false,
   reallow: function() {
     smoothScroll.allow = true;
   },
