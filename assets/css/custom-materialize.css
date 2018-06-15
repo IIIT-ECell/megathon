@@ -85,6 +85,11 @@
   letter-spacing: 1rem;
 }
 
+.landing .align-box h5 {
+  letter-spacing: 0.5rem;
+  text-shadow: 1px 1px black;
+}
+
 .landing .align-box h1, .landing .align-box h2 {
   margin: 0;
   line-height: 0.75;
@@ -339,6 +344,15 @@ nav ul a {
   height: 15rem;
   overflow: hidden;
   overflow-wrap: break-word;
+}
+.fixwh-container {
+  width: 16rem;
+  height: 4rem;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+.fixwh-container.stout {
+  width: 8rem;
 }
 
 .of {
