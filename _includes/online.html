@@ -1,26 +1,38 @@
 <div class = "scrollspy" id="online">
 	<div class = "container">
-		<div class="card">
-			<div class="card-content">
-				<h2>  Events </h2>
-			</div>
-			<div class="card-tabs">
-				<ul class="tabs tabs-fixed-width">
-					{% for data in site.data.sections %}
-					<li class="tab"><a href="#{{data.name}}">{{data.name}}</a></li>
-					{% endfor %}
-				</ul>
-			</div>
-			<div class="card-content grey lighten-4">
-				{% for data in site.data.sections %}
-				<div id="{{data.name}} content">{{data.name}}</div>
-				{% endfor %}
-			</div>
-		</div>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$('#content').hide();
-	})
-</script>
+		
+  <div class="card">
+    <div class="card-content">
+    <h1><centre>Events</centre></h1>
+    </div>
+    <div class="card-tabs">
+      <ul class="tabs tabs-fixed-width">
+        <li class="tab"><a class="active" href="#test0">Road to Megathon</a></li>
+        {% for data in site.data.sections %}
+        <li class="tab"><a href="#test{{forloop.index}}">{{data.name}}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="card-content grey lighten-4">
+      <div id="test0">
+      	<h1>Road to Megathon</h1>
+
+      </div>
+      {% for data in site.data.sections %}
+      <div id="test{{forloop.index}}">
+      	<h2>{{data.name}}</h2>
+      	<h4>{{data.format}}</h4>
+      	<h5>{{data.about}}</h5>
+      	<div class="card-action">
+          <a href="{{data.link}}">Know More</a>
+        </div>
+      </div>
+      {% endfor %}
+       </div>
+  </div>
+
 	</div>
 </div>
+<script type="text/javascript">
+
+</script>
