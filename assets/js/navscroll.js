@@ -9,7 +9,7 @@ let hero_overlay = $('.hero-overlay');
 
 
 let change = (cov.height() - nav.height()) * 0.8;
-let shiftY = (cov.height())/2 - nav.height();
+let shiftY = (cov.height()) - nav.height();
 
 // To make sure the JS is optimal, i.e. There's no performance issue
 // Accomplished by making the scrollThing wait
@@ -18,7 +18,7 @@ let scrollHandler = {
   reallow: function() {
     scrollHandler.allow = true;
   },
-  delay: 200
+  delay: 100
 }
 
 // To disable, set allow = false;
@@ -44,7 +44,7 @@ function checkScroll() {
     nav.addClass('transparent');
   }
 
-  if(win.scrollTop() > shiftY) {
+  if(win.scrollTop() > shiftY/2) {
     jump.removeClass('transparent');
     jumpicon.removeClass('transparent');
   }

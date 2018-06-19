@@ -1,4 +1,4 @@
 ---
-layout: megathon
+layout: onsite
 title: Megathon
 ---

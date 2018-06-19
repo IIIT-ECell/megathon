@@ -1,11 +1,13 @@
 $(document).ready(function() {
-  $('.dropdown-trigger').dropdown({ hover: false });
+  $('.dropdown-trigger').dropdown({ hover: true });
 
   $('.sidenav').sidenav({
   	edge: 'right',
   	draggable: false,
   	closeOnClick: true
   });
+
+  $('.modal').modal();
 
   $('.scrollspy').scrollSpy();
 });
