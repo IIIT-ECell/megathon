@@ -4,7 +4,6 @@ title: Megathon Online
 ---
 
 Theme:
->>>>>>> solved
 As part of Megathon’17, we introduced a social challenge which was around Women
 Safety and Cyber Crime. Although it was limited only to Hyderabad students, we were
 really inspired by the innovative solutions that were proposed. Motivated by the success
