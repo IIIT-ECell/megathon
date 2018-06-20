@@ -8,12 +8,13 @@
     misc: make the others feel good
     participation: sabko milenge
   url: hackerearth.com
+  link: online
   format: Online on hackerearth
   apply: blah blah
   eligibility: very smarts internet connection
 
 - name: Megathon Onsite
-  about: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  about: The goal of this is to provide technological solutions to issues put forward by the challenge sponsors. You can choose one problem statement out of the 4 presented to you and prototype and implement your ideas under the guidance of mentors from the industry and academia in 24 hours. This will be followed by pitching of the business models/ prototypes. The event will be conducted on 22nd and 23rd September, 2018 at IIIT Hyderabad. The top ideas will be selected for the Business Hack and rewarded prized worth 3 lakhs- 40k, 20k and 5k for the first, second and third places respectively.
   date: 20th July-20th August
   prizes:
     first: A lot of cash
@@ -22,6 +23,7 @@
     misc: make the others feel good
     participation: sabko milenge
   url: hackerearth.com
+  link: onsite
   format: Online on hackerearth
   apply: blah blah
   eligibility: very smarts internet connection
@@ -36,12 +38,15 @@
     misc: make the others feel good
     participation: sabko milenge
   url: hackerearth.com
+  link: road
   format: Online on hackerearth
   apply: blah blah
   eligibility: very smarts internet connection
 
 - name: Business Hack
-  about: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  about: The teams selected from the Onsite Hackathon in each problem statement will be mentored by our Incubators, top academics and partners to convert their ideas into products/ services with the revenue model. They will participate in B-hack to pitch their company in front of  VCs, Corporates and top academia.
+    Apart from this, there will be Entrepreneurship Workshops and sessions from Founder Students, Business Plan competitions, Elevator Pitch competitions and case studies over the business challenges presented by the sponsors, which will be open to all Megathon participants and not just the selected teams.
+    This event will be conducted in September, 2018 at IIT Hyderabad.
   date: 20th July-20th August
   prizes:
     first: A lot of cash
@@ -50,6 +55,7 @@
     misc: make the others feel good
     participation: sabko milenge
   url: hackerearth.com
+  link: bhack
   format: Online on hackerearth
   apply: blah blah
   eligibility: very smarts internet connection

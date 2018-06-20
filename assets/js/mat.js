@@ -9,6 +9,8 @@ $(document).ready(function() {
   	closeOnClick: true
   });
 
+  $('.tabs').tabs();
+
   $('.modal').modal();
 
   $('.scrollspy').scrollSpy();
