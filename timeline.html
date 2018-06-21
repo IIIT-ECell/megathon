@@ -33,7 +33,7 @@ layout : wrapper
   bottom: 0;
   width: 400px;
   padding: 15px;
-  /*background: #F45B69;*/
+  
 }
 
 .timeline ul li div::before {
@@ -67,7 +67,7 @@ layout : wrapper
 
 time {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 8px;
 }
@@ -125,26 +125,42 @@ time {
     border-color: transparent #F45B69 transparent transparent;
   }
 }
+.online
+{
+	background-color: yellow;
+}
 </style>
-<div>
-<img class="of cover" src="https://i.ytimg.com/vi/mCPKtsrW9RI/maxresdefault.jpg" alt="test">
-<h1 class="">MEGATHON</h1>
-      <h2 class="right red-text">2018</h2>
-      <h5 class="grey-text lighten-5">22-23rd September</h5>
+<div class="landing bebas-neue">
+  
+  <div class="overlay black opacity-5">
+  </div>
+  <div class="hero" id="landing-hero">
+    <img class="of cover" src="https://i.ytimg.com/vi/mCPKtsrW9RI/maxresdefault.jpg" alt="test1">
+  </div>
+
+  <div class="align-fill">
+      <h1 style = "font-size: 15vw">Timeline</h1>
+      {% include scrolldown.html %}
+    </div>
+
+    <div class="align-box">
+      <a class="btn-large btn-line waves-effect waves-white red">Apply now</a>
+    </div>
+  </div>
 </div>
-
-
-
-
 <section class='timeline'>
 	
 	<ul>
 	{% for data in site.data.events %}
 	<li>
-	<div>
+	{% if data.type contains 'online' %}
+	<div class = "online">
 	<time>{{data.date}}</time>
-	<h5>{{data.event}}</h5>
+	
+	<h5 >{{data.event}}</h5>
+	
 	</div>
+	{% endif %}
 	</li>
 	{% endfor %}
 	</ul>
@@ -177,6 +193,6 @@ time {
   window.addEventListener("load", callbackFunc);
   window.addEventListener("resize", callbackFunc);
   window.addEventListener("scroll", callbackFunc);
-
+ 
 })();
 </script>
