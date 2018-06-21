@@ -126,17 +126,24 @@ time {
   }
 }
 </style>
-<h1>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr</h1>
-<h3>Timeline of events</h3>
+<div>
+<img class="of cover" src="https://i.ytimg.com/vi/mCPKtsrW9RI/maxresdefault.jpg" alt="test">
+<h1 class="">MEGATHON</h1>
+      <h2 class="right red-text">2018</h2>
+      <h5 class="grey-text lighten-5">22-23rd September</h5>
+</div>
+
+
+
 
 <section class='timeline'>
+	
 	<ul>
-	{% for data in site.data.sections %}
+	{% for data in site.data.events %}
 	<li>
 	<div>
-	<time>{{data.start_date}}</time>
-	<h5>{{data.name}}</h5>
-	{{data.about}}
+	<time>{{data.date}}</time>
+	<h5>{{data.event}}</h5>
 	</div>
 	</li>
 	{% endfor %}
