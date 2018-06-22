@@ -154,7 +154,6 @@
 /* START format styling */
 
 #format a {
-  color: black;
   transition: 0.5s ease;
 }
 
@@ -225,6 +224,7 @@ nav {
 /* ------Hover animations and transitions------ */
 /* Link */
 a {
+  color: #455a64;
   transition: 0.5s ease;
 }
 a:hover {
@@ -357,7 +357,12 @@ nav ul a {
   line-height: 0.15;
 }
 .ico {
+  color: #3f51b5;
   padding: 1rem;
+  transition: 0.5s ease;
+}
+.ico:hover {
+  color: #f44336;
 }
 
 /* subset of Bootstrap-like spacingn options */
