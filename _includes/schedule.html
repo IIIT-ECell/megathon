@@ -1,8 +1,11 @@
 <div id="Schedule" class="scrollspy">
   <div class="container">
     <h3>Schedule</h3>
-     <table class ="stripped highlight responsive-table">
-        <thead>
+    <p>
+      Click <a href="{{site.baseurl}}/timeline">here</a> for a more detailed timeline.
+    </p>
+     <table class ="striped centered responsive-table">
+        <thead class="grey lighten-4">
           <tr>
               <th>Event</th>
               <th>Start Date</th>
@@ -13,7 +16,7 @@
 
         <tbody>
           {% for data in site.data.sections %}
-          <tr>
+          <tr class="grey lighten-5">
           <td>{{data.name}}</td>
           <td>{{data.start_date}}</td>
           <td>{{data.end_date}}</td>
