@@ -151,7 +151,26 @@
 
 /* END home scroll styling */
 
+/* START format styling */
 
+#format a {
+  color: black;
+  transition: 0.5s ease;
+}
+
+#format a:hover {
+  color: #f44336;
+}
+
+/* #format .row {
+  margin-bottom: 0;
+} */
+
+#format .container {
+  border: 1px solid #eeeeee;
+}
+
+/* END format styling */
 
 /* START sponsor styling */
 
@@ -344,6 +363,9 @@ nav ul a {
 /* subset of Bootstrap-like spacingn options */
 .mb-5 {
   margin-bottom: 3rem !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
 }
 .pl-0 {
   padding-left: 0 !important;

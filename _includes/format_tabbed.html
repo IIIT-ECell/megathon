@@ -29,14 +29,29 @@
 
 	</div>
 </div> -->
-<!-- <br> -->
+<br>
+<div class="container">
+<pre>
+get a prettier graphic for this
+
+                                              -top 3 for whatever->|
+                                              |                    |
+MEGATHON ONLINE     Road to Megathon     Megathon      B-Hack < ----
+(8 July - 6 Aug)    (some september)    (21-22 Sep)   (Whatever)
+Online hack |         workshop@IIT     Hack@IIITH ^    workshop?@IIT
+            |                                     |
+            V----->top 3, for felicitation------->|
+</pre>
+</div>
+
+<br>
 <div class="scrollspy" id="format">
 	<div class="container">
 		<div class="row">
 	    <div class="col s12 px-0">
 				<ul class="tabs">
 					{% for event in site.data.eventlist %}
-					<li class="tab col s3"><a class="black-text" href="#{{event.link}}">{{event.name}}</a></li>
+					<li class="tab col s3"><a class="black-text white" href="#{{event.link}}">{{event.name}}</a></li>
 					{% endfor %}
 				</ul>
 			</div>
@@ -50,7 +65,7 @@
 					</div>
 				</div>
 
-				<div class="row">
+				<div class="row mb-0">
 					<div class="col s4 center-align">
 						<a href="{{event.url}}">Apply Now</a>
 					</div>
