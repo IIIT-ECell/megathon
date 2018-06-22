@@ -1,0 +1,99 @@
+- name: Megathon Online
+  about: >
+    As part of Megathon’17, we introduced a social challenge based around Women
+    Safety and Cyber Crime. The solutions proposed were innovative and inspiring,
+    but limited to primarily Hyderabad students. In this edition of Megathon, we
+    decided to make it accessible beyond Hyderabad to the whole country. In this
+    regard we are proud to introduce to you the Online Round of Megathon, to help
+    contribute ideas for Women's Safety.
+  date: 8th July - 6th August
+  detailed_date: |
+    Registrations and Access to Problem Statements - 8th July to 20th July
+    Submission portal opens - 21st July to 6th August
+    Submission portal closes and judgement process begins: 6th August to 25th August
+    Results are announced - 26th August
+  prizes:
+    first: Rs. 80,000
+    second: Rs. 30,000
+    third: Rs. 10,000
+    misc: Goodies worth Rs. 1000 each for the top 25 teams
+    participation:
+    more: >
+      The top 3 winning teams will get an all-expenses paid trip to Hyderabad for
+      felicitation at Megathon'18.
+  url: hackerearth.com
+  link: megathon-online
+  format: >
+    The contest will be hosted on Hackerearth. Submissions open for a month, and
+    participants can submit solutions any time within the given deadline from the
+    time the contest starts.
+  apply: TODO ADD
+  eligibility: TODO ADD
+
+- name: Road to Megathon
+  about: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  date: 20th July-20th August
+  detailed_date:
+  prizes:
+    first: A lot of cash
+    second: so much cash
+    third: i want this cash too
+    misc: make the others feel good
+    participation: sabko milenge
+    more:
+  url: hackerearth.com
+  link: road
+  format: Online on hackerearth
+  apply: blah blah
+  eligibility: very smarts internet connection
+
+- name: Megathon Onsite
+  about: >
+    The goal of this is to provide technological solutions to issues put forward
+    by the challenge sponsors. You can choose one problem statement out of the 4
+    presented to you and prototype and implement your ideas under the guidance of
+    mentors from the industry and academia in 24 hours. This will be followed by
+    pitching of the business models/ prototypes. The event will be conducted on
+    22nd and 23rd September, 2018 at IIIT Hyderabad. The top ideas will be selected
+    for the Business Hack and rewarded prized worth 3 lakhs- 40k, 20k and 5k for
+    the first, second and third places respectively.
+  date: 22nd - 23rd September
+  detailed_date:
+  prizes:
+    first: Rs. 40,000 per theme
+    second: Rs. 20,000 per theme
+    third: Rs. 5,000 per theme
+    misc:
+    participation: T-Shirts, TODO ADD
+    more: The top ideas will be selected for the Business Hack
+  url:
+  link: onsite
+  format: The hackathon will be conducted on the IIIT Hyderabad campus. TODO ADD
+  apply: TODO ADD
+  eligibility: TODO ADD
+
+- name: Business Hack
+  about: >
+    The teams selected from the Onsite Hackathon in each problem statement will
+    be mentored by our Incubators, top academics and partners to convert their
+    ideas into products/ services with the revenue model. They will participate
+    in B-hack to pitch their company in front of  VCs, Corporates and top academia.
+    Apart from this, there will be Entrepreneurship Workshops and sessions from
+    Founder Students, Business Plan competitions, Elevator Pitch competitions and
+    case studies over the business challenges presented by the sponsors, which
+    will be open to all Megathon participants and not just the selected teams.
+    This event will be conducted in September, 2018 at IIT Hyderabad.
+  date: TODO get
+  detailed_date:
+  prizes:
+    first: A lot of cash
+    second: so much cash
+    third: i want this cash too
+    misc: make the others feel good
+    participation: sabko milenge
+    more:
+  url: hackerearth.com
+  link: bhack
+  format: Online on hackerearth
+  apply: TODO ADD
+  eligibility: TODO ADD
