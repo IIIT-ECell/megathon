@@ -13,6 +13,8 @@
   font-family: "Norwester";
   src: url("../fonts/norwester.tff"), url("../fonts/norwester.eot");
 }
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
 /* END CUSTOM DECLARATIONS */
 /* END CUSTOM DECLARATIONS */
 /* END CUSTOM DECLARATIONS */
@@ -174,6 +176,13 @@
 /* BEGIN MODIFYING MATERIALIZE */
 /* BEGIN MODIFYING MATERIALIZE */
 
+/* ------custom fonts------ */
+body {
+  /* defined in html */
+  font-weight: 500;
+}
+
+
 /* ------z-indices as per bootstrap------ */
 * {
   z-index: 1000;
@@ -260,7 +269,9 @@ nav ul a {
 .norwester {
   font-family: "Norwester","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
+.raleway {
+  font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 /* ------Opacity settings------ */
 .opacity-1 {
   opacity: 0.1 !important;
