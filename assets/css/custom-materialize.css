@@ -332,8 +332,19 @@ nav ul a {
 
 /* subset of Bootstrap-like spacingn options */
 .mb-5 {
-  margin-bottom: 3rem;
+  margin-bottom: 3rem !important;
 }
+.pl-0 {
+  padding-left: 0 !important;
+}
+.pr-0 {
+  padding-right: 0 !important;
+}
+.px-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 
 /* ------components------ */
 .overlay {
