@@ -1,0 +1,117 @@
+---
+layout: wrapper
+---
+<style>
+	.prize {
+		width: 18rem;
+		height: 18rem;
+		position: relative;
+		overflow: hidden;
+		border-radius: 50%;
+
+	}
+	.overlay {
+		position: absolute;
+		bottom: 100%;
+		left: 0;
+		right: 0;
+		background-color: black;
+		overflow: hidden;
+		width: 100%;
+		height:0;
+		transition: .5s ease;
+	}
+
+	.prize:hover .overlay {
+		bottom: 0;
+		height: 100%;
+	}
+
+	.text {
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: center;
+	}
+</style>
+{% capture content %}
+{{page.title}}
+{% endcapture %}
+
+{% include upper_pic.html title = content size = '10vw'%}
+<div class ="container">
+	{% for data in site.data.eventlist %}
+	{% if data.name contains page.title %}
+	<h2 class = "center-align">About</h2>
+
+	<h5>{{data.about}}</h5>
+
+	<h2 class = "center-align">Dates</h2>
+	<h5>
+		<ul>
+			<li><b>Start Date:</b> {{data.date.start}} </li>
+			<li><b>End Date:</b> {{data.date.end}}</li>
+		</ul>
+		<!-- Not including detailed date section wll be done if required timeline looks redundant without it -->
+	</h5>
+	<h4>For more information check out <a href="/megathon2018/timeline">the Timeline</a></h4>
+	<br>
+	<br>
+	<h2 class = "center-align">Prizes</h2>
+	<h5>
+		<div class = 'row'>
+			<div class = 'col s12 m4 l4'>
+				<div class=" prize responsive-img">
+
+					<img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJJjO2nCVpsGPCEwn6HWt71dd6VwEBijEDoiFSIJH3MG5mdgUrZA' class="of ">
+
+					<div class="overlay">
+						<div class="text"><b>First Prize</b> : {{data.prizes.first}}</div>
+					</div>
+				</div>
+			</div>
+			<div class = 'col s12 m4 l4'>
+				<div class=" prize responsive-img">
+					<img src = 'https://thumbs.dreamstime.com/b/silver-medal-number-two-icon-cartoon-style-illustration-vector-web-90622358.jpg' class="of">
+					<div class="overlay">
+						<div class="text"><b>Second Prize</b> : {{data.prizes.second}}</div>
+					</div>
+				</div>
+			</div>
+			<div class = 'col s12 m4 l4'>
+				<div class=" prize responsive-img">
+					<img src = 'https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX25680726.jpg' class="of">
+					<div class="overlay">
+						<div class="text"><b>Third Prize</b> : {{data.prizes.third}}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		<ul>
+			<li><b>{{data.prizes.misc}}</b></li>.
+			<li>{{data.prizes.more}}</li>
+		</ul>
+	</h5>
+	<h2 class = "center-align">Format</h2>
+	<h5>{{data.format}}</h5>
+	<br>
+	<h2 class = "center-align">Eligibility</h2>
+	<h5>{{data.eligibility}}</h5>
+	<div class ="row">
+		<div class="col s2 m6 l6 left-allign">
+		<a class="waves-effect waves-light btn"><i class="material-icons left">add</i>Apply Now</a>
+		</div>
+		<div class="col s2 m6 l6">
+		<a class="waves-effect waves-light btn"><i class="material-icons left">link</i>Link</a>
+		</div>
+	</div>
+	{% endif %}
+	{% endfor %}
+</div>

@@ -1,4 +1,4 @@
 ---
-layout: online
+layout: events
 title: Road to Megathon
 ---

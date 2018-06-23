@@ -1,4 +1,4 @@
 ---
-layout: bhacks
-title: B-Hacks
+layout: events
+title: Business Hack
 ---

@@ -1,4 +1,4 @@
-- name: Megathon Online
+- name: Online
   about: >
     As part of Megathon’17, we introduced a social challenge based around Women
     Safety and Cyber Crime. The solutions proposed were innovative and inspiring,
@@ -6,7 +6,9 @@
     decided to make it accessible beyond Hyderabad to the whole country. In this
     regard we are proud to introduce to you the Online Round of Megathon, to help
     contribute ideas for Women's Safety.
-  date: 8th July - 6th August
+  date: 
+    start: 8th July 
+    end : 6th August
   detailed_date: |
     Registrations and Access to Problem Statements - 8th July to 20th July
     Submission portal opens - 21st July to 6th August
@@ -21,7 +23,7 @@
     more: >
       The top 3 winning teams will get an all-expenses paid trip to Hyderabad for
       felicitation at Megathon'18.
-  url: hackerearth.com
+  url: https://www.hackerearth.com/
   link: megathon-online
   format: >
     The contest will be hosted on Hackerearth. Submissions open for a month, and
@@ -41,13 +43,13 @@
     misc: make the others feel good
     participation: sabko milenge
     more:
-  url: hackerearth.com
+  url: https://www.hackerearth.com/
   link: road
   format: At IIT Hyderabad
   apply: blah blah
   eligibility: very smarts internet connection
 
-- name: Megathon Onsite
+- name: Onsite
   about: >
     The goal of this is to provide technological solutions to issues put forward
     by the challenge sponsors. You can choose one problem statement out of the 4
@@ -81,7 +83,7 @@
     Apart from this, there will be Entrepreneurship Workshops and sessions from
     Founder Students, Business Plan competitions, Elevator Pitch competitions and
     case studies over the business challenges presented by the sponsors, which
-    will be open to all Megathon participants and not just the selected teams.
+    will be open to all Megathon participants and not just the selected teams. 
     This event will be conducted in September, 2018 at IIT Hyderabad.
   date: TODO get
   detailed_date:
@@ -92,7 +94,7 @@
     misc: make the others feel good
     participation: sabko milenge
     more:
-  url: hackerearth.com
+  url: https://www.hackerearth.com/
   link: bhack
   format: At IIT Hyderabad
   apply: TODO ADD
