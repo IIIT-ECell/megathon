@@ -1,4 +1,4 @@
 ---
 layout: events
-title: Megathon-Online
+title: Online
 ---

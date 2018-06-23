@@ -1,6 +1,5 @@
 ---
-layout: online
-title: Megathon Online
+layout: wrapper
 ---
 <style>
 	.prize {
@@ -39,71 +38,78 @@ title: Megathon Online
 		text-align: center;
 	}
 </style>
-<h2 class = "center-align">About</h2>
+{% capture content %}
+{{page.title}}
+{% endcapture %}
 
-<h5>As part of Megathon’17, we introduced a social challenge which was around Women
-	Safety and Cyber Crime. Although it was limited only to Hyderabad students, we were
-	really inspired by the innovative solutions that were proposed. Motivated by the success
-	last year and a deep desire to take it to national level, we decided to take the same
-	problem, which still remains one of the most pressing issues of today.
+{% include upper_pic.html title = content size = '10vw'%}
+<div class ="container">
+	{% for data in site.data.eventlist %}
+	{% if data.name contains page.title %}
+	<h2 class = "center-align">About</h2>
+
+	<h5>{{data.about}}</h5>
+
+	<h2 class = "center-align">Dates</h2>
+	<h5>
+		<ul>
+			<li><b>Start Date:</b> {{data.date.start}} </li>
+			<li><b>End Date:</b> {{data.date.end}}</li>
+		</ul>
+		<!-- Not including detailed date section wll be done if required timeline looks redundant without it -->
+	</h5>
+	<h4>For more information check out <a href="/megathon2018/timeline">the Timeline</a></h4>
 	<br>
 	<br>
-	In this edition, we are looking for all kinds of solution (and not just limited to
-	technology) that could be useful to address this problem. The whole idea behind this is to
-	find solutions that can be implemented and/or taken to the market. Hence, we shall be
-	partnering with different govt. agencies (like the Hyderabad Police She Team) and NGOs
-	who shall help us in this aspect.
-	<br>
-	<br>
-	We really want to make our small contribution to this important issue and hope for a safer
-	nation for women.
-</h5>
+	<h2 class = "center-align">Prizes</h2>
+	<h5>
+		<div class = 'row'>
+			<div class = 'col s12 m4 l4'>
+				<div class=" prize responsive-img">
 
-<h2 class = "center-align">Dates</h2>
-<h5>Registration begins by<b> end of June</b><br>
-	<ul>
-		<li><b>Start Date:</b> 20th of July, 2018 </li>
-		<li><b>End Date:</b> 20th of August, 2018.</li>
-	</ul>
-</h5>
-<h4>For more information check out <a href="/megathon2018/timeline">the Timeline</a></h4>
-<br>
-<br>
-<h2 class = "center-align">Prizes</h2>
-<h5>
-	<div class = 'row'>
-		<div class = 'col s12 m4 l4'>
-			<div class=" prize responsive-img">
+					<img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJJjO2nCVpsGPCEwn6HWt71dd6VwEBijEDoiFSIJH3MG5mdgUrZA' class="of ">
 
-				<img src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJJjO2nCVpsGPCEwn6HWt71dd6VwEBijEDoiFSIJH3MG5mdgUrZA' class="of ">
-
-				<div class="overlay">
-					<div class="text"><b>First Prize</b> : Rs. 80,000</div>
+					<div class="overlay">
+						<div class="text"><b>First Prize</b> : {{data.prizes.first}}</div>
+					</div>
+				</div>
+			</div>
+			<div class = 'col s12 m4 l4'>
+				<div class=" prize responsive-img">
+					<img src = 'https://thumbs.dreamstime.com/b/silver-medal-number-two-icon-cartoon-style-illustration-vector-web-90622358.jpg' class="of">
+					<div class="overlay">
+						<div class="text"><b>Second Prize</b> : {{data.prizes.second}}</div>
+					</div>
+				</div>
+			</div>
+			<div class = 'col s12 m4 l4'>
+				<div class=" prize responsive-img">
+					<img src = 'https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX25680726.jpg' class="of">
+					<div class="overlay">
+						<div class="text"><b>Third Prize</b> : {{data.prizes.third}}</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class = 'col s12 m4 l4'>
-			<div class=" prize responsive-img">
-				<img src = 'https://thumbs.dreamstime.com/b/silver-medal-number-two-icon-cartoon-style-illustration-vector-web-90622358.jpg' class="of">
-				<div class="overlay">
-					<div class="text"><b>Second Prize</b> : Rs. 30,000</div>
-				</div>
-			</div>
-		</div>
-		<div class = 'col s12 m4 l4'>
-			<div class=" prize responsive-img">
-				<img src = 'https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX25680726.jpg' class="of">
-				<div class="overlay">
-					<div class="text"><b>Third Prize</b> : Rs. 10,000</div>
-				</div>
-			</div>
+
+
+
+		<ul>
+			<li><b>{{data.prizes.misc}}</b></li>.
+			<li>{{data.prizes.more}}</li>
+		</ul>
+	</h5>
+	<h2 class = "center-align">Format</h2>
+	<h5>{{data.format}}</h5>
+	<br>
+	<h2 class = "center-align">Eligibility</h2>
+	<h5>{{data.eligibility}}</h5>
+	<div class ="row">
+		<div class="col s2 m6 l6">
+		<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Apply Now</a>
+		<a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Link</a>
 		</div>
 	</div>
-
-
-
-	<ul>
-		<li>Goodies worth <b>Rs.1000 each for top 25 teams</b></li>.
-		<li>The top 3 winning teams will get an <b>all-expenses paid trip to Hyderabad</b> for felicitation at Megathon'18.</li>
-	</ul>
-</h5>
+	{% endif %}
+	{% endfor %}
+</div>
