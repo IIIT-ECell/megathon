@@ -2,16 +2,16 @@
 layout: wrapper
 ---
 
-{% include spacer.html %}
+<!-- {% include spacer.html %}
+ -->
+{% capture content %}
+{{page.title}}
+{% endcapture %}
 
-<div class="fixwh-container max">
-  <img class="of cover" alt="generic text" src="https://i.imgur.com/t9Dzw2S.jpg">
-</div>
-
+{% include upper_pic.html title = content size = '10vw'%}
 <div class="container">
-  <h3>Megathon Online - Women Safety</h3>
-  {{content}}
+  {{page.content}}
 
-  <h3>Quick Info</h3>
-  {% include mo_quickinfo.html %}
+  <!-- <h3>Quick Info</h3>
+  {% include mo_quickinfo.html %} -->
 </div>
