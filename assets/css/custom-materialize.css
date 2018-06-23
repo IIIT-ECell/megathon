@@ -14,7 +14,13 @@
   src: url("../fonts/norwester.tff"), url("../fonts/norwester.eot");
 }
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+/* @import url('https://fonts.googleapis.com/css?family=Raleway:400,500'); */
+
+@@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway/Raleway-Medium.ttf"), url("../fonts/raleway/Raleway-Regular.ttf");
+}
+
 /* END CUSTOM DECLARATIONS */
 /* END CUSTOM DECLARATIONS */
 /* END CUSTOM DECLARATIONS */
