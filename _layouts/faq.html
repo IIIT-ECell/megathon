@@ -2,10 +2,17 @@
 layout: wrapper
 ---
 
-<div id="FAQ">
-  <div class="container">
-    <br>
-    <h3>FAQ</h3>
-    {{content}}
-  </div>
+<div class="landing bebas-neue">
+	<div class="overlay black opacity-5">
+	</div>
+	<div class="hero" id="landing-hero">
+    	<img class="of cover" src="{{site.baseurl}}/assets/images/back/faq.jpg" alt="test">
+	</div>
+	<div class="align-fill">
+    	<h1>Frequently Asked Questions</h1>
+    	{% include scrolldown.html %}
+	</div>
+</div>
+<div class="container">
+	{{content}}
 </div>
