@@ -10,12 +10,15 @@ title : timeline
 	<li>
 	{% if data.type contains 'online' %}
 	<div class = "online">
+	{% else %}
+	<div class ="onsite">
+	{% endif %}
 	<time>{{data.date}}</time>
 	
 	<h5 >{{data.event}}</h5>
 	
 	</div>
-	{% endif %}
+	
 	</li>
 	{% endfor %}
 	</ul>
