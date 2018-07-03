@@ -1,4 +1,4 @@
 ---
 layout: events
-title: Onsite
+title: Megathon Onsite
 ---

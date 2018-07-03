@@ -1,4 +1,4 @@
-- name: Online
+- name: Megathon Online
   about: >
     As part of Megathon’17, we introduced a social challenge based around Women
     Safety and Cyber Crime. The solutions proposed were innovative and inspiring,
@@ -6,8 +6,8 @@
     decided to make it accessible beyond Hyderabad to the whole country. In this
     regard we are proud to introduce to you the Online Round of Megathon, to help
     contribute ideas for Women's Safety.
-  date: 
-    start: 8th July 
+  date:
+    start: 8th July
     end : 6th August
   detailed_date: |
     Registrations and Access to Problem Statements - 8th July to 20th July
@@ -34,7 +34,9 @@
 
 - name: Road to Megathon
   about: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  date: 20th July-20th August
+  date:
+    start:
+    end:
   detailed_date:
   prizes:
     first: A lot of cash
@@ -49,7 +51,7 @@
   apply: blah blah
   eligibility: very smarts internet connection
 
-- name: Onsite
+- name: Megathon Onsite
   about: >
     The goal of this is to provide technological solutions to issues put forward
     by the challenge sponsors. You can choose one problem statement out of the 4
@@ -57,7 +59,7 @@
     mentors from the industry and academia in 24 hours. This will be followed by
     pitching of the business models/ prototypes. The event will be conducted at IIIT Hyderabad.
     The top ideas will be selectedfor the Business Hack.
-  date: 
+  date:
     start: 22nd September
     end : 23rd September
   detailed_date:
@@ -83,7 +85,7 @@
     Apart from this, there will be Entrepreneurship Workshops and sessions from
     Founder Students, Business Plan competitions, Elevator Pitch competitions and
     case studies over the business challenges presented by the sponsors, which
-    will be open to all Megathon participants and not just the selected teams. 
+    will be open to all Megathon participants and not just the selected teams.
     This event will be conducted in September, 2018 at IIT Hyderabad.
   date: TODO get
   detailed_date:

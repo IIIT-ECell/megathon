@@ -181,6 +181,45 @@
 
 /* END sponsor styling */
 
+
+/* START events pages styling */
+
+.eventcont p {
+  font-size: 1.3rem;
+}
+
+
+.prize {
+  width: 35vh;
+  height: 35vh;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.prize-overlay {
+  bottom: 100%;
+  background-color: black;
+  overflow: hidden;
+  height:0;
+}
+.prize:hover .prize-overlay {
+  bottom: 0;
+  height: 100%;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* END events pages styling */
+
+
 /* END REGULAR ELEMENT STYLING */
 /* END REGULAR ELEMENT STYLING */
 /* END REGULAR ELEMENT STYLING */
@@ -337,6 +376,7 @@ nav ul a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .align-box.right, .align-box-h.right {
   align-items: flex-end;
@@ -575,37 +615,6 @@ time {
   background-color: pink;
 }
 
-/* This is events layout css*/
-.prize {
-    width: 18rem;
-    height: 18rem;
-    position: relative;
-    overflow: hidden;
-    border-radius: 50%;
-
-  }
-  .prize-overlay {
-    bottom: 100%;
-    background-color: black;
-    overflow: hidden;
-    height:0;
-  }
-
-  .prize:hover .prize-overlay {
-    bottom: 0;
-    height: 100%;
-  }
-
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
 /* END DEFINE GENERIC CLASSES */
 /* END DEFINE GENERIC CLASSES */
 /* END DEFINE GENERIC CLASSES */
