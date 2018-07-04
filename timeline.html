@@ -2,9 +2,9 @@
 layout : wrapper
 title : timeline
 ---
-{% include upper_pic.html title = 'Timeline' size = '15vw' %}
+{% include upper_pic.html title = 'Timeline' size = '12vw' %}
 <section class='timeline'>
-	
+
 	<ul>
 	{% for data in site.data.events %}
 	<li>
@@ -14,11 +14,11 @@ title : timeline
 	<div class ="onsite">
 	{% endif %}
 	<time>{{data.date}}</time>
-	
+
 	<h5 >{{data.event}}</h5>
-	
+
 	</div>
-	
+
 	</li>
 	{% endfor %}
 	</ul>

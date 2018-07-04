@@ -286,9 +286,15 @@ nav ul a {
 /* ------New helper classes------ */
 /* Buttons */
 .btn-line {
-  background-color: transparent !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  /* background-color: transparent !important; */
   border: solid 1px red;
+  transition: all 0.5s ease;
 }
+/*
+.btn-line:hover {
+  color: #212121;
+} */
 
 /* Transparency */
 .transparent {
