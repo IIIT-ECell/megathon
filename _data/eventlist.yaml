@@ -2,18 +2,22 @@
   about: >
     As part of Megathon’17, we introduced a social challenge based around Women
     Safety and Cyber Crime. The solutions proposed were innovative and inspiring,
-    but limited to primarily Hyderabad students. In this edition of Megathon, we
+    but limited primarily to Hyderabad students. In this edition of Megathon, we
     decided to make it accessible beyond Hyderabad to the whole country. In this
     regard we are proud to introduce to you the Online Round of Megathon, to help
     contribute ideas for Women's Safety.
   date:
     start: 8th July
     end : 6th August
-  detailed_date: |
-    Registrations and Access to Problem Statements - 8th July to 20th July
-    Submission portal opens - 21st July to 6th August
-    Submission portal closes and judgement process begins: 6th August to 25th August
-    Results are announced - 26th August
+  detailed_date:
+    - header: Registrations and Access to Problem Statements
+      date: 8th July to 20th July
+    - header: Submission portal opens
+      date: 21st July to 6th August
+    - header: Submission portal closes and judgement process begins
+      date: 6th August to 25th August
+    - header: Results are announced
+      date: 26th August
   prizes:
     first: Rs. 80,000
     second: Rs. 30,000
@@ -47,10 +51,15 @@
     more:
   url: https://www.hackerearth.com/
   link: road
-  format: At IIT Hyderabad
-  apply: blah blah
-  eligibility: very smarts internet connection
+  format: TODO ADD
+  apply: TODO ADD
+  eligibility: TODO ADD
 
+# Started in 2016, the onsite round of Megathon has been organised jointly by
+# E-Cell IIIT Hyderabad and E-Cell IIT Hyderabad to a great degree of success,
+# with around 1500 participants. This year too, IIIT Hyderabad will host the
+# 24 hour Onsite Hackathon where students prototype and build their business
+# model.
 - name: Megathon Onsite
   about: >
     The goal of this is to provide technological solutions to issues put forward

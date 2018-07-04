@@ -13,58 +13,96 @@ layout: wrapper
 	{% for data in site.data.eventlist %}
 	{% if data.name contains page.title %}
 
-	<h3 class = "center-align">About</h3>
+		<!-- Waiting for IIT to send data, till then -->
+		{% if data.name contains "Business Hack" %}
+			<h2 class="center-align">More information will be added soon!</h2>
+		{% elsif data.name contains "Road to Megathon" %}
+			<h2 class="center-align">More information will be added soon!</h2>
+		{% else %}
+			<h3 class = "center-align">About</h3>
 
-	<p>{{data.about}}</p>
+			<p>{{data.about}}</p>
 
-	<h3 class = "center-align">Dates</h3>
-	<p><b>Starts on:</b> {{data.date.start}}</p>
-	<p><b>Ends on:</b> {{data.date.end}}</p>
+			<h3 class = "center-align">Dates</h3>
+			<p><b>Starts on:</b> {{data.date.start}}</p>
+			<p><b>Ends on:</b> {{data.date.end}}</p>
 
-	<!-- <p>{{data.detailed_date}}</p> -->
-	<!-- Not including detailed date section wll be done if required timeline looks redundant without it -->
+			{% if data.detailed_date %}
+				<table class="responsive-table highlight">
+					<thead>
+					</thead>
+					<tbody>
+						{% for x in data.detailed_date %}
+						<tr>
+							<td>{{x.header}}</td>
+							<td>{{x.date}}</td>
+						</tr>
+						{% endfor %}
+					</tbody>
+				</table>
 
-	<p>For more information check out <a href="{{site.baseurl}}/timeline">the Timeline</a></p>
+			{% endif %}
+			<!-- <p>{{data.detailed_date}}</p> -->
+			<!-- Not including detailed date section wll be done if required timeline looks redundant without it -->
+
+			<p>For more information check out <a href="{{site.baseurl}}/timeline">the Timeline</a></p>
 
 
-	<h3 class = "center-align">Prizes</h3>
-	<div class="align-box-h">
+			<h3 class = "center-align">Prizes</h3>
+			<div class="align-box-h">
 
-		<div class="prize">
-			<img class="responsive-img" src="{{site.baseurl}}/assets/images/icons/first.png" alt="first prize">
+				<div class="prize">
+					<img class="responsive-img" src="{{site.baseurl}}/assets/images/icons/first.png" alt="first prize">
 
-			<div class="overlay prize-overlay">
-				<div class="text"><b>First Prize</b> : {{data.prizes.first}}</div>
+					<div class="overlay prize-overlay">
+						<div class="text"><b>First Prize</b> : {{data.prizes.first}}</div>
+					</div>
+				</div>
+
+
+				<div class="prize">
+					<img class="responsive-img" src="{{site.baseurl}}/assets/images/icons/second.png" alt="second prize">
+
+					<div class="overlay prize-overlay">
+						<div class="text"><b>Second Prize</b> : {{data.prizes.second}}</div>
+					</div>
+				</div>
+
+
+				<div class="prize">
+					<img class="responsive-img" src="{{site.baseurl}}/assets/images/icons/third.png" alt="third prize">
+
+					<div class="overlay prize-overlay">
+						<div class="text"><b>Third Prize</b> : {{data.prizes.third}}</div>
+					</div>
+				</div>
+
 			</div>
-		</div>
 
+			{% if data.prizes.misc %}
+			<p><b>Others</b>: {{data.prizes.misc}}</p>
+			{% endif %}
+			{% if data.prizes.more %}
+			<p><b>More</b>: {{data.prizes.more}}</p>
+			{% endif %}
+			{% if data.prizes.participation %}
+			<p><b>Participation</b>: {{data.prizes.participation}}</p>
+			{% endif %}
 
-		<div class="prize">
-			<img class="responsive-img" src="{{site.baseurl}}/assets/images/icons/second.png" alt="second prize">
+			<h3 class = "center-align">Format</h3>
+			<p>{{data.format}}</p>
 
-			<div class="overlay prize-overlay">
-				<div class="text"><b>Second Prize</b> : {{data.prizes.second}}</div>
-			</div>
-		</div>
+			<h3 class="center-align">Frequently Asked Questions</h3>
+			<p>
+				For more information about the event (including eligibility, cost if any,
+				more on format, team size etc), please check out the
+				<a href="{{site.baseurl}}/faq/#{{data.link}}">Frequently Asked
+				Questions</a> on the topic for more details.
+			</p>
+		{% endif %}
+	<!-- TODO remove when IIT sends content -->
 
-
-		<div class="prize">
-			<img class="responsive-img" src="{{site.baseurl}}/assets/images/icons/third.png" alt="third prize">
-
-			<div class="overlay prize-overlay">
-				<div class="text"><b>Third Prize</b> : {{data.prizes.third}}</div>
-			</div>
-		</div>
-
-	</div>
-
-	<p>{{data.prizes.misc}}</p>
-	<p>{{data.prizes.more}}</p>
-
-	<h3 class = "center-align">Format</h3>
-	<p>{{data.format}}</p>
-
-	<h3 class = "center-align">Eligibility</h3>
+	<!-- <h3 class = "center-align">Eligibility</h3>
 	<p>{{data.eligibility}}</p>
 
 	<div class ="row">
@@ -74,7 +112,7 @@ layout: wrapper
 		<div class="col s2 m6 l6">
 		<a class="waves-effect waves-light btn"><i class="material-icons left">link</i>Link</a>
 		</div>
-	</div>
+	</div> -->
 	{% endif %}
 	{% endfor %}
 </div>

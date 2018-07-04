@@ -3,13 +3,13 @@
     <br>
     <h3 class="align-box-h grey-text lighten-4">Contact Us</h3>
     {% assign contact = site.data.contact %}
-    {% for i in (0..4) %}
+    {% for i in (0..3) %}
       <div class="row">
-        <div class="col s4 center-align">
-          <strong>{{contact[i].job}}</strong>
-        </div>
         <div class="col s8 center-align">
-          {{contact[i].name}} (E-Cell {{contact[i].from}}): {{contact[i].number}}
+          <strong>{{contact[i].name}} (E-Cell {{contact[i].from}})</strong>
+        </div>
+        <div class="col s4 center-align">
+          {{contact[i].number}}
         </div>
       </div>
     {% endfor %}
