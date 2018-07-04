@@ -44,13 +44,6 @@
 
   overflow: hidden;
 
-  /* centering and maxing out the image */
-  /* background-image: url("../images/back/charminar.jpg"); */
-  /* background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-
   color: white;
 }
 .hero {
@@ -185,7 +178,7 @@
 /* START events pages styling */
 
 .eventcont p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 
@@ -243,6 +236,7 @@
 body {
   /* defined in html */
   font-weight: 500;
+  font-size: 1.1em;
 }
 
 
@@ -292,9 +286,15 @@ nav ul a {
 /* ------New helper classes------ */
 /* Buttons */
 .btn-line {
-  background-color: transparent !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  /* background-color: transparent !important; */
   border: solid 1px red;
+  transition: all 0.5s ease;
 }
+/*
+.btn-line:hover {
+  color: #212121;
+} */
 
 /* Transparency */
 .transparent {
