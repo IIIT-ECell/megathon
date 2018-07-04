@@ -1,11 +1,19 @@
 - name: Megathon Online
   about: >
-    As part of Megathon’17, we introduced a social challenge based around Women
-    Safety and Cyber Crime. The solutions proposed were innovative and inspiring,
-    but limited primarily to Hyderabad students. In this edition of Megathon, we
-    decided to make it accessible beyond Hyderabad to the whole country. In this
-    regard we are proud to introduce to you the Online Round of Megathon, to help
-    contribute ideas for Women's Safety.
+    As part of Megathon’17, we introduced a social challenge which was around Women
+    Safety and Cyber Crime. Although it was limited only to Hyderabad students, we were
+    really inspired by the innovative solutions that were proposed. Motivated by the success
+    last year and a deep desire to take it to national level, we decided to take the same
+    problem, which still remains one of the most pressing issues of today.
+
+    In this edition, we are looking for all kinds of solution (and not just limited to
+    technology) that could be useful to address this problem. The whole idea behind this is to
+    find solutions that can be implemented and/or taken to the market. Hence, we shall be
+    partnering with different govt. agencies (like the Hyderabad Police She Team) and NGOs
+    who shall help us in this aspect.
+
+    We really want to make our small contribution to this important issue and hope for a safer
+    nation for women.
   date:
     start: 8th July
     end : 6th August
@@ -55,13 +63,14 @@
   apply: TODO ADD
   eligibility: TODO ADD
 
-# Started in 2016, the onsite round of Megathon has been organised jointly by
-# E-Cell IIIT Hyderabad and E-Cell IIT Hyderabad to a great degree of success,
-# with around 1500 participants. This year too, IIIT Hyderabad will host the
-# 24 hour Onsite Hackathon where students prototype and build their business
-# model.
 - name: Megathon Onsite
   about: >
+    Started in 2016, the onsite round of Megathon has been organised jointly by
+    E-Cell IIIT Hyderabad and E-Cell IIT Hyderabad to a great degree of success,
+    with around 1500 participants. This year too, IIIT Hyderabad will host the
+    24 hour Onsite Hackathon where students prototype and build their business
+    model.
+    
     The goal of this is to provide technological solutions to issues put forward
     by the challenge sponsors. You can choose one problem statement out of the 4
     presented to you and prototype and implement your ideas under the guidance of
