@@ -235,7 +235,7 @@
 /* ------custom fonts------ */
 body {
   /* defined in html */
-  font-weight: 500;
+  /* font-weight: 500; */
   font-size: 1.1em;
 }
 
