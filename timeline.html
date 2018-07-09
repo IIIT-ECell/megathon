@@ -10,20 +10,21 @@ title : timeline
 <section class='timeline'>
 
 	<ul>
-	{% for data in site.data.events %}
-	<li>
-	{% if data.type contains 'online' %}
-	<div class = "online">
-	{% else %}
-	<div class ="onsite">
-	{% endif %}
-	<time>{{data.date}}</time>
+		{% for data in site.data.events %}
+			<li>
 
-	<h5 >{{data.event}}</h5>
+				{% if data.type contains 'online' %}
+				<div class = "online">
+				{% else %}
+				<div class ="onsite">
+				{% endif %}
 
-	</div>
+					<time>{{data.date}}</time>
 
-	</li>
-	{% endfor %}
+					<p>{{data.event}}</p>
+				</div>
+
+			</li>
+		{% endfor %}
 	</ul>
 </section>
