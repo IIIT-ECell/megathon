@@ -37,6 +37,33 @@
 /* BEGIN REGULAR ELEMENT STYLING */
 /* BEGIN REGULAR ELEMENT STYLING */
 
+/*START Banner*/
+#banner{
+  color: white;
+  margin-left: 5vw;
+  margin-top: 5vw;
+  height: 90vh;
+  width: 90vw;
+  z-index: 3000;
+  position: fixed;
+  background-color: black;
+}
+.banner-text{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#closeable{
+  color:red;
+  font-size: 2rem;
+}
+#closeable:hover{
+  cursor: pointer;
+}
 /* START landing cover */
 .landing {
   height: 100vh;
