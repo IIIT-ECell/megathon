@@ -25,9 +25,13 @@ layout: wrapper
 			<p>{{data.about}}</p>
 
 			<h3 class="center-align">Apply Now</h3>
+			{% if data.name contains "Megathon Online" %}
+			<p><a href="{{data.apply}}">Click here to apply!</a></p>
+			{% else %}
 			<p>Applications will be opened soon!</p>
+			{% endif %}
 
-			<h3 class = "center-align">Dates</h3>
+			<h3 class = "center-align" id="schedule">Dates</h3>
 			<p><b>Starts on:</b> {{data.date.start}}</p>
 			<p><b>Ends on:</b> {{data.date.end}}</p>
 
