@@ -2,7 +2,7 @@
   <div class="container">
     <h3>Schedule</h3>
     <p>
-      Click <a href="{{site.baseurl}}/timeline">here</a> for a more detailed timeline.
+      Click <a href="{{site.baseurl}}/timeline">here for a more detailed timeline.</a>
     </p>
      <table class ="striped centered responsive-table">
         <thead class="grey lighten-4">
@@ -15,12 +15,12 @@
         </thead>
 
         <tbody>
-          {% for data in site.data.sections %}
+          {% for data in site.data.eventlist %}
           <tr class="grey lighten-5">
           <td>{{data.name}}</td>
-          <td>{{data.start_date}}</td>
-          <td>{{data.end_date}}</td>
-          <td><a href="{{data.link}}">Schedule </a></td>
+          <td>{{data.date.start}}</td>
+          <td>{{data.date.end}}</td>
+          <td><a href="{{site.baseurl}}/{{data.link}}/#schedule">Schedule </a></td>
           </tr>
           {% endfor %}
         </tbody>

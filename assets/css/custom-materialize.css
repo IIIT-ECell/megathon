@@ -500,17 +500,17 @@ nav ul a {
 
 /*This is timeline css*/
 .timeline ul {
-
-  padding: 50px 0;
+  /* padding: 50px 0; */
   overflow: hidden;
+  margin-top: 0.1em;
 }
 
 .timeline ul li {
   list-style-type: none;
   position: relative;
-  width: 6px;
+  width: 1px;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 1rem;
   background: #000;
 }
 
@@ -565,9 +565,9 @@ nav ul a {
 
 time {
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 0rem;
 }
 .timeline ul li::after {
   transition: background .5s ease-in-out;
@@ -625,11 +625,11 @@ time {
 }
 .online
 {
-  background-color: yellow;
+  background-color: #e57373;
 }
 .onsite
 {
-  background-color: pink;
+  background-color: #ef5350;
 }
 
 /* END DEFINE GENERIC CLASSES */
