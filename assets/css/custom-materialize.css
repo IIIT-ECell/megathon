@@ -625,11 +625,11 @@ time {
 }
 .online
 {
-  background-color: yellow;
+  background-color: #e57373;
 }
 .onsite
 {
-  background-color: pink;
+  background-color: #f44336;
 }
 
 /* END DEFINE GENERIC CLASSES */
