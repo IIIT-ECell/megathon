@@ -8,7 +8,7 @@ $(document).ready(function() {
   	draggable: false,
   	closeOnClick: true
   });
-
+  $('#banner').fadeIn();
   $('.tabs').tabs();
 
   $('.modal').modal();
@@ -48,6 +48,11 @@ The next set of functions are for the timeline page
   window.addEventListener("scroll", callbackFunc);
  
 })();
+
+function kill(){
+  $('#banner').fadeOut();
+}
+
 // $(document).scroll(function(){
 // 	$('.scrollspy').each(function(){
 // 	  	if($(this).is(':visible'))
