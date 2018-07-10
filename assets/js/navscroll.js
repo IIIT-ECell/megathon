@@ -6,6 +6,7 @@ let jump = $('#jump');
 let jumpicon = $('#jumpicon');
 let down = $('#down');
 let hero_overlay = $('.hero-overlay');
+let banner = $('#banner');
 
 
 let change = (cov.height() - nav.height()) * 0.8;
@@ -37,11 +38,13 @@ function checkScroll() {
     nav.addClass('grey');
     nav.addClass('darken-4');
     nav.removeClass('transparent');
+    banner.removeClass('std-transparent');
   }
   else {
     nav.removeClass('grey');
     nav.removeClass('darken-4');
     nav.addClass('transparent');
+    banner.addClass('std-transparent');
   }
 
   if(win.scrollTop() > shiftY/2) {

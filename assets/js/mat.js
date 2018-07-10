@@ -8,7 +8,7 @@ $(document).ready(function() {
   	draggable: false,
   	closeOnClick: true
   });
-  $('#banner').fadeIn();
+  // $('#banner').fadeIn();
   $('.tabs').tabs();
 
   $('.modal').modal();
@@ -23,7 +23,7 @@ The next set of functions are for the timeline page
 
   var items = document.querySelectorAll(".timeline li");
 
-  
+
   function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
@@ -42,11 +42,11 @@ The next set of functions are for the timeline page
     }
   }
 
-  
+
   window.addEventListener("load", callbackFunc);
   window.addEventListener("resize", callbackFunc);
   window.addEventListener("scroll", callbackFunc);
- 
+
 })();
 
 function kill(){

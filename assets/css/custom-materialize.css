@@ -38,7 +38,7 @@
 /* BEGIN REGULAR ELEMENT STYLING */
 
 /*START Banner*/
-#banner{
+/* #banner{
   color: white;
   margin-left: 5vw;
   margin-top: 5vw;
@@ -63,7 +63,34 @@
 }
 #closeable:hover{
   cursor: pointer;
+} */
+
+#banner {
+  position: fixed;
+  z-index: 1200;
+  top: 4rem;
+  width: 100%;
+  padding: 0.5rem;
+  /* height: 2rem; */
+
+  transition: all 0.5s ease;
+
+  background-color: #b71c1c;
+  color: white;
 }
+
+#banner a {
+  color: white;
+  /* font-style: italic; */
+  text-decoration: underline;
+}
+
+#closeBanner:hover{
+  cursor: pointer;
+}
+
+/* END banner styling */
+
 /* START landing cover */
 .landing {
   height: 100vh;
@@ -343,6 +370,10 @@ nav ul a {
 .transparent {
   background-color: transparent !important;
   color: transparent !important;
+}
+
+.std-transparent {
+  background-color: transparent !important;
 }
 
 /* END MODIFYING MATERIALIZE */
