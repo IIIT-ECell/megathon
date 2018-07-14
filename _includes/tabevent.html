@@ -5,17 +5,17 @@
 {% else %}
 
 
-  <h3>About {{include.data.name}}</h3>
+  <h3 class="center-align">About {{include.data.name}}</h3>
   <p>{{include.data.about}}</p>
 
-  <h3>Apply Now</h3>
+  <h3 class="center-align">Apply Now</h3>
   {% if include.data.name contains "Megathon Online" %}
   <p><a href="{{include.data.apply}}">Click here to apply!</a></p>
   {% else %}
   <p>Applications will be opened soon!</p>
   {% endif %}
 
-  <h3 id="schedule">Dates</h3>
+  <h3 class="center-align" id="schedule">Dates</h3>
   <p><b>Starts on:</b> {{include.data.date.start}}</p>
   <p><b>Ends on:</b> {{include.data.date.end}}</p>
 
@@ -34,7 +34,7 @@
     </table>
   {% endif %}
 
-  <h3>Prizes</h3>
+  <h3 class="center-align">Prizes</h3>
   <div class="align-box-h">
 
     <div class="prize">
