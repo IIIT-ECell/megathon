@@ -1,0 +1,91 @@
+{% if include.data.name contains "Business Hack" %}
+  <h2 class="center-align">More information will be added soon!</h2>
+{% elsif include.data.name contains "Road to Megathon" %}
+  <h2 class="center-align">More information will be added soon!</h2>
+{% else %}
+
+
+  <h3 class="center-align">About {{include.data.name}}</h3>
+  <p>{{include.data.about}}</p>
+
+  <h3 class="center-align">Apply Now</h3>
+  {% if include.data.name contains "Megathon Online" %}
+  <p><a href="{{include.data.apply}}">Click here to apply!</a></p>
+  {% else %}
+  <p>Applications will be opened soon!</p>
+  {% endif %}
+
+  <h3 class="center-align" id="schedule">Dates</h3>
+  <p><b>Starts on:</b> {{include.data.date.start}}</p>
+  <p><b>Ends on:</b> {{include.data.date.end}}</p>
+
+  {% if include.data.detailed_date %}
+    <table class="responsive-table highlight">
+      <thead>
+      </thead>
+      <tbody>
+        {% for x in include.data.detailed_date %}
+        <tr>
+          <td>{{x.header}}</td>
+          <td>{{x.date}}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+
+  <h3 class="center-align">Prizes</h3>
+  <div class="align-box-h">
+
+    <div class="prize">
+      <img class="responsive-img" src="{{site.baseurl}}/assets/images/icons/first.png" alt="first prize">
+
+      <div class="overlay prize-overlay">
+        <div class="text"><b>First Prize</b> : {{include.data.prizes.first}}</div>
+      </div>
+    </div>
+
+
+    <div class="prize">
+      <img class="responsive-img" src="{{site.baseurl}}/assets/images/icons/second.png" alt="second prize">
+
+      <div class="overlay prize-overlay">
+        <div class="text"><b>Second Prize</b> : {{include.data.prizes.second}}</div>
+      </div>
+    </div>
+
+
+    <div class="prize">
+      <img class="responsive-img" src="{{site.baseurl}}/assets/images/icons/third.png" alt="third prize">
+
+      <div class="overlay prize-overlay">
+        <div class="text"><b>Third Prize</b> : {{include.data.prizes.third}}</div>
+      </div>
+    </div>
+
+  </div>
+
+  {% if data.prizes.misc %}
+  <p><b>Others</b>: {{include.data.prizes.misc}}</p>
+  {% endif %}
+  {% if data.prizes.more %}
+  <p><b>More</b>: {{include.data.prizes.more}}</p>
+  {% endif %}
+  {% if data.prizes.participation %}
+  <p><b>Participation</b>: {{include.data.prizes.participation}}</p>
+  {% endif %}
+
+  <h3 class = "center-align">Format</h3>
+  <p>{{include.data.format}}</p>
+
+  <h3 class="center-align">Frequently Asked Questions</h3>
+  <p>
+    For more information about the event (including eligibility, cost if any,
+    more on format, team size etc), please check out the
+    <a href="{{site.baseurl}}/faq#{{include.data.link}}">Frequently Asked
+    Questions</a> on the topic for more details.
+  </p>
+
+
+
+{% endif %}
