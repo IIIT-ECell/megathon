@@ -16,7 +16,7 @@
 
 /* @import url('https://fonts.googleapis.com/css?family=Raleway:400,500'); */
 
-@@font-face {
+@font-face {
   font-family: "Raleway";
   src: url("../fonts/raleway/Raleway-Medium.ttf"), url("../fonts/raleway/Raleway-Regular.ttf");
 }
@@ -67,7 +67,7 @@
 
 #banner {
   position: fixed;
-  z-index: 996;
+  z-index: 1200;
   top: 4rem;
   width: 100%;
   padding: 0.5rem;
