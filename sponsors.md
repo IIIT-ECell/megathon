@@ -1,5 +1,4 @@
 ---
-layout: sponsors
+layout: sponsor
 title: Sponsors
-permalink: /sponsors/
 ---

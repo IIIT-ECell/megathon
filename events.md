@@ -1,4 +1,4 @@
 ---
 layout: events
-title: Business Hack
+title: Events
 ---

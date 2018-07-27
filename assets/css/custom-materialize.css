@@ -317,7 +317,7 @@ body {
 }
 
 .sidenav {
-  z-index: 1200;
+  z-index: 1300;
 }
 
 .waves-effect {
@@ -488,6 +488,12 @@ nav ul a {
 /* subset of Bootstrap-like spacingn options */
 .mb-5 {
   margin-bottom: 3rem !important;
+}
+.mt-5 {
+  margin-top: 3rem !important;
+}
+.mb-3 {
+  margin-bottom: 2rem !important;
 }
 .mb-0 {
   margin-bottom: 0 !important;
