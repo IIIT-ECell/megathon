@@ -2,13 +2,9 @@
   <div class="container">
 
     <!-- Single Heading line -->
-    <h3 class="center-align mb-3 mt-5">Schedule</h3>
-    <hr>
+    <h3 class="center-align mb-3 mt-5" style="border-bottom: 1px solid grey; padding-bottom: 20px;">Schedule</h3>
 
-    <p>
-      Click <a href="{{site.baseurl}}/timeline">here for a more detailed timeline.</a>
-    </p>
-     <table class ="striped centered responsive-table">
+     <table class ="striped centered">
         <thead class="grey lighten-4">
           <tr>
               <th>Event</th>
@@ -20,14 +16,20 @@
 
         <tbody>
           {% for data in site.data.eventlist %}
-          <tr class="grey lighten-5">
-          <td>{{data.name}}</td>
-          <td>{{data.date.start}}</td>
-          <td>{{data.date.end}}</td>
-          <td><a href="{{site.baseurl}}/{{data.link}}/#schedule">Schedule </a></td>
-          </tr>
+              <tr class="grey lighten-5">
+                  <td>{{data.name}}</td>
+                  <td>{{data.date.start}}</td>
+                  <td>{{data.date.end}}</td>
+                  <td><a href="{{site.baseurl}}/{{data.link}}/#schedule">Schedule </a></td>
+              </tr>
           {% endfor %}
         </tbody>
       </table>
+      <br>
+
+    <p>
+      <a href="{{site.baseurl}}/timeline">Click here for a more detailed timeline.</a>
+    </p>
+
   </div>
 </div>
