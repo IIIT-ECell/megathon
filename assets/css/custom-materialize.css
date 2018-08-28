@@ -1,9 +1,4 @@
 /* BEGIN CUSTOM DECLARATIONS */
-/* BEGIN CUSTOM DECLARATIONS */
-/* BEGIN CUSTOM DECLARATIONS */
-/* BEGIN CUSTOM DECLARATIONS */
-/* BEGIN CUSTOM DECLARATIONS */
-/* BEGIN CUSTOM DECLARATIONS */
 @font-face {
   font-family: "Bebas Neue";
   src: url("../fonts/BebasNeueRegular.ttf");
@@ -22,19 +17,7 @@
 }
 
 /* END CUSTOM DECLARATIONS */
-/* END CUSTOM DECLARATIONS */
-/* END CUSTOM DECLARATIONS */
-/* END CUSTOM DECLARATIONS */
-/* END CUSTOM DECLARATIONS */
-/* END CUSTOM DECLARATIONS */
 
-
-
-/* BEGIN REGULAR ELEMENT STYLING */
-/* BEGIN REGULAR ELEMENT STYLING */
-/* BEGIN REGULAR ELEMENT STYLING */
-/* BEGIN REGULAR ELEMENT STYLING */
-/* BEGIN REGULAR ELEMENT STYLING */
 /* BEGIN REGULAR ELEMENT STYLING */
 
 /*START Banner*/
@@ -284,22 +267,7 @@
 
 
 /* END REGULAR ELEMENT STYLING */
-/* END REGULAR ELEMENT STYLING */
-/* END REGULAR ELEMENT STYLING */
-/* END REGULAR ELEMENT STYLING */
-/* END REGULAR ELEMENT STYLING */
-/* END REGULAR ELEMENT STYLING */
 
-
-
-
-
-
-/* BEGIN MODIFYING MATERIALIZE */
-/* BEGIN MODIFYING MATERIALIZE */
-/* BEGIN MODIFYING MATERIALIZE */
-/* BEGIN MODIFYING MATERIALIZE */
-/* BEGIN MODIFYING MATERIALIZE */
 /* BEGIN MODIFYING MATERIALIZE */
 
 /* ------custom fonts------ */
@@ -329,6 +297,7 @@ nav {
   -webkit-box-shadow: 0 0 0;
   box-shadow: 0 0 0;
 }
+
 
 /* ------Hover animations and transitions------ */
 /* Link */
@@ -377,22 +346,8 @@ nav ul a {
 }
 
 /* END MODIFYING MATERIALIZE */
-/* END MODIFYING MATERIALIZE */
-/* END MODIFYING MATERIALIZE */
-/* END MODIFYING MATERIALIZE */
-/* END MODIFYING MATERIALIZE */
-/* END MODIFYING MATERIALIZE */
 
 
-
-
-
-
-/* BEGIN DEFINE GENERIC CLASSES */
-/* BEGIN DEFINE GENERIC CLASSES */
-/* BEGIN DEFINE GENERIC CLASSES */
-/* BEGIN DEFINE GENERIC CLASSES */
-/* BEGIN DEFINE GENERIC CLASSES */
 /* BEGIN DEFINE GENERIC CLASSES */
 
 /* ---APPEARANCE--- */
@@ -697,8 +652,108 @@ time {
 }
 
 /* END DEFINE GENERIC CLASSES */
-/* END DEFINE GENERIC CLASSES */
-/* END DEFINE GENERIC CLASSES */
-/* END DEFINE GENERIC CLASSES */
-/* END DEFINE GENERIC CLASSES */
-/* END DEFINE GENERIC CLASSES */
+
+.heading {
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+}
+
+.light-text-visible {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heading-fix {
+    text-align: center;
+}
+
+.video-fix {
+  max-width: 575px;
+  width: 90%;
+}
+
+.content-fix {
+  text-align: justify;
+  width: 90%;
+}
+
+.container-fix {
+  margin-bottom: 2vh;
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 80%;
+  }
+
+  .container-fix:nth-child(2n) .video-fix {
+    float: left;
+    width: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    max-width: 665px;
+  }
+
+  .container-fix:nth-child(2n + 1) .content-fix {
+    margin-top: 0;
+    width: 55%;
+    float: left;
+  }
+
+  .container-fix:nth-child(2n + 1) .video-fix {
+    width: 40%;
+    float: right;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .container-fix:nth-child(2n) .heading-fix {
+    width: 55%;
+    float: right;
+    text-align: initial;
+    margin-bottom: 0;;
+  }
+
+  .container-fix:nth-child(2n + 1) .heading-fix {
+    width: 55%;
+    float: left;
+    text-align: initial;
+    margin-bottom: 0;
+  }
+
+  .container-fix {
+    margin-bottom: 1vh;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .container-fix:nth-child(2n) .content-fix {
+    float: right;
+    width: 55%;
+  }
+}
+
+@media (min-width: 1100px) {
+  /* To increase specificity */
+  .container-fix:nth-child(n) .video-fix {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
+
+@media (min-width: 1550px) {
+  /* To increase specificity */
+  .container-fix:nth-child(n) .video-fix {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .container-fix {
+    margin-bottom: 5vh;
+  }
+}
