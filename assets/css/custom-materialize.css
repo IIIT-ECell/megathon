@@ -744,6 +744,10 @@ time {
     margin-top: 2%;
     margin-bottom: 2%;
   }
+
+  .iframe-responsive {
+      width: 80%;
+  }
 }
 
 @media (min-width: 1550px) {
@@ -757,3 +761,47 @@ time {
     margin-bottom: 5vh;
   }
 }
+
+.center {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+
+@media (min-width: 1200px) {
+    .iframe-responsive {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .iframe-responsive {
+        width: 55%;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    display: inline-block;
+    height: 75%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0;
+    margin-left: 0;
+    -webkit-transition: 1s;
+}
+
+.inline-text {
+    display: inline;
+}
+
+.logo:hover img {
+    opacity: 0.4;
+}
+
