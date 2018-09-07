@@ -783,7 +783,7 @@ time {
 
 @media (min-width: 1500px) {
     .iframe-responsive {
-        width: 55%;
+        width: 100%;
     }
 }
 
@@ -815,6 +815,6 @@ time {
 }
 
 .blur {
-    -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
-    filter: blur(3px);
+    -webkit-filter: blur(2.5px); /* Safari 6.0 - 9.0 */
+    filter: blur(2.5px);
 }
