@@ -39,6 +39,28 @@
     "eligibility": ""
   },
   {
+    "name": "Megathon Onsite",
+    "about": "Started in 2016, the onsite round of Megathon has been organised jointly by E-Cell IIIT Hyderabad and E-Cell IIT Hyderabad to a great degree of success, with around 1500 participants. This year too, IIIT Hyderabad will host the 24 hour Onsite Hackathon where students prototype and build their business model.\n\nThe goal of this is to provide technological solutions to issues put forward by the challenge sponsors. You can choose one problem statement out of the 4 presented to you and prototype and implement your ideas under the guidance of mentors from the industry and academia in 24 hours. This will be followed by pitching of the business models/ prototypes. The event will be conducted at IIIT Hyderabad.\n\nThe top ideas will be selected for the Business Hack.",
+    "date": {
+      "start": "29th September",
+      "end": "30th September"
+    },
+    "detailed_date": [],
+    "prizes": {
+      "first": "₹ 40,000 per theme",
+      "second": "₹ 20,000 per theme",
+      "third": "₹ 5,000 per theme",
+      "misc": "",
+      "participation": "T-Shirts",
+      "more": "The top ideas will be selected for the Business Hack"
+    },
+    "url": "",
+    "link": "megathon",
+    "format": "The hackathon will be conducted on the IIIT Hyderabad campus.",
+    "apply": "https://megathon.in/Apply/#content-main",
+    "eligibility":
+  },
+  {
     "name": "Road to Megathon",
 
     "about": "Info to be added soon.",
@@ -60,28 +82,6 @@
     "format": "",
     "apply": "https://megathon.in/Apply/",
     "eligibility": ""
-  },
-  {
-    "name": "Megathon Onsite",
-    "about": "Started in 2016, the onsite round of Megathon has been organised jointly by E-Cell IIIT Hyderabad and E-Cell IIT Hyderabad to a great degree of success, with around 1500 participants. This year too, IIIT Hyderabad will host the 24 hour Onsite Hackathon where students prototype and build their business model.\n\nThe goal of this is to provide technological solutions to issues put forward by the challenge sponsors. You can choose one problem statement out of the 4 presented to you and prototype and implement your ideas under the guidance of mentors from the industry and academia in 24 hours. This will be followed by pitching of the business models/ prototypes. The event will be conducted at IIIT Hyderabad.\n\nThe top ideas will be selected for the Business Hack.",
-    "date": {
-      "start": "29th September",
-      "end": "30th September"
-    },
-    "detailed_date": [],
-    "prizes": {
-      "first": "₹ 40,000 per theme",
-      "second": "₹ 20,000 per theme",
-      "third": "₹ 5,000 per theme",
-      "misc": "",
-      "participation": "T-Shirts",
-      "more": "The top ideas will be selected for the Business Hack"
-    },
-    "url": "",
-    "link": "megathon",
-    "format": "The hackathon will be conducted on the IIIT Hyderabad campus.",
-    "apply": "https://megathon.in/Apply/",
-    "eligibility":
   },
   {
     "name": "Business Hack",

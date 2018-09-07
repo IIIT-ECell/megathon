@@ -9,8 +9,10 @@
   <p>{{include.data.about | newline_to_br }}</p>
 
   <h3 class="center-align heading">Apply Now</h3>
-  {% if include.data.name contains "Megathon Online" %}
+  {% if include.data.name contains "Megathon Onsite" %}
   <p><a href="{{include.data.apply}}">Click here to apply!</a></p>
+  {% elsif include.data.name contains "Megathon Online" %}
+  <p>Next event in 2019!</p>
   {% else %}
   <p>Applications will be opened soon!</p>
   {% endif %}
@@ -85,7 +87,5 @@
     <a href="{{site.baseurl}}/faq#{{include.data.link}}">Frequently Asked
     Questions</a> on the topic for more details.
   </p>
-
-
 
 {% endif %}
