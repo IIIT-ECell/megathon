@@ -11,6 +11,7 @@ let banner = $('#banner');
 
 let change = (cov.height() - nav.height()) * 0.8;
 let shiftY = (cov.height()) - nav.height();
+let shift_opaque = (cov.height() - nav.height()) * 0.1;
 
 // To make sure the JS is optimal, i.e. There's no performance issue
 // Accomplished by making the scrollThing wait
@@ -34,7 +35,7 @@ let smoothScroll = {
 // Function executing on detecting a scroll
 function checkScroll() {
   console.log("Detected scroll, checking to see if classes should change")
-  if(win.scrollTop() > shiftY) {
+  if(win.scrollTop() > shift_opaque) {
     nav.addClass('grey');
     nav.addClass('darken-4');
     nav.removeClass('transparent');
