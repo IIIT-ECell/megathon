@@ -49,10 +49,6 @@ The next set of functions are for the timeline page
 
 })();
 
-function kill(){
-  $('#banner').fadeOut();
-}
-
 // $(document).scroll(function(){
 // 	$('.scrollspy').each(function(){
 // 	  	if($(this).is(':visible'))
