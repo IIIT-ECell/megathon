@@ -2,17 +2,19 @@ function init() {
     var $win = $(window),
         // native DOM-specific lookups are faster than jQuery selector lookups
         $nav = $(document.getElementsByTagName("nav")[0]),
-        $cov = $(document.getElementsByClassName("cover")[0]),
+        // some pages have it named cover, others overlay
+        $cov = $(document.querySelector(".cover, .overlay")),
         $jump = $(document.getElementById("jump")),
         $jumpicon = $(document.getElementById("jumpicon")),
         $down = $(document.getElementById("down")),
         $banner = $(document.getElementById("banner")),
-        $heading = $(document.querySelector(".align-box")),
+        // some pages have it named .align-box, others h1
+        $heading = $(document.querySelector(".align-box, h1")),
         coverPageHeight = $cov.height(),
         headingTopPosition = $heading.offset().top,
         // make navbar opaque just before user scrolls past heading
         navBarTransparentPixelLimit =
-            headingTopPosition - $nav.height() - $banner.height(),
+            headingTopPosition - $nav.height() - ($banner.height() || 0),
         darkNavbarClasses = "grey darken-4",
         transparentNavbarClass = "transparent",
         bannerTransparentClass = "std-transparent",
