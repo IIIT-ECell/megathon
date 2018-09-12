@@ -13,7 +13,8 @@
 
 @font-face {
     font-family: "Raleway";
-    src: url("../fonts/raleway/Raleway-Medium.ttf"), url("../fonts/raleway/Raleway-Regular.ttf");
+    src: url("../fonts/raleway/Raleway-Medium.ttf"),
+        url("../fonts/raleway/Raleway-Regular.ttf");
 }
 
 /* END CUSTOM DECLARATIONS */
@@ -68,7 +69,7 @@ cursor: pointer;
     text-decoration: underline;
 }
 
-#closeBanner:hover{
+#closeBanner:hover {
     cursor: pointer;
 }
 
@@ -87,8 +88,8 @@ cursor: pointer;
     position: absolute;
     height: 100%;
     width: 100%;
-    overflow:hidden;
-    z-index:900;
+    overflow: hidden;
+    z-index: 900;
 }
 .hero-overlay {
     opacity: 0.5;
@@ -119,7 +120,8 @@ cursor: pointer;
     text-shadow: 1px 1px black;
 }
 
-.landing .align-box h1, .landing .align-box h2 {
+.landing .align-box h1,
+.landing .align-box h2 {
     margin: 0;
     line-height: 0.75;
 }
@@ -131,10 +133,12 @@ cursor: pointer;
     transition: all 0.6s ease;
 }
 
-@keyframes bounce
-{
-    0%, 20%, 60%, 100% {
-        -webkit-transform:translateY(0);
+@keyframes bounce {
+    0%,
+    20%,
+    60%,
+    100% {
+        -webkit-transform: translateY(0);
         -transform: translateY(0);
     }
     40% {
@@ -142,7 +146,7 @@ cursor: pointer;
         -transform: translateY(-20px);
     }
     80% {
-        -webkit-transform:translateY(-10px);
+        -webkit-transform: translateY(-10px);
         -transform: translateY(-10px);
     }
 }
@@ -200,7 +204,6 @@ cursor: pointer;
     color: white;
 }
 
-
 /* END home scroll styling */
 
 /* START format styling */
@@ -227,13 +230,11 @@ margin-bottom: 0;
 
 /* END sponsor styling */
 
-
 /* START events pages styling */
 
 .eventcont p {
     font-size: 1.2rem;
 }
-
 
 .prize {
     width: 35vh;
@@ -246,7 +247,7 @@ margin-bottom: 0;
     bottom: 100%;
     background-color: black;
     overflow: hidden;
-    height:0;
+    height: 0;
 }
 .prize:hover .prize-overlay {
     bottom: 0;
@@ -265,7 +266,6 @@ margin-bottom: 0;
 
 /* END events pages styling */
 
-
 /* END REGULAR ELEMENT STYLING */
 
 /* BEGIN MODIFYING MATERIALIZE */
@@ -276,7 +276,6 @@ body {
     /* font-weight: 500; */
     font-size: 1.1em;
 }
-
 
 /* ------z-indices as per bootstrap------ */
 * {
@@ -297,7 +296,6 @@ nav {
     -webkit-box-shadow: 0 0 0;
     box-shadow: 0 0 0;
 }
-
 
 /* ------Hover animations and transitions------ */
 /* Link */
@@ -320,7 +318,6 @@ nav ul {
 nav ul a {
     transition: all 0.5s ease;
 }
-
 
 /* ------New helper classes------ */
 /* Buttons */
@@ -347,23 +344,21 @@ color: #212121;
 
 /* END MODIFYING MATERIALIZE */
 
-
 /* BEGIN DEFINE GENERIC CLASSES */
 
 /* ---APPEARANCE--- */
 
 /* ------link classes------ */
 
-
 /* ------font stacks------ */
 .bebas-neue {
-    font-family: "Bebas Neue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Bebas Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .norwester {
-    font-family: "Norwester","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Norwester", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .raleway {
-    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /* ------Opacity settings------ */
 .opacity-1 {
@@ -408,16 +403,20 @@ color: #212121;
     flex-wrap: wrap;
     text-align: center;
 }
-.align-box.right, .align-box-h.right {
+.align-box.right,
+.align-box-h.right {
     align-items: flex-end;
 }
-.align-box.left, .align-box-h.left{
+.align-box.left,
+.align-box-h.left {
     align-items: flex-start;
 }
-.align-box .right, .align-box-h .right{
+.align-box .right,
+.align-box-h .right {
     align-self: flex-end;
 }
-.align-box .left, .align-box-h .left{
+.align-box .left,
+.align-box-h .left {
     align-self: flex-start;
 }
 .align-box-h.right {
@@ -426,7 +425,6 @@ color: #212121;
 .align-box-h.left {
     justify-content: flex-start;
 }
-
 
 /* Custom line heights */
 .lh-15 {
@@ -464,7 +462,6 @@ color: #212121;
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
-
 
 /* ------components------ */
 .overlay {
@@ -507,14 +504,13 @@ color: #212121;
     width: 100%;
     object-fit: contain;
 }
-.of.cover{
+.of.cover {
     object-fit: cover;
 }
 
 .hide-overflow {
     overflow: hidden;
 }
-
 
 /* TODO ORGANIZE AND DEAL WITH THIS ASAP */
 
@@ -535,7 +531,7 @@ color: #212121;
 }
 
 .timeline ul li::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -551,11 +547,10 @@ color: #212121;
     bottom: 0;
     width: 400px;
     padding: 15px;
-
 }
 
 .timeline ul li div::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 7px;
     width: 0;
@@ -570,7 +565,7 @@ color: #212121;
 .timeline ul li:nth-child(odd) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #F45B69 transparent transparent;
+    border-color: transparent #f45b69 transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -580,7 +575,7 @@ color: #212121;
 .timeline ul li:nth-child(even) div::before {
     right: -15px;
     border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent #F45B69;
+    border-color: transparent transparent transparent #f45b69;
 }
 
 time {
@@ -590,17 +585,17 @@ time {
     margin-bottom: 0rem;
 }
 .timeline ul li::after {
-    transition: background .5s ease-in-out;
+    transition: background 0.5s ease-in-out;
 }
 
 .timeline ul li.in-view::after {
-    background: #F45B69;
+    background: #f45b69;
 }
 
 .timeline ul li div {
     visibility: hidden;
     opacity: 0;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .timeline ul li:nth-child(odd) div {
@@ -623,7 +618,6 @@ time {
     }
     .timeline ul li:nth-child(even) div {
         left: -289px;
-
     }
 }
 
@@ -640,15 +634,13 @@ time {
     .timeline ul li:nth-child(even) div::before {
         left: -15px;
         border-width: 8px 16px 8px 0;
-        border-color: transparent #F45B69 transparent transparent;
+        border-color: transparent #f45b69 transparent transparent;
     }
 }
-.online
-{
+.online {
     background-color: #e57373;
 }
-.onsite
-{
+.onsite {
     background-color: #ef5350;
 }
 
@@ -717,7 +709,7 @@ time {
         width: 55%;
         float: right;
         text-align: initial;
-        margin-bottom: 0;;
+        margin-bottom: 0;
     }
 
     .container-fix:nth-child(2n + 1) .heading-fix {
@@ -761,7 +753,6 @@ time {
         margin-left: 25%;
     }
 }
-
 
 @media (min-width: 1100px) {
     /* To increase specificity */
@@ -817,4 +808,10 @@ time {
 .blur {
     -webkit-filter: blur(2.5px); /* Safari 6.0 - 9.0 */
     filter: blur(2.5px);
+}
+
+.hiddenJumpIcon {
+    height: 0 !important;
+    width: 0 !important;
+    opacity: 0 !important;
 }
