@@ -1,101 +1,94 @@
-// Caching? the variables
-let win = $(window);
-let nav = $('nav');
-let cov = $('.landing');
-let jump = $('#jump');
-let jumpicon = $('#jumpicon');
-let down = $('#down');
-let hero_overlay = $('.hero-overlay');
-let banner = $('#banner');
+function init() {
+    var $win = $(window),
+        // native DOM-specific lookups are faster than jQuery selector lookups
+        $nav = $(document.getElementsByTagName("nav")[0]),
+        // some pages have it named cover, others overlay
+        $cov = $(document.querySelector(".cover, .overlay")),
+        $jump = $(document.getElementById("jump")),
+        $jumpicon = $(document.getElementById("jumpicon")),
+        $down = $(document.getElementById("down")),
+        $banner = $(document.getElementById("banner")),
+        // some pages have it named .align-box, others h1
+        $heading = $(document.querySelector(".align-box, h1")),
+        coverPageHeight = $cov.height(),
+        headingTopPosition = $heading.offset().top,
+        // make navbar opaque just before user scrolls past heading
+        navBarTransparentPixelLimit =
+            headingTopPosition - $nav.height() - ($banner.height() || 0),
+        darkNavbarClasses = "grey darken-4",
+        transparentNavbarClass = "transparent",
+        bannerTransparentClass = "std-transparent",
+        hiddenJumpIconClass = "hiddenJumpIcon";
 
+    function throttle(func, time) {
+        var timeout, hadCalledInBetween;
 
-let change = (cov.height() - nav.height()) * 0.8;
-let shiftY = (cov.height()) - nav.height();
+        return function() {
+            if (!timeout) {
+                func.apply(this, arguments);
 
-// To make sure the JS is optimal, i.e. There's no performance issue
-// Accomplished by making the scrollThing wait
-let scrollHandler = {
-  allow: true,
-  reallow: function() {
-    scrollHandler.allow = true;
-  },
-  delay: 100
-}
-
-// To disable, set allow = false;
-let smoothScroll = {
-  allow: false,
-  reallow: function() {
-    smoothScroll.allow = true;
-  },
-  delay: 20
-}
-
-// Function executing on detecting a scroll
-function checkScroll() {
-  console.log("Detected scroll, checking to see if classes should change")
-  if(win.scrollTop() > shiftY) {
-    nav.addClass('grey');
-    nav.addClass('darken-4');
-    nav.removeClass('transparent');
-    banner.removeClass('std-transparent');
-  }
-  else {
-    nav.removeClass('grey');
-    nav.removeClass('darken-4');
-    nav.addClass('transparent');
-    banner.addClass('std-transparent');
-  }
-
-  if(win.scrollTop() > shiftY/2) {
-    jump.removeClass('transparent');
-    jumpicon.removeClass('transparent');
-  }
-  else {
-    jump.addClass('transparent');
-    jumpicon.addClass('transparent');
-  }
-
-}
-
-
-checkScroll();
-// only executes if on the home page or somewhere with a landing
-if(cov.length > 0) {
-  win.on("scroll load resize", function(){
-    if(scrollHandler.allow) {
-      checkScroll();
-      scrollHandler.allow = false;
-      setTimeout(scrollHandler.reallow, scrollHandler.delay);
+                timeout = setTimeout(function() {
+                    if (hadCalledInBetween) {
+                        func.apply(this, arguments);
+                        hadCalledInBetween = false;
+                    }
+                    timeout = null;
+                }, time);
+            } else {
+                hadCalledInBetween = true;
+            }
+        };
     }
 
-    if(smoothScroll.allow) {
-      console.log('looking at smoothScroll');
-      if(win.scrollTop() < change) {
-        hero_overlay.css({
-          opacity: function() {
-            let opacity = 0.5 + 0.5 * (1 - (change - win.scrollTop())/change);
+    function checkScroll() {
+        var scrollTop = $win.scrollTop();
 
-            return opacity;
-          }
-        });
-      }
+        if (scrollTop > navBarTransparentPixelLimit) {
+            $nav.removeClass(transparentNavbarClass);
+            $nav.addClass(darkNavbarClasses);
+            $banner.removeClass(bannerTransparentClass);
+        } else {
+            $nav.addClass(transparentNavbarClass);
+            $nav.removeClass(darkNavbarClasses);
+            $banner.addClass(bannerTransparentClass);
+        }
 
-      smoothScroll.allow = false;
-
-      setTimeout(smoothScroll.reallow, smoothScroll.delay);
+        if (scrollTop > coverPageHeight / 2) {
+            $jump.removeClass(hiddenJumpIconClass);
+            $jumpicon.removeClass(hiddenJumpIconClass);
+        } else {
+            $jump.addClass(hiddenJumpIconClass);
+            $jumpicon.addClass(hiddenJumpIconClass);
+        }
     }
-  });
+
+    // demo for throttle https://jsbin.com/sagiwizuvu/1/edit?output
+    if ($cov.length > 0) {
+        checkScroll();
+        $win.on("scroll load resize", throttle(checkScroll, 100));
+    } else {
+        // make navbar permanently opaque on non-Home pages
+        $nav.removeClass(transparentNavbarClass);
+    }
+
+    $jump.click(function() {
+        $("body, html").animate(
+            {
+                scrollTop: 0
+            },
+            500
+        );
+    });
+
+    $down.click(function() {
+        // On clicking the down arrow
+        $("body,html").animate(
+            {
+                scrollTop: $cov.height() - $nav.height()
+            },
+            600
+        );
+    });
 }
 
-jump.click(function() { // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0 // Scroll to top of body
-    }, 600);
-});
-
-down.click(function() { // On clicking the down arrow
-  $('body,html').animate({
-      scrollTop : cov.height() // go down just past the cover
-  }, 600);
-});
+window.addEventListener("load", init);
