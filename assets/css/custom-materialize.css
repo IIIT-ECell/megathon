@@ -790,11 +790,81 @@ time {
     }
 }
 
+@media (min-width: 1600px) {
+    .align-box-h.mb-5 {
+        height: 10rem;
+    }
+
+    .align-box-h.mb-5 .stout {
+        height: 100%;
+    }
+
+    nav {
+        height: 80px;
+    }
+
+    .nav-wrapper > * {
+        height: 100%;
+    }
+
+    .nav-wrapper a {
+        line-height: 80px;
+        font-size: 1.2rem;
+    }
+
+    .fixwh-container.logo {
+        height: 100%;
+    }
+
+    .align-box a {
+        font-size: 2em !important;
+        height: 5rem;
+        line-height: 5rem;
+    }
+
+    #banner {
+        top: 80px;
+        font-size: 23px;
+    }
+
+    .row,
+    #Schedule,
+    footer {
+        font-size: 1.3rem;
+    }
+
+    #Contact .container {
+        max-width: 550px !important;
+        width: 550px;
+    }
+
+    h5 {
+        font-size: 2.5em;
+    }
+
+    h3 {
+        font-size: 3.5em !important;
+    }
+}
+
 .center {
     display: block;
     margin: auto;
     text-align: center;
     margin-top: 10vh;
+}
+
+blockquote h5 {
+    font-size: 2rem;
+}
+
+blockquote p {
+    font-size: 1.2rem;
+}
+
+footer .center {
+    padding: 10px 0;
+    margin-top: 0;
 }
 
 .inline-text {
