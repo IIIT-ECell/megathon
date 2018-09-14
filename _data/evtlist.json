@@ -1,5 +1,27 @@
 [
   {
+    "name": "Megathon Onsite",
+    "about": "Started in 2016, the onsite round of Megathon has been organised jointly by E-Cell IIIT Hyderabad and E-Cell IIT Hyderabad to a great degree of success, with around 1500 participants. This year too, IIIT Hyderabad will host the 24 hour Onsite Hackathon where students prototype and build their business model.\n\nThe goal of this is to provide technological solutions to issues put forward by the challenge sponsors. You can choose one problem statement out of the 4 presented to you and prototype and implement your ideas under the guidance of mentors from the industry and academia in 24 hours. This will be followed by pitching of the business models/ prototypes. The event will be conducted at IIIT Hyderabad.\n\nThe top ideas will be selected for the Business Hack.",
+    "date": {
+      "start": "29th September",
+      "end": "30th September"
+    },
+    "detailed_date": [],
+    "prizes": {
+      "first": "₹ 40,000 per theme",
+      "second": "₹ 20,000 per theme",
+      "third": "₹ 5,000 per theme",
+      "misc": "",
+      "participation": "T-Shirts",
+      "more": "The top ideas will be selected for the Business Hack"
+    },
+    "url": "",
+    "link": "megathon",
+    "format": "The hackathon will be conducted on the IIIT Hyderabad campus.",
+    "apply": "https://megathon.in/Apply/#content-main",
+    "eligibility":
+  },
+  {
     "name": "Megathon Online",
     "about": "As part of Megathon`17, we introduced a social challenge which was around Women Safety and Cyber Crime. Although it was limited only to Hyderabad students, we were really inspired by the innovative solutions that were proposed. Motivated by the success last year and a deep desire to take it to national level, we decided to take the same problem, which still remains one of the most pressing issues of today.\n\n In this edition, we are looking for all kinds of solution (and not just limited to technology) that could be useful to address this problem. The whole idea behind this is to find solutions that can be implemented and/or taken to the market. Hence, we shall be partnering with different govt. agencies (like the Hyderabad Police She Team) and NGOs who shall help us in this aspect.\n\n We really want to make our small contribution to this important issue and hope for a safer nation for women.",
     "date": {
@@ -37,28 +59,6 @@
     "format": "The contest will be hosted on Hackerearth. Submissions open for a month, and participants can submit solutions any time within the given deadline from the time the contest starts.",
     "apply": "https://megathononline.hackerearth.com/",
     "eligibility": ""
-  },
-  {
-    "name": "Megathon Onsite",
-    "about": "Started in 2016, the onsite round of Megathon has been organised jointly by E-Cell IIIT Hyderabad and E-Cell IIT Hyderabad to a great degree of success, with around 1500 participants. This year too, IIIT Hyderabad will host the 24 hour Onsite Hackathon where students prototype and build their business model.\n\nThe goal of this is to provide technological solutions to issues put forward by the challenge sponsors. You can choose one problem statement out of the 4 presented to you and prototype and implement your ideas under the guidance of mentors from the industry and academia in 24 hours. This will be followed by pitching of the business models/ prototypes. The event will be conducted at IIIT Hyderabad.\n\nThe top ideas will be selected for the Business Hack.",
-    "date": {
-      "start": "29th September",
-      "end": "30th September"
-    },
-    "detailed_date": [],
-    "prizes": {
-      "first": "₹ 40,000 per theme",
-      "second": "₹ 20,000 per theme",
-      "third": "₹ 5,000 per theme",
-      "misc": "",
-      "participation": "T-Shirts",
-      "more": "The top ideas will be selected for the Business Hack"
-    },
-    "url": "",
-    "link": "megathon",
-    "format": "The hackathon will be conducted on the IIIT Hyderabad campus.",
-    "apply": "https://megathon.in/Apply/#content-main",
-    "eligibility":
   },
   {
     "name": "Road to Megathon",

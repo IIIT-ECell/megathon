@@ -1,0 +1,38 @@
+[
+    {
+        "name": "EA",
+        "url": "https://www.ea.com/",
+        "pic": "easports.png",
+        "tense": "present",
+        "rank": "Title Sponsor"
+    },
+    {
+        "name": "joveo",
+        "url": "https://www.joveo.com/",
+        "pic": "joveo.png",
+        "tense": "present",
+        "rank": "Associate Title Sponsor"
+    },
+    {
+        "name": "pwc",
+        "url": "https://www.pwc.in/",
+        "pic": "pwclogo.png",
+        "tense": "present",
+        "rank": "Knowledge Partner",
+        "count": "multiple"
+    },
+    {
+        "name": "AuthBase",
+        "url": "http://www.authbase.net/",
+        "pic": "authbase.png",
+        "tense": "present",
+        "rank": "sameAsAbove"
+    },
+    {
+        "name": "DBS",
+        "url": "https://www.dbs.com/in/index/default.page",
+        "pic": "dbs.png",
+        "tense": "present",
+        "rank": "Community Partner"
+    }
+]
