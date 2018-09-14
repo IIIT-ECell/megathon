@@ -431,7 +431,7 @@ color: #212121;
     line-height: 0.15;
 }
 .ico {
-    color: #3f51b5;
+    color: rgba(256,256,256,0.8);
     padding: 1rem;
     transition: 0.5s ease;
 }
@@ -565,7 +565,7 @@ color: #212121;
 .timeline ul li:nth-child(odd) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #f45b69 transparent transparent;
+    border-color: transparent #107ba0 transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -575,7 +575,7 @@ color: #212121;
 .timeline ul li:nth-child(even) div::before {
     right: -15px;
     border-width: 8px 0 8px 16px;
-    border-color: transparent transparent transparent #f45b69;
+    border-color: transparent transparent transparent #107ba0;
 }
 
 time {
@@ -589,7 +589,7 @@ time {
 }
 
 .timeline ul li.in-view::after {
-    background: #f45b69;
+    background: #107ba0;
 }
 
 .timeline ul li div {
@@ -634,14 +634,16 @@ time {
     .timeline ul li:nth-child(even) div::before {
         left: -15px;
         border-width: 8px 16px 8px 0;
-        border-color: transparent #f45b69 transparent transparent;
+        border-color: transparent #107ba0 transparent transparent;
     }
 }
 .online {
-    background-color: #e57373;
+    background-color: #3fa4af;
+    color: rgba(256,256,256,0.8);
 }
 .onsite {
-    background-color: #ef5350;
+    background-color: #107ba0;
+    color: rgba(256,256,256,0.8);
 }
 
 /* END DEFINE GENERIC CLASSES */

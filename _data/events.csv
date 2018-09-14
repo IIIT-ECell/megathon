@@ -1,8 +1,7 @@
-date,event,type
-15th July,  Registrations for Online Round begins alongwith access to problem statement,online
-21st July , Submission portal opens,online
-1̶2̶t̶h̶ ̶A̶u̶g̶u̶s̶t̶ 20th August , Registration and Submission portal for Online Round close and judgement process begins,online
-25th August, Deadline to evaluate all solutions,online
-26th August , Results are announced,online
-29th September,Onsite event starts,onsite
-30th September,Onsite event concludes,onsite
+date,event,type,time
+17th September, Early Bird Registrations End,onsite,11:55pm
+28th September, Megathon Registrations End,onsite,5:30pm
+29th September,Spot Registrations Start,onsite,4pm
+29th September,Spot Registrations End,onsite,6pm
+29th September,Onsite event starts,onsite,5pm
+30th September,Onsite event concludes,onsite,5pm
