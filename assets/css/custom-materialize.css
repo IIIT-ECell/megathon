@@ -705,18 +705,19 @@ time {
     clear: both;
 }
 
-.center-list {
-    padding: 2%;
-    margin: 0 auto;
-    text-align: center;
+.sponsor-logo {
+    width: 238px;
+    max-width: 238px;
+    padding: 5%;
 }
 
-.center-list a {
-    display: inline-block;
+.sponsor-logo img {
+    width: 100%;
+    height: auto;
 }
 
-.center-list a + a {
-    margin-left: 10%;
+.center-list img {
+    width: 100%;
 }
 
 .loww {
