@@ -8,10 +8,12 @@
             {% for sponsor in site.data.sponsors %}
                 {% if sponsor.rank != "sameAsAbove" %}
                     <h4 class="heading-fix heading loww">{{ sponsor.rank }}</h4>
-                    <div class="row center-list">
+                    <div class="align-box-h">
                 {% endif %}
                 <a href="{{ sponsor.url }}">
-                    <img src="{{site.baseurl}}/assets/images/sponsors/{{ sponsor.pic }}">
+                    <div class="sponsor-logo">
+                        <img src="{{site.baseurl}}/assets/images/sponsors/{{ sponsor.pic }}">
+                    </div>
                 </a>
                 {% if sponsor.count != "multiple" %}
                     </div>
