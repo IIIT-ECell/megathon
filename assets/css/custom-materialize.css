@@ -711,6 +711,8 @@ time {
     width: 238px;
     max-width: 238px;
     padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 .sponsor-logo img {
