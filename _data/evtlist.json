@@ -15,11 +15,33 @@
       "participation": "T-Shirts",
       "more": "The top ideas will be selected for the Business Hack"
     },
-    "url": "",
+    "url": "/events#megathon",
     "link": "megathon",
     "format": "The hackathon will be conducted on the IIIT Hyderabad campus.",
     "apply": "https://megathon.in/Apply/#content-main",
-    "eligibility":
+    "eligibility": ""
+  },
+  {
+    "name": "Business Hack",
+    "about": "The teams selected from the Onsite Hackathon in each problem statement will be mentored by our Incubators, top academics and partners to convert their ideas into products/ services with the revenue model. They will participate in B-hack to pitch their company in front of  VCs, Corporates and top academia.  Apart from this, there will be Entrepreneurship Workshops and sessions from Founder Students, Business Plan competitions, Elevator Pitch competitions and case studies over the business challenges presented by the sponsors, which will be open to all Megathon participants and not just the selected teams.  This event will be conducted in September, 2018 at IIT Hyderabad.",
+    "date": {
+      "start": "February",
+      "end": "February"
+    },
+    "detailed_date": [],
+    "prizes": {
+      "first": "",
+      "second": "",
+      "third": "",
+      "misc": "",
+      "participation": "",
+      "more": ""
+    },
+    "url": "/events#b-hack",
+    "link": "b-hack",
+    "format": "At IIT Hyderabad",
+    "apply": "https://megathon.in/Apply/",
+    "eligibility": ""
   },
   {
     "name": "Megathon Online",
@@ -54,7 +76,7 @@
       "participation": "",
       "more": "The top 3 winning teams will get an all-expenses paid trip to Hyderabad for felicitation at Megathon'18."
     },
-    "url": "https://megathononline.hackerearth.com/",
+    "url": "/events#megathon-online",
     "link": "megathon-online",
     "format": "The contest will be hosted on Hackerearth. Submissions open for a month, and participants can submit solutions any time within the given deadline from the time the contest starts.",
     "apply": "https://megathononline.hackerearth.com/",
@@ -82,27 +104,6 @@
     "format": "",
     "apply": "https://megathon.in/Apply/",
     "eligibility": ""
-  },
-  {
-    "name": "Business Hack",
-    "about": "The teams selected from the Onsite Hackathon in each problem statement will be mentored by our Incubators, top academics and partners to convert their ideas into products/ services with the revenue model. They will participate in B-hack to pitch their company in front of  VCs, Corporates and top academia.  Apart from this, there will be Entrepreneurship Workshops and sessions from Founder Students, Business Plan competitions, Elevator Pitch competitions and case studies over the business challenges presented by the sponsors, which will be open to all Megathon participants and not just the selected teams.  This event will be conducted in September, 2018 at IIT Hyderabad.",
-    "date": {
-      "start": "February",
-      "end": "February"
-    },
-    "detailed_date": [],
-    "prizes": {
-      "first": "",
-      "second": "",
-      "third": "",
-      "misc": "",
-      "participation": "",
-      "more": ""
-    },
-    "url": "",
-    "link": "b-hack",
-    "format": "At IIT Hyderabad",
-    "apply": "https://megathon.in/Apply/",
-    "eligibility": ""
   }
+  
 ]
