@@ -33,6 +33,22 @@
         "url": "https://www.dbs.com/in/index/default.page",
         "pic": "dbs.png",
         "tense": "present",
-        "rank": "Community Partner"
+        "rank": "Community Partner",
+        "count": "multiple"
+    },
+    {
+        "name": "CIE",
+        "url": "https://cie.iiit.ac.in",
+        "pic": "cie.png",
+        "tense": "present",
+        "rank": "sameAsAbove",
+        "count": "multiple"
+    },
+    {
+        "name": "UNIspotter",
+        "url": "http://application.unispotter.com/",
+        "pic": "uni.jpg",
+        "tense": "present",
+        "rank": "sameAsAbove"
     }
 ]
