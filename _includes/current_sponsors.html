@@ -10,10 +10,8 @@
                     <h4 class="heading-fix heading loww">{{ sponsor.rank }}</h4>
                     <div class="align-box-h">
                 {% endif %}
-                <a href="{{ sponsor.url }}">
-                    <div class="sponsor-logo">
-                        <img src="{{site.baseurl}}/assets/images/sponsors/{{ sponsor.pic }}">
-                    </div>
+                <a href="{{ sponsor.url }}" class="brand-logo">
+                    <img src="{{site.baseurl}}/assets/images/sponsors/{{ sponsor.pic }}">
                 </a>
                 {% if sponsor.count != "multiple" %}
                     </div>

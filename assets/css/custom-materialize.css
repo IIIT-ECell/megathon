@@ -431,7 +431,7 @@ color: #212121;
     line-height: 0.15;
 }
 .ico {
-    color: rgba(256,256,256,0.8);
+    color: rgba(256, 256, 256, 0.8);
     padding: 1rem;
     transition: 0.5s ease;
 }
@@ -485,7 +485,7 @@ color: #212121;
 }
 .fixwh-container {
     width: 10rem;
-    height: 4rem;
+    height: 100%;
     overflow: hidden;
     overflow-wrap: break-word;
 }
@@ -639,11 +639,11 @@ time {
 }
 .online {
     background-color: #3fa4af;
-    color: rgba(256,256,256,0.8);
+    color: rgba(256, 256, 256, 0.8);
 }
 .onsite {
     background-color: #107ba0;
-    color: rgba(256,256,256,0.8);
+    color: rgba(256, 256, 256, 0.8);
 }
 
 /* END DEFINE GENERIC CLASSES */
@@ -681,7 +681,6 @@ time {
     margin-bottom: 2vh;
 }
 
-
 .logo {
     display: flex;
     justify-content: center;
@@ -689,9 +688,6 @@ time {
 
 .logo img {
     height: 85%;
-    margin-top: auto;
-    margin-bottom: auto;
-    /*-webkit-transition: 1s; */
 }
 
 .logo:hover img {
@@ -707,17 +703,35 @@ time {
     clear: both;
 }
 
-.sponsor-logo {
-    width: 238px;
-    max-width: 238px;
-    padding: 5%;
-    padding-left: 15%;
-    padding-right: 15%;
+.fixwh-container.logo {
+    width: 100px;
+    display: flex;
+    margin-left: calc(50% - 50px);
+    align-items: center;
 }
 
-.sponsor-logo img {
+.megathon-logo {
+    display: inline-block;
+    margin: 0 auto;
+    height: 85%;
+    width: fit-content;
+}
+
+.megathon-logo img {
+    height: 100%;
+}
+
+.brand-logo {
+    width: 238px;
+    max-width: 238px;
+    padding: 2%;
+    height: 100%;
+}
+
+.brand-logo img {
     width: 100%;
     height: auto;
+    flex: 1;
 }
 
 .center-list img {
@@ -734,6 +748,10 @@ time {
     .center-list a + a {
         display: block;
         margin-left: 0;
+    }
+
+    .loww {
+        width: 100%;
     }
 }
 
@@ -795,6 +813,10 @@ time {
     .logo img {
         margin-top: auto;
         margin-left: 25%;
+    }
+
+    .fixwh-container.logo {
+        margin-left: 3%;
     }
 }
 
