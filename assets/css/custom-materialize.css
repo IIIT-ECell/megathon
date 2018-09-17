@@ -54,7 +54,7 @@ cursor: pointer;
     z-index: 1200;
     top: 4rem;
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.2rem;
     /* height: 2rem; */
 
     transition: all 0.5s ease;
@@ -490,7 +490,11 @@ color: #212121;
     overflow-wrap: break-word;
 }
 .fixwh-container.stout {
-    width: 8rem;
+    width: 4rem;
+}
+
+.fixwh-container.stouter {
+    width: 5rem;
 }
 .fixwh-container.max {
     width: 100%;
@@ -645,13 +649,19 @@ time {
 
 @media screen and (max-width: 600px) and (max-height: 900px) {
     .fixwh-container.stout {
-        width: 6rem;
+        width: 4rem;
+    }
+    .fixwh-container.stouter {
+    	width: 5rem;
     }
 }
 
 @media screen and (max-width: 600px) and (max-height: 650px) {
     .fixwh-container.stout {
-        width: 4rem;
+        width: 3rem;
+    }
+    .fixwh-container.stouter {
+    	width: 4rem;
     }
 }
 
@@ -724,13 +734,11 @@ time {
 .fixwh-container.logo {
     width: 100px;
     display: flex;
-    margin-left: calc(50% - 50px);
     align-items: center;
 }
 
 .megathon-logo {
     display: inline-block;
-    margin: 0 auto;
     height: 85%;
     width: fit-content;
 }
