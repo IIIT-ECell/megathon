@@ -734,13 +734,11 @@ time {
 .fixwh-container.logo {
     width: 100px;
     display: flex;
-    margin-left: calc(50% - 50px);
     align-items: center;
 }
 
 .megathon-logo {
     display: inline-block;
-    margin: 0 auto;
     height: 85%;
     width: fit-content;
 }
