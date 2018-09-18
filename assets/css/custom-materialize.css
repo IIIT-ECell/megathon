@@ -494,7 +494,7 @@ color: #212121;
 }
 
 .fixwh-container.stouter {
-    width: 5rem;
+    width: 6rem;
 }
 .fixwh-container.max {
     width: 100%;
@@ -652,7 +652,7 @@ time {
         width: 4rem;
     }
     .fixwh-container.stouter {
-    	width: 5rem;
+    	width: 6rem;
     }
 }
 
@@ -661,7 +661,7 @@ time {
         width: 3rem;
     }
     .fixwh-container.stouter {
-    	width: 4rem;
+    	width: 5rem;
     }
 }
 
