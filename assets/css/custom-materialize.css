@@ -765,7 +765,7 @@ time {
     margin: auto;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     .center-list a + a {
         display: block;
         margin-left: 0;
@@ -773,6 +773,16 @@ time {
 
     .loww {
         width: 100%;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 700px) {
+    h1 {
+        font-size: 5rem;
     }
 }
 
@@ -969,4 +979,8 @@ footer .center {
     height: 0 !important;
     width: 0 !important;
     opacity: 0 !important;
+}
+
+h1 {
+    text-align: center;
 }
