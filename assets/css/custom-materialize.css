@@ -431,7 +431,7 @@ color: #212121;
     line-height: 0.15;
 }
 .ico {
-    color: rgba(256,256,256,0.8);
+    color: rgba(256, 256, 256, 0.8);
     padding: 1rem;
     transition: 0.5s ease;
 }
@@ -639,11 +639,11 @@ time {
 }
 .online {
     background-color: #3fa4af;
-    color: rgba(256,256,256,0.8);
+    color: rgba(256, 256, 256, 0.8);
 }
 .onsite {
     background-color: #107ba0;
-    color: rgba(256,256,256,0.8);
+    color: rgba(256, 256, 256, 0.8);
 }
 
 /* END DEFINE GENERIC CLASSES */
@@ -680,7 +680,6 @@ time {
 .container-fix {
     margin-bottom: 2vh;
 }
-
 
 .logo {
     display: flex;
