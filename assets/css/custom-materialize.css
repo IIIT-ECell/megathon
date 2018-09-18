@@ -722,11 +722,6 @@ time {
     opacity: 0.6;
 }
 
-.blur {
-    -webkit-filter: blur(2.5px); /* Safari 6.0 - 9.0 */
-    filter: blur(2.5px);
-}
-
 .clear {
     clear: both;
 }
@@ -949,6 +944,15 @@ footer .center {
 
 .logo:hover img {
     opacity: 0.6;
+}
+
+.cover {
+    background-attachment: fixed;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .blur {
