@@ -19,7 +19,7 @@ test:
 pages:
   stage: deploy
   script:
-  - bundle exec jekyll build -d public
+  - bundle exec jekyll build -d public --baseurl="https://abhigyanghosh30.gitlab.io/megathon"
   artifacts:
     paths:
     - public
