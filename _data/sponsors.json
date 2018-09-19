@@ -37,18 +37,17 @@
         "count": "multiple"
     },
     {
-        "name": "CIE",
-        "url": "https://cie.iiit.ac.in",
-        "pic": "cie.png",
-        "tense": "present",
-        "rank": "sameAsAbove",
-        "count": "multiple"
-    },
-    {
         "name": "UNIspotter",
         "url": "http://application.unispotter.com/",
         "pic": "uni.jpg",
         "tense": "present",
         "rank": "sameAsAbove"
+    },
+    {
+        "name": "CIE",
+        "url": "https://cie.iiit.ac.in",
+        "pic": "cie.png",
+        "tense": "present",
+        "rank": "Ecosystem partner"
     }
 ]
