@@ -1,109 +1,107 @@
 [
-  {
-    "name": "Megathon Onsite",
-    "about": "E-Cell IIIT-Hyderabad and E-Cell IIT-Hyderabad bring back the 3rd edition of Megathon'18, the largest student Hackathon in Hyderabad on 29th and 30th September, 2018 at IIIT Hyderabad.\n\nMegathon ’18 embodies the spirit of creativity and innovation without inhibition. Even if you aren’t the best coder or are just interested in exploring the world of hackathons, Megathon 18 is the place for you. Get expert guidance from experts of the field and become part of a plethora of fellow thinkers and coders and solve problems affecting the corporate world deeply. And, don’t forget to take home an exclusive Megathon’18 T-shirt and various other goodies to remind you of the experiences shared.\n\nAlso get a gist of the previous editions of Megathon here:\n<a href='https://www.youtube.com/watch?v=KuaNsJj31Qw' target='_blank'>Megathon 2017 Aftermovie</a>\n<a href='https://www.youtube.com/watch?v=F2nx3d-QHSs' target='blank'>Megathon 2016 Aftermovie</a>\n\nIntrigued? Check these articles about the previous editions of Megathon:\n- <a href='https://inc42.com/event/megathon-2017/' target='_blank'>Inc42</a>\n- <a href='https://www.stumagz.com/megathon-2017' target='_blank'> StuMagz</a>\n- <a href='https://www.thehindubusinessline.com/info-tech/megathon-2017-to-be-held-in-gachibowli-on-sept-23-amp-24/article9864924.ece' target='_blank'>The Hindu Business Line</a>\n- <a href='https://misfits.io/hackathon-megathon/' target='_blank'>misfits.io</a>\n- <a href='http://indiaeducationdiary.in/largest-student-hackathon-hyderabad-megathon-2017-announces-winners/' target='_blank'>India Education Diary</a>",
-    "date": {
-      "start": "29th September",
-      "end": "30th September"
+    {
+        "name": "Megathon Onsite",
+        "about": "E-Cell IIIT-Hyderabad and E-Cell IIT-Hyderabad bring back the 3rd edition of Megathon'18, the largest student Hackathon in Hyderabad on 29th and 30th September, 2018 at IIIT Hyderabad.\n\nMegathon ’18 embodies the spirit of creativity and innovation without inhibition. Even if you aren’t the best coder or are just interested in exploring the world of hackathons, Megathon 18 is the place for you. Get expert guidance from experts of the field and become part of a plethora of fellow thinkers and coders and solve problems affecting the corporate world deeply. And, don’t forget to take home an exclusive Megathon’18 T-shirt and various other goodies to remind you of the experiences shared.\n\nAlso get a gist of the previous editions of Megathon here:\n<a href='https://www.youtube.com/watch?v=KuaNsJj31Qw' target='_blank'>Megathon 2017 Aftermovie</a>\n<a href='https://www.youtube.com/watch?v=F2nx3d-QHSs' target='blank'>Megathon 2016 Aftermovie</a>\n\nIntrigued? Check these articles about the previous editions of Megathon:\n- <a href='https://inc42.com/event/megathon-2017/' target='_blank'>Inc42</a>\n- <a href='https://www.stumagz.com/megathon-2017' target='_blank'> StuMagz</a>\n- <a href='https://www.thehindubusinessline.com/info-tech/megathon-2017-to-be-held-in-gachibowli-on-sept-23-amp-24/article9864924.ece' target='_blank'>The Hindu Business Line</a>\n- <a href='https://misfits.io/hackathon-megathon/' target='_blank'>misfits.io</a>\n- <a href='http://indiaeducationdiary.in/largest-student-hackathon-hyderabad-megathon-2017-announces-winners/' target='_blank'>India Education Diary</a>",
+        "date": {
+            "start": "29th September",
+            "end": "30th September"
+        },
+        "detailed_date": [],
+        "prizes": {
+            "first": "₹ 40,000 per theme",
+            "second": "₹ 20,000 per theme",
+            "misc": "",
+            "participation": "T-Shirts",
+            "more": "The top ideas will be selected for the Business Hack"
+        },
+        "url": "/events#megathon",
+        "link": "megathon",
+        "format": "The highly anticipated event is a rigorous 24-hour contest, from 5 pm on 29th to 5pm on 30th September at IIIT-H. It requires participants to use every grey cell in their brain in an effort to solve 1 of 4 corporate challenges in teams of 1-4 through the use of technology with a touch of entrepreneurship.\n\nThe theme of the problem statements provided by EA Sports, PwC and Joveo would be released by the 3rd week of September for you to brainstorm about the problem. Furthermore, your team would be guided by experts of the trade throughout the competition, helping you bag the coveted prizes. Pitch your idea to the judges and take home prizes worth 6 lakhs.",
+        "apply": "https://megathon.in/Apply/#content-main",
+        "eligibility": "Megathon’18 is open to university (undergraduate and postgraduate) students all across India; with free transportation provided to some of the best teams.\nAll students must have college ID cards with them during time of registration. Cross college teams are allowed.\n\nThe purpose of the registration fees is to take in only serious participants. The entire amount shall be reimbursed on the day of event in the form of food and free T-shirt among other goodies.\n\nEvery participant shall be given :\n1. Three meals\n2. Megathon T-shirt\n3. Welcome Kit\n4. Certificate of Participation"
     },
-    "detailed_date": [],
-    "prizes": {
-      "first": "₹ 40,000 per theme",
-      "second": "₹ 20,000 per theme",
-      "third": "₹ 5,000 per theme",
-      "misc": "",
-      "participation": "T-Shirts",
-      "more": "The top ideas will be selected for the Business Hack"
+    {
+        "name": "Business Hack",
+        "about": "Potential teams selected from each problem statement in the Onsite Hackathon will be mentored from our incubations, top academics and partners to convert their ideas into services/products with a feasible revenue model.\n\nThey will participate in B-Hack in February, 2019 to pitch their companies in front of VCs, corporates and top academia.",
+        "date": {
+            "start": "February",
+            "end": "February"
+        },
+        "detailed_date": [],
+        "prizes": {
+            "first": "",
+            "second": "",
+            "third": "",
+            "misc": "",
+            "participation": "",
+            "more": ""
+        },
+        "url": "/events#b-hack",
+        "link": "b-hack",
+        "format": "At IIT Hyderabad",
+        "apply": "https://megathon.in/Apply/",
+        "eligibility": ""
     },
-    "url": "/events#megathon",
-    "link": "megathon",
-    "format": "The highly anticipated event is a rigorous 24-hour contest, from 5 pm on 29th to 5pm on 30th September at IIIT-H. It requires participants to use every grey cell in their brain in an effort to solve 1 of 4 corporate challenges in teams of 1-4 through the use of technology with a touch of entrepreneurship.\n\nThe theme of the problem statements provided by EA Sports, PwC and Joveo would be released by the 3rd week of September for you to brainstorm about the problem. Furthermore, your team would be guided by experts of the trade throughout the competition, helping you bag the coveted prizes. Pitch your idea to the judges and take home prizes worth 6 lakhs.",
-    "apply": "https://megathon.in/Apply/#content-main",
-    "eligibility": "Megathon’18 is open to university (undergraduate and postgraduate) students all across India; with free transportation provided to some of the best teams.\nAll students must have college ID cards with them during time of registration. Cross college teams are allowed.\n\nThe purpose of the registration fees is to take in only serious participants. The entire amount shall be reimbursed on the day of event in the form of food and free T-shirt among other goodies.\n\nEvery participant shall be given :\n1. Three meals\n2. Megathon T-shirt\n3. Welcome Kit\n4. Certificate of Participation"
-  },
-  {
-    "name": "Business Hack",
-    "about": "Potential teams selected from each problem statement in the Onsite Hackathon will be mentored from our incubations, top academics and partners to convert their ideas into services/products with a feasible revenue model.\n\nThey will participate in B-Hack in February, 2019 to pitch their companies in front of VCs, corporates and top academia.",
-    "date": {
-      "start": "February",
-      "end": "February"
+    {
+        "name": "Megathon Online",
+        "about": "As part of Megathon`17, we introduced a social challenge which was around Women Safety and Cyber Crime. Although it was limited only to Hyderabad students, we were really inspired by the innovative solutions that were proposed. Motivated by the success last year and a deep desire to take it to national level, we decided to take the same problem, which still remains one of the most pressing issues of today.\n\n In this edition, we are looking for all kinds of solution (and not just limited to technology) that could be useful to address this problem. The whole idea behind this is to find solutions that can be implemented and/or taken to the market. Hence, we shall be partnering with different govt. agencies (like the Hyderabad Police She Team) and NGOs who shall help us in this aspect.\n\n We really want to make our small contribution to this important issue and hope for a safer nation for women.",
+        "date": {
+            "start": "15th July",
+            "end": "1̶2̶t̶h̶ ̶A̶u̶g̶u̶s̶t̶ 20th August"
+        },
+        "detailed_date": [
+            {
+                "header": "Registrations and Access to Problem Statements",
+                "date": "15th July to 20th July"
+            },
+            {
+                "header": "Submission portal opens",
+                "date": "21st July to 20th August"
+            },
+            {
+                "header": "Registration and Submission portal close and judgement process begins",
+                "date": "21st August to 25th August"
+            },
+            {
+                "header": "Results are annouced",
+                "date": "26th August"
+            }
+        ],
+        "prizes": {
+            "first": "₹ 60,000",
+            "second": "₹ 30,000",
+            "third": "₹ 10,000",
+            "misc": "Goodies worth ₹ 1000 each for the top 25 teams",
+            "participation": "",
+            "more": "The top 3 winning teams will get an all-expenses paid trip to Hyderabad for felicitation at Megathon'18."
+        },
+        "url": "/events#megathon-online",
+        "link": "megathon-online",
+        "format": "The contest will be hosted on Hackerearth. Submissions open for a month, and participants can submit solutions any time within the given deadline from the time the contest starts.",
+        "apply": "https://megathononline.hackerearth.com/",
+        "eligibility": ""
     },
-    "detailed_date": [],
-    "prizes": {
-      "first": "",
-      "second": "",
-      "third": "",
-      "misc": "",
-      "participation": "",
-      "more": ""
-    },
-    "url": "/events#b-hack",
-    "link": "b-hack",
-    "format": "At IIT Hyderabad",
-    "apply": "https://megathon.in/Apply/",
-    "eligibility": ""
-  },
-  {
-    "name": "Megathon Online",
-    "about": "As part of Megathon`17, we introduced a social challenge which was around Women Safety and Cyber Crime. Although it was limited only to Hyderabad students, we were really inspired by the innovative solutions that were proposed. Motivated by the success last year and a deep desire to take it to national level, we decided to take the same problem, which still remains one of the most pressing issues of today.\n\n In this edition, we are looking for all kinds of solution (and not just limited to technology) that could be useful to address this problem. The whole idea behind this is to find solutions that can be implemented and/or taken to the market. Hence, we shall be partnering with different govt. agencies (like the Hyderabad Police She Team) and NGOs who shall help us in this aspect.\n\n We really want to make our small contribution to this important issue and hope for a safer nation for women.",
-    "date": {
-      "start": "15th July",
-      "end": "1̶2̶t̶h̶ ̶A̶u̶g̶u̶s̶t̶ 20th August"
-    },
-    "detailed_date": [
-      {
-        "header": "Registrations and Access to Problem Statements",
-        "date": "15th July to 20th July"
-      },
-      {
-        "header": "Submission portal opens",
-        "date": "21st July to 20th August"
-      },
-      {
-        "header": "Registration and Submission portal close and judgement process begins",
-        "date": "21st August to 25th August"
-      },
-      {
-        "header": "Results are annouced",
-        "date": "26th August"
-      }
-    ],
-    "prizes": {
-      "first": "₹ 60,000",
-      "second": "₹ 30,000",
-      "third": "₹ 10,000",
-      "misc": "Goodies worth ₹ 1000 each for the top 25 teams",
-      "participation": "",
-      "more": "The top 3 winning teams will get an all-expenses paid trip to Hyderabad for felicitation at Megathon'18."
-    },
-    "url": "/events#megathon-online",
-    "link": "megathon-online",
-    "format": "The contest will be hosted on Hackerearth. Submissions open for a month, and participants can submit solutions any time within the given deadline from the time the contest starts.",
-    "apply": "https://megathononline.hackerearth.com/",
-    "eligibility": ""
-  },
-  {
-    "name": "Road to Megathon",
+    {
+        "name": "Road to Megathon",
 
-    "about": "Info to be added soon.",
-    "date": {
-      "start": "8th September",
-      "end": "9th September"
-    },
-    "detailed_date": [],
-    "prizes": {
-      "first": "",
-      "second": "",
-      "third": "",
-      "misc": "",
-      "participation": "",
-      "more": ""
-    },
-    "url": "",
-    "link": "road",
-    "format": "",
-    "apply": "https://megathon.in/Apply/",
-    "eligibility": ""
-  }
-
+        "about": "Info to be added soon.",
+        "date": {
+            "start": "8th September",
+            "end": "9th September"
+        },
+        "detailed_date": [],
+        "prizes": {
+            "first": "",
+            "second": "",
+            "third": "",
+            "misc": "",
+            "participation": "",
+            "more": ""
+        },
+        "url": "",
+        "link": "road",
+        "format": "",
+        "apply": "https://megathon.in/Apply/",
+        "eligibility": ""
+    }
 ]
