@@ -956,8 +956,29 @@ footer .center {
     opacity: 0.6;
 }
 
+.ecell-logos {
+    position: relative;
+    z-index: 100000000;
+
+    margin-top: 15px;
+    height: 80px;
+    width: 210px;
+}
+
+.ecell-logos img {
+    height: 100%;
+    position: absolute;
+}
+
+.ecell-logos img:first-child {
+    left: 0;
+}
+
+.ecell-logos img:last-child {
+    right: 0;
+}
+
 .cover {
-    background-attachment: fixed;
     background-size: cover;
 
     position: absolute;
