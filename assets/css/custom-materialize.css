@@ -98,7 +98,8 @@ cursor: pointer;
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+    margin-top: calc(64px + 2rem);
+    height: calc(100% - 64px - 2rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -765,6 +766,84 @@ time {
     margin: auto;
 }
 
+.center {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+blockquote h5 {
+    font-size: 2rem;
+}
+
+blockquote p {
+    font-size: 1.2rem;
+}
+
+footer .center {
+    padding: 10px 0;
+    margin-top: 0;
+}
+
+.inline-text {
+    display: inline;
+}
+
+.logo:hover img {
+    opacity: 0.6;
+}
+
+.ecell-logos {
+    position: relative;
+    z-index: 100000000;
+
+    margin-top: 3rem;
+    height: 80px;
+    width: 210px;
+}
+
+.ecell-logos img {
+    height: 100%;
+    position: absolute;
+}
+
+.ecell-logos img:first-child {
+    left: 0;
+}
+
+.ecell-logos img:last-child {
+    right: 0;
+}
+
+.cover {
+    background-size: cover;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.blur {
+    -webkit-filter: blur(2.5px); /* Safari 6.0 - 9.0 */
+    filter: blur(2.5px);
+}
+
+.hiddenJumpIcon {
+    height: 0 !important;
+    width: 0 !important;
+    opacity: 0 !important;
+}
+
+h1 {
+    text-align: center;
+}
+
 @media (max-width: 700px) {
     .center-list a + a {
         display: block;
@@ -777,6 +856,17 @@ time {
 
     h1 {
         font-size: 3.5rem;
+    }
+
+    .ecell-logos {
+        height: 50px;
+        width: 150px;
+    }
+}
+
+@media (min-height: 750px) {
+    .ecell-logos {
+        margin-top: 20px;
     }
 }
 
@@ -926,61 +1016,4 @@ time {
     h3 {
         font-size: 3.5em !important;
     }
-}
-
-.center {
-    display: block;
-    margin: auto;
-    text-align: center;
-    margin-top: 10vh;
-}
-
-blockquote h5 {
-    font-size: 2rem;
-}
-
-blockquote p {
-    font-size: 1.2rem;
-}
-
-footer .center {
-    padding: 10px 0;
-    margin-top: 0;
-}
-
-.inline-text {
-    display: inline;
-}
-
-.logo:hover img {
-    opacity: 0.6;
-}
-
-.cover {
-    background-attachment: fixed;
-    background-size: cover;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.blur {
-    -webkit-filter: blur(2.5px); /* Safari 6.0 - 9.0 */
-    filter: blur(2.5px);
-}
-
-.hiddenJumpIcon {
-    height: 0 !important;
-    width: 0 !important;
-    opacity: 0 !important;
-}
-
-h1 {
-    text-align: center;
 }
