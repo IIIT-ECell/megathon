@@ -796,7 +796,7 @@ footer .center {
 
 .ecell-logos {
     position: relative;
-    z-index: 100000000;
+    z-index: 1000;
 
     margin-top: 3rem;
     height: 80px;
@@ -961,7 +961,7 @@ h1 {
     }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1921px) {
     .align-box-h.mb-5 {
         height: 10rem;
     }
@@ -1077,4 +1077,30 @@ h1 {
 
 .emphasized{
     font-weight: bold;
+}
+
+.problems {
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.problems > button, .problems > a {
+    width: 75%;
+    display: block;
+    margin: auto;
+    height: 10vh;
+    font-size: 2rem;
+    background-color: #107ba0;
+    text-transform: none;
+}
+
+.problems > button:hover, .problems > a:hover {
+    background-color: #2fa4b3;
+    color: #ec0000;
+}
+
+.problems > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
