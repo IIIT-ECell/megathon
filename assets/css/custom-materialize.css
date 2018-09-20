@@ -1085,22 +1085,81 @@ h1 {
 }
 
 .problems > button, .problems > a {
-    width: 75%;
     display: block;
     margin: auto;
-    height: 10vh;
+    height: 20vh;
     font-size: 2rem;
-    background-color: #107ba0;
+    background-color: #000;
     text-transform: none;
 }
 
 .problems > button:hover, .problems > a:hover {
-    background-color: #2fa4b3;
-    color: #ec0000;
+    background-color: #000;
+}
+
+.problems > button:hover, .problems > a:hover .problems img {
 }
 
 .problems > a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.problems img {
+    width: 100%;
+    transition: 0.5s ease;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.problems .problem-link {
+    position: relative;
+    padding: 0;
+}
+
+.hidden {
+    font-size: 3rem;
+    font-weight: bold;
+    width: 100%;
+    display: none;
+    line-height: 100%;
+}
+
+.problems .problem-link:hover {
+    color: #fff;
+}
+
+.problems .problem-link:hover .hidden {
+    display: block;
+}
+
+.problems .problem-link:hover img {
+    opacity: 0.4;
+}
+
+.problems .modal-content h4 {
+    text-align: center;
+}
+
+.problems .modal{
+    overflow: hidden;
+}
+
+.problems .modal-footer{
+    padding-bottom: 60px;
+    padding-right: 15px;
+}
+
+.problems .modal-footer a:hover{
+    color: #f44336;
+}
+
+
+.problems .modal-footer .modal-close{
+    color: #000;
+    font-size: 1.25rem;
+    padding-bottom: 10px;
 }
