@@ -934,8 +934,8 @@ h1 {
     justify-content: center;
 }
 
-.problems .problem-link:hover .problem-statement {    
-    font-size: 1.75rem;
+.problems .problem-link:hover .problem-statement {
+    font-size: 1.5rem;
     height: 100%;
     opacity: 1;
     transition: 0.5s ease;
@@ -966,6 +966,11 @@ h1 {
 
 .problems .problem-link .problem-image {
     opacity: 0.4;
+}
+
+.problems:nth-child(4) .problem-link .problem-image,
+.problems:nth-child(5) .problem-link .problem-image{
+  opacity: 0.7;
 }
 
 .problems .modal-content h4 {
