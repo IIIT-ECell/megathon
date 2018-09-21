@@ -5,7 +5,7 @@
         "theme": "Everyone talks about the cat but no one has ever cared look inside the Schrödinger's Box! What happens inside is unknown until you open it. For all you know, the laws of Physics don’t apply in the world you create! Imagine the events that could happen and make them come alive in your game. You! ... yes you, define the rules of this amazing world err box.\n\nSchrödinger's Cat is following you along on your journey. It is a little crazy about the quality of code you write....meow!\n\nCreate an epic journey or a survival horror, the choice is up to you (and what the cat allows you to do?)",
         "img": "cat.jpg",
         "authorLogo": "eablack.png",
-        "class": "col s12 m6 l3 offset-l3 problems",
+        "class": "col s12 m6 l3 problems",
         "url": "EA.pdf"
     },
     {
@@ -16,5 +16,23 @@
         "authorLogo": "joveo.png",
         "class": "col s12 m6 l3 problems",
         "url": "joveo.pdf"
+    },
+    {
+        "author": "PWC: Smart Cities",
+        "topic": "Mosquitoes and Drones",
+        "theme": "",
+        "img": "smart2.png",
+        "authorLogo": "pwclogo.png",
+        "class": "col s12 m6 l3 problems",
+        "url": "PWC_smart.pdf"
+    },
+    {
+        "author": "PWC: Security",
+        "topic": "Tracking Malware",
+        "theme": "",
+        "img": "privacy.jpg",
+        "authorLogo": "pwclogo.png",
+        "class": "col s12 m6 l3 problems",
+        "url": "PWC_malware.pdf"
     }
 ]
