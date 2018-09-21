@@ -1074,3 +1074,7 @@ footer .center {
 h1 {
     text-align: center;
 }
+
+.emphasized{
+    font-weight: bold;
+}
