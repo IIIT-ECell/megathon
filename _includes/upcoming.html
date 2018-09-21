@@ -6,7 +6,7 @@
         {% for event in site.data.evtlist %}
             <div class="col m6 heading-fix">
                 <h4>{{event.name}}</h4>
-                <p class="content-fix">{{event.about|slice : 0,250}}
+                <p class="upcoming-list">{{event.about|slice : 0,250}}
                     <a class="clink" href="{{site.baseurl}}{{event.url}}" target="_blank">... [Read more]</a>
                 </p>
             </div>

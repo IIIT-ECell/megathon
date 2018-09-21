@@ -1,24 +1,15 @@
 <div class="container row">
-    <div class="heading center-align mt-5"><h3>Problem statements</h3></div>
+    <div class="heading center-align mt-5"><h3>Problem Statements</h3></div>
 
     {% for problem in site.data.problems %}
 
-        <div class="col s12 l3 problems">
+        <div class="{{ problem.class }}">
             <!-- <button data-target="{{ problem.id }}" class="btn modal-trigger">{{ problem.author }}</button> -->
-            <a class="problem-link waves-effect waves-light btn modal-trigger" href="#{{ problem.id }}">
-                <img src="{{site.baseurl}}/assets/images/{{ problem.img }}" alt="Problem image">
-                <span class="hidden">{{ problem.author }}</span>
+            <a class="problem-link waves-effect waves-light" target="_blank" href="{{ site.baseurl }}/assets/problems/{{ problem.url }}">
+                <img src="{{site.baseurl}}/assets/images/{{ problem.img }}" class="problem-image" alt="Problem image">
+                <img src="{{site.baseurl}}/assets/images/sponsors/{{ problem.authorLogo }}" class="author-logo" alt="authorLogo">
+                <div class="problem-statement">{{problem.topic}}</div>
             </a>
-            <div id="{{ problem.id }}" class="modal">
-                <div class="modal-content">
-                    <h4>{{ problem.topic }}</h4>
-                    <p>{{ problem.theme | newline_to_br }}</p>
-                </div>
-                <div class="modal-footer">
-                    <!-- TODO: change the href below -->
-                    <a href="#!" class="modal-close waves-effect waves-light btn-flat">See full problem</a>
-                </div>
-            </div>
         </div>
 
     {% endfor %}
