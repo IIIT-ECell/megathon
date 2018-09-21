@@ -1245,16 +1245,13 @@ h1 {
     background-color: #000;
 }
 
-.problems > button:hover, .problems > a:hover .problems img {
-}
-
 .problems > a {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.problems img {
+.problems .problem-image {
     width: 100%;
     transition: 0.5s ease;
 
@@ -1284,8 +1281,9 @@ h1 {
     display: block;
 }
 
-.problems .problem-link:hover img {
+.problems .problem-link:hover .problem-image {
     opacity: 0.4;
+}
 
 @media screen and (max-width: 900px) {
     .timeline ul li div {
