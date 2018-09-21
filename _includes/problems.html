@@ -1,0 +1,20 @@
+<div id="Problems"></div>
+<br> <br>
+<div class="container row">
+    <div class="heading center-align mt-5"><h3>Problem Statements</h3></div>
+
+    {% for problem in site.data.problems %}
+
+        <div class="{{ problem.class }}">
+            <!-- <button data-target="{{ problem.id }}" class="btn modal-trigger">{{ problem.author }}</button> -->
+            <a class="problem-link waves-effect waves-light" target="_blank" href="{{ site.baseurl }}/assets/problems/{{ problem.url }}">
+                <img src="{{site.baseurl}}/assets/images/{{ problem.img }}" class="problem-image" alt="Problem image">
+                <img src="{{site.baseurl}}/assets/images/sponsors/{{ problem.authorLogo }}" class="author-logo" alt="authorLogo">
+                <div class="problem-statement">{{problem.topic}}</div>
+            </a>
+        </div>
+
+    {% endfor %}
+
+</div>
+</div>

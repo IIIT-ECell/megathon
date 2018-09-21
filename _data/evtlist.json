@@ -3,13 +3,14 @@
         "name": "Megathon Onsite",
         "about": "E-Cell IIIT-Hyderabad and E-Cell IIT-Hyderabad bring back the 3rd edition of Megathon'18, the largest student Hackathon in Hyderabad on 29th and 30th September, 2018 at IIIT Hyderabad.\n\nMegathon ’18 embodies the spirit of creativity and innovation without inhibition. Even if you aren’t the best coder or are just interested in exploring the world of hackathons, Megathon 18 is the place for you. Get expert guidance from experts of the field and become part of a plethora of fellow thinkers and coders and solve problems affecting the corporate world deeply. And, don’t forget to take home an exclusive Megathon’18 T-shirt and various other goodies to remind you of the experiences shared.\n\nAlso get a gist of the previous editions of Megathon here:\n<a href='https://www.youtube.com/watch?v=KuaNsJj31Qw' target='_blank'>Megathon 2017 Aftermovie</a>\n<a href='https://www.youtube.com/watch?v=F2nx3d-QHSs' target='blank'>Megathon 2016 Aftermovie</a>\n\nIntrigued? Check these articles about the previous editions of Megathon:\n- <a href='https://inc42.com/event/megathon-2017/' target='_blank'>Inc42</a>\n- <a href='https://www.stumagz.com/megathon-2017' target='_blank'> StuMagz</a>\n- <a href='https://www.thehindubusinessline.com/info-tech/megathon-2017-to-be-held-in-gachibowli-on-sept-23-amp-24/article9864924.ece' target='_blank'>The Hindu Business Line</a>\n- <a href='https://misfits.io/hackathon-megathon/' target='_blank'>misfits.io</a>\n- <a href='http://indiaeducationdiary.in/largest-student-hackathon-hyderabad-megathon-2017-announces-winners/' target='_blank'>India Education Diary</a>",
         "date": {
-            "start": "29th September",
-            "end": "30th September"
+            "start": "29th September, 5PM",
+            "end": "30th September 5PM"
         },
         "detailed_date": [],
         "prizes": {
             "first": "₹ 40,000 per theme",
             "second": "₹ 20,000 per theme",
+            "third": "Special prizes for 3 other teams",
             "misc": "",
             "participation": "T-Shirts",
             "more": "The top ideas will be selected for the Business Hack"
