@@ -44,10 +44,19 @@
         "rank": "sameAsAbove"
     },
     {
+        "name": "UBER",
+        "url": "https://www.uber.com/",
+        "pic":"uber.jpeg",
+        "tense": "present",
+        "rank":"Travel Partner"
+    },
+    {
         "name": "CIE",
         "url": "https://cie.iiit.ac.in",
         "pic": "cie.png",
         "tense": "present",
         "rank": "Ecosystem partner"
     }
+    
+
 ]
