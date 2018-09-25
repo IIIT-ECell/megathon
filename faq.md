@@ -35,7 +35,7 @@ layout: faq
 
 <div id="online"></div>
 
-### Megathon Online
+<!-- ### Megathon Online
 
 > ##### **Do I need to pay money to register for the Hackathon?**
 >
@@ -120,7 +120,7 @@ layout: faq
 > All details regarding the events will be present on [this website](https://megathon.in) .Follow the E-Cell Facebook pages of [E-Cell IIIT Hyderabad](https://www.facebook.com/ecell.iiithyd/) & [E-Cell IIT Hyderabad](https://www.facebook.com/ecell.iithyderabad/) for regular updates.
 > Who to contact for any queries?For any queries mail us [ecell.iiit.ac.in](mailto:ecell@iiit.ac.in).
 
-<br>
+<br> -->
 
 <div id="bhack"></div>
 
