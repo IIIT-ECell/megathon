@@ -46,9 +46,9 @@
     {
         "name": "UBER",
         "url": "https://www.uber.com/",
-        "pic":"uber.jpeg",
+        "pic": "uber.jpeg",
         "tense": "present",
-        "rank":"Travel Partner"
+        "rank": "Travel Partner"
     },
     {
         "name": "CIE",
@@ -56,7 +56,12 @@
         "pic": "cie.png",
         "tense": "present",
         "rank": "Ecosystem partner"
+    },
+    {
+        "name": "LovelyChocos",
+        "url": "http://www.lovelychocos.com",
+        "pic": "lovelychocos-logo.png",
+        "tense": "present",
+        "rank": "Gifting partner"
     }
-    
-
 ]
