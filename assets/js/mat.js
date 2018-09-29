@@ -49,7 +49,7 @@ The next set of functions are for the timeline page
 
 })();
 
-function kill(){
+function kill() {
   $('#banner').fadeOut();
 }
 

@@ -1290,6 +1290,12 @@ h1 {
     opacity: 0.4;
 }
 
+.count-down {
+    font-size: 3rem;
+    letter-spacing: .4rem;
+    padding: 1vh 1vw;
+}
+
 @media screen and (max-width: 900px) {
     .timeline ul li div {
         width: 250px;
@@ -1300,6 +1306,10 @@ h1 {
 }
 
 @media screen and (max-width: 600px) {
+    .count-down {
+        font-size: 1.7rem;
+        letter-spacing: .2rem;
+    }
     .timeline ul li {
         margin-left: 20px;
     }
