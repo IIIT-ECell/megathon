@@ -46,4 +46,4 @@ const countDown = (endDate) => {
 }
 
 //  Format: Date(yr, mnth - 1, day, 24H, min, sec)
-countDown(new Date(2018, 8, 30, 14, 0, 0));
+countDown(new Date(2018, 8, 30, 12, 30, 0));
