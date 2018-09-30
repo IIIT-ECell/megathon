@@ -38,6 +38,7 @@ const countDown = (endDate) => {
 
             timeDisplay.innerHTML = timeLeft;
         } else {
+            timeDisplay.innerHTML = "Megathon has ended. Schedules will be announced soon";
             return;
         }
     }
@@ -46,4 +47,4 @@ const countDown = (endDate) => {
 }
 
 //  Format: Date(yr, mnth - 1, day, 24H, min, sec)
-countDown(new Date(2018, 8, 30, 13, 00, 0));
+countDown(new Date(2018, 8, 30, 14, 00, 0));
