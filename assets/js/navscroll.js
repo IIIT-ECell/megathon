@@ -7,7 +7,7 @@ function init() {
         $jump = $(document.getElementById("jump")),
         $jumpicon = $(document.getElementById("jumpicon")),
         $down = $(document.getElementById("down")),
-        $banner = $(document.getElementById("banner")),
+        $banner = $(document.getElementById("banner") || "<div>"),
         // some pages have it named .align-box, others h1
         $heading = $(document.querySelector(".align-box, h1")),
         coverPageHeight = $cov.height(),
@@ -46,11 +46,11 @@ function init() {
         if (scrollTop > navBarTransparentPixelLimit) {
             $nav.removeClass(transparentNavbarClass);
             $nav.addClass(darkNavbarClasses);
-            $banner.removeClass(bannerTransparentClass);
+            //$banner.removeClass(bannerTransparentClass);
         } else {
             $nav.addClass(transparentNavbarClass);
             $nav.removeClass(darkNavbarClasses);
-            $banner.addClass(bannerTransparentClass);
+            //$banner.addClass(bannerTransparentClass);
         }
 
         if (scrollTop > coverPageHeight / 2) {
