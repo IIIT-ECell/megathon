@@ -38,7 +38,7 @@ const countDown = (endDate) => {
 
             timeDisplay.innerHTML = timeLeft;
         } else {
-            timeDisplay.innerHTML = "Megathon has ended. Schedules will be announced soon";
+            timeDisplay.innerHTML = "Megathon has ended. Schedule will be announced soon";
             return;
         }
     }
