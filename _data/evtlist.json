@@ -1,5 +1,27 @@
 [
     {
+        "name": "Business Hack",
+        "about": "Potential teams selected from each problem statement in the Onsite Hackathon will be mentored from our incubations, top academics and partners to convert their ideas into services/products with a feasible revenue model.\n\nThey will participate in Business Hack in February 2019 to pitch their companies in front of VCs, corporates and top academia.",
+        "date": {
+            "start": "February",
+            "end": "February"
+        },
+        "detailed_date": [],
+        "prizes": {
+            "first": "",
+            "second": "",
+            "third": "",
+            "misc": "",
+            "participation": "",
+            "more": ""
+        },
+        "url": "/events#b-hack",
+        "link": "b-hack",
+        "format": "At IIT Hyderabad",
+        "apply": "https://megathon.in/Apply/",
+        "eligibility": ""
+    },
+    {
         "name": "Megathon Onsite",
         "about": "E-Cell IIIT-Hyderabad and E-Cell IIT-Hyderabad bring back the 3rd edition of Megathon'18, the largest student Hackathon in Hyderabad on 29th and 30th September, 2018 at IIIT Hyderabad.\n\nMegathon ’18 embodies the spirit of creativity and innovation without inhibition. Even if you aren’t the best coder or are just interested in exploring the world of hackathons, Megathon 18 is the place for you. Get expert guidance from experts of the field and become part of a plethora of fellow thinkers and coders and solve problems affecting the corporate world deeply. And, don’t forget to take home an exclusive Megathon’18 T-shirt and various other goodies to remind you of the experiences shared.\n\nAlso get a gist of the previous editions of Megathon here:\n<a href='https://www.youtube.com/watch?v=KuaNsJj31Qw' target='_blank'>Megathon 2017 Aftermovie</a>\n<a href='https://www.youtube.com/watch?v=F2nx3d-QHSs' target='blank'>Megathon 2016 Aftermovie</a>\n\nIntrigued? Check these articles about the previous editions of Megathon:\n- <a href='https://inc42.com/event/megathon-2017/' target='_blank'>Inc42</a>\n- <a href='https://www.stumagz.com/megathon-2017' target='_blank'> StuMagz</a>\n- <a href='https://www.thehindubusinessline.com/info-tech/megathon-2017-to-be-held-in-gachibowli-on-sept-23-amp-24/article9864924.ece' target='_blank'>The Hindu Business Line</a>\n- <a href='https://misfits.io/hackathon-megathon/' target='_blank'>misfits.io</a>\n- <a href='http://indiaeducationdiary.in/largest-student-hackathon-hyderabad-megathon-2017-announces-winners/' target='_blank'>India Education Diary</a>",
         "date": {
@@ -20,28 +42,6 @@
         "format": "The highly anticipated event is a rigorous 24-hour contest, from 5 pm on 29th to 5pm on 30th September at IIIT-H. It requires participants to use every grey cell in their brain in an effort to solve 1 of 4 corporate challenges in teams of 1-4 through the use of technology with a touch of entrepreneurship.\n\nThe theme of the problem statements provided by EA Sports, PwC and Joveo would be released by the 3rd week of September for you to brainstorm about the problem. Furthermore, your team would be guided by experts of the trade throughout the competition, helping you bag the coveted prizes. Pitch your idea to the judges and take home prizes worth 6 lakhs.",
         "apply": "https://megathon.in/Apply/#content-main",
         "eligibility": "Megathon’18 is open to university (undergraduate and postgraduate) students all across India; with free transportation provided to some of the best teams.\nAll students must have college ID cards with them during time of registration. Cross college teams are allowed.\n\nThe purpose of the registration fees is to take in only serious participants. The entire amount shall be reimbursed on the day of event in the form of food and free T-shirt among other goodies.\n\nEvery participant shall be given :\n1. Three meals\n2. Megathon T-shirt\n3. Welcome Kit\n4. Certificate of Participation"
-    },
-    {
-        "name": "Business Hack",
-        "about": "Potential teams selected from each problem statement in the Onsite Hackathon will be mentored from our incubations, top academics and partners to convert their ideas into services/products with a feasible revenue model.\n\nThey will participate in B-Hack in February, 2019 to pitch their companies in front of VCs, corporates and top academia.",
-        "date": {
-            "start": "February",
-            "end": "February"
-        },
-        "detailed_date": [],
-        "prizes": {
-            "first": "",
-            "second": "",
-            "third": "",
-            "misc": "",
-            "participation": "",
-            "more": ""
-        },
-        "url": "/events#b-hack",
-        "link": "b-hack",
-        "format": "At IIT Hyderabad",
-        "apply": "https://megathon.in/Apply/",
-        "eligibility": ""
     },
     {
         "name": "Megathon Online",
