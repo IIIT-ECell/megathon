@@ -41,7 +41,7 @@ function init() {
     }
 
     function checkScroll() {
-        var scrollTop = $win.scrollTop();
+        let scrollTop = $win.scrollTop();
 
         if (scrollTop > navBarTransparentPixelLimit) {
             $nav.removeClass(transparentNavbarClass);

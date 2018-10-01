@@ -25,7 +25,7 @@ The next set of functions are for the timeline page
 
 
   function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
+    let rect = el.getBoundingClientRect();
     return (
       rect.top >= 0 &&
       rect.left >= 0 &&

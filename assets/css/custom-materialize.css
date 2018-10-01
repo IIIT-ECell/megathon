@@ -165,6 +165,7 @@ cursor: pointer;
 }
 #downicon:hover {
     color: #e14658;
+    font-style: oblique;
 }
 /* END scoll down button styling */
 
