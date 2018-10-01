@@ -4,7 +4,7 @@ layout: faq
 
 <div id="onsite"></div>
 
-### Megathon Offline
+### Megathon Onsite
 
 > ##### **I've submitted wrong details in the registration form, how can I correct them?**
 >
@@ -124,10 +124,6 @@ layout: faq
 
 <div id="bhack"></div>
 
-### B-Hack
+### Business Hack
 
-> ##### FAQs will be added soon
-
-<div id="road"></div>
-### Road to Megathon
 > ##### FAQs will be added soon
