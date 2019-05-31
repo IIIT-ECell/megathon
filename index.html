@@ -4,39 +4,95 @@ layout: none
 
 <!doctype html>
 <html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    {% include ganal.html %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-{% include head.html %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>Megathon 2019</title>
+    <link rel="shortcut icon" type="image/png" href="{{site.baseurl}}/assets/images/logos/logo_new.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/materialize-colours.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/custom-materialize.css">
+    <!-- <link rel="stylesheet" href="{{site.baseurl}}/assets/css/custom-bootstrap.css"> -->
+</head>
 
 <body class="raleway">
-    <div class="landing bebas-neue">
-        <div class="overlay black opacity-5">
-        </div>
-        <div class="hero" id="landing-hero">
-            <div class="of cover blur" style="background-image: url('{{site.baseurl}}/assets/images/back/charminar.jpg')" ></div>
-        </div>
-        
-        <div class="align-fill">
-            
-            <div class="align-box">
-                <h1 class="">MEGATHON</h1>
-                <h2 class="right red-text">2019</h2>
-            </div>
-            <div class="align-box">
-                    <h2 style="font-size: xx-large">Coming Soon!</h2>
-                </div> 
-                <div class="align-box">
+    <div id="fullpage">
+        <div class="section landing bebas-neue" style="background-image: url('{{site.baseurl}}/assets/images/back/charminar.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center" >
+            <div class="align-fill">
+                <div class="align-box text-center"> 
+                    <h1>Megathon</h1>
+                    <h1 class="right red-text">2019</h1>
+                </div>
+                <div class="align-box text-center">
+                    <h2 style="font-size: xx-large">Coming soon!</h2>
+                </div>
+                <div class="align-box text-center">
                     <a href="https://ecell.iiit.ac.in"><img src="../assets/images/logos/logo-ecell.png" alt="ECell IIIT"></a>
-                    <a href="/old/index.html"><button class="btn btn-line">Megathon 2018</button></a>
+                    <a href="/old/index.html"><button class="btn btn-line">More About Megathon</button></a>
+                </div>
             </div>
+        </div>
+        <div class="section grey darken-3 white-text">
+            <div class="container hide-overflow" style="max-width: 500px;">
+                <br>
+                <h2 class="align-box-h grey-text lighten-4">Contact Us for Sponsorship</h2>
+                {% assign contact = site.data.contact %}
+                {% for i in (0..3) %}
+                    <div class="row">
+                        <div class="col s8 center-align">
+                            <strong>{{contact[i].name}}</strong>
+                        </div>
+                        <div class="col s4 center-align">
+                            {{contact[i].number}}
+                        </div>
+                    </div>
+                {% endfor %}
+                <div class="align-box-h text-center">
+                    <h2>
+                        <a href="https://www.facebook.com/events/2163861923827794/"><i class="fab fa-facebook-f ico"></i></a>
+                        <a href="https://twitter.com/ecell_iiithyd"><i class="fab fa-twitter ico"></i></a>
+                        <a href="https://www.instagram.com/ecell_iiith/"><i class="fab fa-instagram ico"></i></a>
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="section fp-auto-height footer-copyright text-center grey darken-4 text-white" id="contact">            
+                <p>Megathon, presented by E-Cell IIIT H</p>
         </div>
     </div>
-    {% include contact.html %}
-    {% include footer.html %}
-    {% include js.html %}
 </body>
 
-
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js" ></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#fullpage').fullpage({
+            //options here
+            autoScrolling:true,
+            scrollHorizontally: true,
+            parallax: false,
+            anchors: ['page1', 'page2', 'page3', 'page4','page5'],
+            sectionsColor: [,,'#1b1b1d'],
+            controlArrows: false,
+            navigation:true,
+            navigationPosition: 'right',
+        });
+        // methods
+        $.fn.fullpage.setAllowScrolling(true);
+    });
+</script>
 </html>
-
 
   
