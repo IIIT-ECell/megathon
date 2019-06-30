@@ -1,0 +1,14 @@
+footer{
+    background: red;
+    border-radius: 50% 30% 0% 0% / 52% 19% 74% 34% ;
+}
+
+.fab{
+    font-size: 3rem;
+    color: red;
+}
+
+.list-inline-item{
+    background: white;
+    border-radius: 30% 70% 46% 54% / 49% 30% 70% 51% ; 
+}
