@@ -1,11 +1,14 @@
 footer{
-    background: red;
+    background: rgb(188,67,63);
+    background: linear-gradient(169deg, rgba(188,67,63,1) 0%, rgba(185,21,48,1) 100%);
     border-radius: 50% 30% 0% 0% / 52% 19% 74% 34% ;
+    font-family: 'Muli', sans-serif;
+    color: white;
 }
 
 .fab{
     font-size: 3rem;
-    color: red;
+    color: rgba(188,67,63,1);
 }
 
 .list-inline-item{
