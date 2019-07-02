@@ -1,0 +1,68 @@
+#navbar {
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 10;
+}
+
+.navbar-brand {
+    font-family: 'Barlow', sans-serif;
+    font-weight: var(--font-bold);
+    font-size: 1.5rem;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.navbar-content a {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: var(--font-bold);
+    color: white !important;
+    margin-left: 60px;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-content a {
+        margin-left: 30px;
+    }
+}
+
+.navbar-content a.active {
+    /* Webgradient 'Summer Games' */
+    background: linear-gradient(to right, #92FE9D, #00C9FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+.navbar-content a:hover {
+    /* Webgradient 'Happy Memories' */
+    background-image: linear-gradient(to right, #ff5858 0%, #f09819 70%);
+    ;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+}
+
+.navbar-modal-content {
+    height: 80vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar-modal-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 50%;
+}
+
+.navbar-button {
+    position: fixed;
+    left: 2%;
+    top: 2%;
+}

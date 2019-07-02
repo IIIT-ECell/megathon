@@ -1,2 +1,60 @@
 <!-- Begin Navbar -->
+<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/navbar.css">
+<script src="{{ site.url }}/js/navbar.js"></script>
+
+<nav id="navbar" class="navbar navbar-dark navbar-expand fixed-top d-none d-md-flex">
+    <!-- No need of toggler, or .collapse.navbar-collapse classes as it is a completely different element on mobile -->
+    <a class="navbar-brand" href="{{ site.url }}">
+        <img src="{{ site.url }}/assets/images/logos/logo_new.png" height="30px">
+        <span class="navbar-heading">megathon</span>
+    </a>
+    <div class="navbar-content navbar-nav ml-auto">
+        <!-- No need of lists as no dropdowns -->
+        {% assign links = site.data.navigation %}
+        {% for link in links %}
+            {% assign class = nil %}
+            {% assign scrtext = nil %}
+            {% if page.url contains link.url %}
+                {% assign class = active %}
+                {% assign scrtext = '<span class="sr-only">(current)</span>' %}
+            {% endif %}
+            <a class="nav-item nav-link {{ class }}" href="{{ site.baseurl }}{{ link.url }}">
+                {{ link.title | upcase }}{{ scrtext }}
+            </a>
+        {% endfor %}
+    </div>
+</nav>
+
+<button type="button" class="btn navbar-button d-md-none" data-toggle="modal" data-target="#navbar-modal">
+    <img src="{{ site.url }}/assets/images/logos/logo_new.png" height="40px">
+</button>
+
+<div class="modal" id="navbar-modal" role="navigation" aria-hidden="true" aria-label="menu">
+    <div class="modal-dialog" role="navigation">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="navbar-modal-content text-center">
+                    <img src="{{ site.url }}/assets/images/logos/logo_new.png" width="80px">
+                    <div class="navbar-modal-links">
+                        {% assign links = site.data.navigation %}
+                        {% for link in links %}
+                            {% assign class = nil %}
+                            {% assign scrtext = nil %}
+                            {% if page.url contains link.url %}
+                                {% assign class = active %}
+                                {% assign scrtext = '<span class="sr-only">(current)</span>' %}
+                            {% endif %}
+                            <a class="{{ class }}" href="{{ site.baseurl }}{{ link.url }}">
+                                {{ link.title | upcase }}{{ scrtext }}
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- End Navbar -->
