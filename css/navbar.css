@@ -45,6 +45,14 @@
     text-fill-color: transparent;
 }
 
+.modal-content {
+    background-image: url('../assets/images/blobs/navbar-background-blob.svg') !important;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+}
+
 .navbar-modal-content {
     height: 80vh !important;
     display: flex;
@@ -62,7 +70,33 @@
 }
 
 .navbar-button {
+    height: 90px;
+    width: 90px;
     position: fixed;
-    left: 2%;
-    top: 2%;
+    left: 15px;
+    top: 15px;
+    background-image: url('../assets/images/blobs/navbar-button-blob.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 10;
+}
+
+.navbar-modal-links a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.3rem;
+}
+
+.navbar-modal-links a.active {
+    font-weight: var(--font-bold);
+}
+
+.navbar-modal-links a:hover {
+    /* Webgradient 'Summer Games' */
+    background: linear-gradient(to right, #92FE9D, #00C9FF);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
 }
