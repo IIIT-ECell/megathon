@@ -1,0 +1,12 @@
+body {
+    color: white;
+}
+
+.fullpage {
+    min-height: 100vh;
+}
+
+.main-heading {
+    font-family: 'Muli';
+    font-size: 7.5rem;
+}
