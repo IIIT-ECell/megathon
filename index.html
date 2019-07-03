@@ -1,7 +1,8 @@
 ---
 layout: home
 ---
-{% comment %}
+<link href="{{ site.baseurl }}/css/section.css" rel="stylesheet">
+
 {% capture ABOUT_US %}
 <p style="color: red">HELLO</p>
 Dolor sit deserunt aperiam tempora sit. Aut cum sapiente aperiam et tenetur Suscipit magni alias modi officia officiis aspernatur repellat asperiores Provident laborum quaerat alias atque porro Libero mollitia maiores.
@@ -11,8 +12,34 @@ Dolor sit deserunt aperiam tempora sit. Aut cum sapiente aperiam et tenetur Susc
 
 {% capture PROBLEM_STATEMENT %}
 <p style="color: red">PROBLEMS :(</p>
-Dolor sit deserunt aperiam tempora sit. Aut cum sapiente aperiam et tenetur Suscipit magni alias modi officia officiis aspernatur repellat asperiores Provident laborum quaerat alias atque porro Libero mollitia maiores.
+<div class="row">
+    <div class="col-md-4 col-sm-12 blob blob-left">
+        <div>
+            <img src="https://dummyimage.com/200x200/000/fff&text=P1" alt="PROB1">
+        </div>
+        <div class="blob-text">
+            Lorem quos nostrum excepturi provident consequuntur, ab? Et reprehenderit rerum esse cum consectetur? Ducimus laudantium nihil incidunt odit voluptatem. Quia quas commodi repellendus maiores minus Suscipit sed eum optio repellat
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-12 blob blob-center">
+        <div>
+            <img src="https://dummyimage.com/200x200/000/fff&text=P2" alt="PROB2">
+        </div>
+        <div class="blob-text">
+            Adipisicing consectetur quidem officia consequuntur illum. Necessitatibus veritatis aspernatur nostrum deserunt ipsa soluta distinctio Lorem ut ab culpa nihil quis? Dolorem voluptatum hic eveniet quos officiis? Non ducimus rem facilis!
+        </div>
+    </div>
+
+    <div class="col-md-4 col-sm-12 blob blob-right">
+        <div>
+            <img src="https://dummyimage.com/200x200/000/fff&text=P3" alt="PROB3">
+        </div>
+        <div class="blob-text">
+            Elit doloremque quasi provident animi cumque omnis ipsa. Qui laudantium voluptatum minus in doloremque. Mollitia nulla odit dolore porro neque recusandae nam. Sunt quasi ipsa laborum odit consequuntur reiciendis sed?
+        </div>
+    </div>
+</div>
 {% endcapture %}
 
-{% include section.html heading="Problem Statements and testing long headings" content=PROBLEM_STATEMENT %}
-{% endcomment %}
+{% include section.html heading="Problem Statements" content=PROBLEM_STATEMENT %}
