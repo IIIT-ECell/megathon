@@ -6,24 +6,36 @@ layout: home
 {% capture ABOUT_US %}
 <p style="color: red">HELLO</p>
 
+<section id="about">
 <div class="row">
-	<div class="col blob blob-left ">
-		<span class="p-5">
+	<div class="col-12 col-lg-6 blob blob-about-left ">
+		<span class="px-5">
+			<h1 class="font-weight-bold">Our History</h1>
 			Dolor sit deserunt aperiam tempora sit. Aut cum sapiente aperiam et tenetur Suscipit magni alias modi officia officiis aspernatur repellat asperiores Provident laborum quaerat alias atque porro Libero mollitia maiores. Dolor sit deserunt aperiam tempora sit. Aut cum sapiente aperiam et tenetur Suscipit magni alias modi officia officiis aspernatur repellat asperiores Provident laborum quaerat alias atque porro Libero mollitia maiores.
 			Dolor sit deserunt aperiam tempora sit. Aut cum sapiente aperiam et tenetur Suscipit magni alias modi officia officiis aspernatur repellat asperiores Provident laborum quaerat alias atque porro Libero mollitia maiores.
 			Dolor sit deserunt aperiam tempora sit. Aut cum sapiente aperiam et tenetur Suscipit magni alias modi officia officiis aspernatur repellat asperiores Provident laborum quaerat alias atque porro Libero mollitia maiores.
+
+			<div class="p-1 w-100 invisible">&nbsp;</div>
+
+			<iframe width="500" height="250" src="https://www.youtube.com/embed/KuaNsJj31Qw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</span>
 	</div>
-	<div class="col-12 col-md-6">
+	<div class="col-12 col-lg-6 blob">
 		<div class="container-fluid">
-			<div class="row">
-				<div class="p-md-5 w-100 invisible">&nbsp;</div>
-				<div class="p-md-5 w-100 invisible">&nbsp;</div>
-				<div class="p-md-5 w-100 invisible">&nbsp;</div>
+			<div class="row d-none d-lg-flex">
+				<div class="col-6">
+					&nbsp;
+				</div>
+				<div class="col-6">
+					<div class="blob blob-tiny w-50">
+						<div class="invisible">&nbsp;</div>		
+					</div>
+				</div>
 			</div>
 			<div class="row">
-				<div class="col blob blob-right">
+				<div class="col blob blob-about-right">
 					<span class="p-5">
+						<h1 class="font-weight-bold">Join 2019!</h1>
 						Dolor sit deserunt aperiam tempora sit. Aut cum sapiente aperiam et tenetur Suscipit magni alias modi officia officiis aspernatur repellat asperiores Provident laborum quaerat alias atque porro Libero mollitia maiores. Dolor sit deserunt aperiam tempora sit. Aut cum sapiente aperiam et tenetur Suscipit magni alias modi officia officiis aspernatur repellat asperiores Provident laborum quaerat alias atque porro Libero mollitia maiores.
 						Dolor sit deserunt aperiam tempora sit. Aut cum sapiente aperiam et tenetur Suscipit magni alias modi officia officiis aspernatur repellat asperiores Provident laborum quaerat alias atque porro Libero mollitia maiores.
 						Dolor sit deserunt aperiam tempora sit. Aut cum sapiente aperiam et tenetur Suscipit magni alias modi officia officiis aspernatur repellat asperiores Provident laborum quaerat alias atque porro Libero mollitia maiores.
@@ -33,10 +45,12 @@ layout: home
 		</div>
 	</div>
 </div>
-
+</section>
 {% endcapture %}
 
 {% include section.html heading="About us" content=ABOUT_US %}
+
+<div class="p-md-5 w-100 invisible">&nbsp;</div>
 
 {% capture PROBLEM_STATEMENT %}
 <p style="color: red">PROBLEMS :(</p>

@@ -50,6 +50,27 @@ body {
     margin-bottom: -50px;
 }
 
+.blob-about-left {
+    background: #007899;
+    background: linear-gradient(-60deg, rgba(0,120,153,0.5) 0%, rgba(103,180,111,1) 100%);
+    border-radius: 67% 33% 73% 27% / 46% 42% 58% 54%  ;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: -100px;
+    margin-top: -50px;
+}
+
+.blob-about-right {
+    background: green;
+    background: linear-gradient(60deg, rgba(177,112,18,1) 0%, rgba(179,104,25,0.5) 100%);
+    border-radius: 56% 44% 34% 66% / 34% 41% 59% 66%;
+    z-index: 1;
+    margin-top: 50px;
+    margin-right: -25px;
+    margin-left: -25px;
+    margin-bottom: -50px;
+}
+
 .blob-right {
     background: blue;
     background: linear-gradient(-120deg, rgba(199,222,215,1) 0%, rgba(217,195,212,0.5) 100%);
@@ -65,6 +86,12 @@ body {
 .blob-text {
     width: 75%;
     padding-top: 1rem;
+}
+
+.blob-tiny {
+    border-radius: 14% 86% 43% 57% / 33% 93% 7% 67%;
+    background: linear-gradient(-120deg, rgba(199,222,215,1) 0%, rgba(217,195,212,0.5) 100%);
+    z-index: 2;
 }
 
 @media(max-width: 768px) {
