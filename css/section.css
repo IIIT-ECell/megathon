@@ -10,7 +10,10 @@ body {
 
 .main-heading {
     font-family: 'Muli';
+    font-weight: 900;
     font-size: 7.5rem;
+    letter-spacing: -0.07em;
+    color: #313131;
 }
 
 .blob {
@@ -26,26 +29,36 @@ body {
 }
 
 .blob-left {
-    background: red;
-    border-radius: 70% 30% 70% 30% / 50% 30% 70% 50%;
-
+    background: #007899;
+    background: linear-gradient(-60deg, rgba(0,120,153,0.5) 0%, rgba(103,180,111,1) 100%);
+    border-radius: 67% 33% 73% 27% / 46% 42% 58% 54%  ;
+    z-index: 2;
     margin-left: auto;
-    margin-right: -50px;
+    margin-right: -100px;
+    margin-top: -50px;
 }
 
 .blob-center {
     background: green;
-    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-
-    margin-top: 100px;
+    background: linear-gradient(60deg, rgba(177,112,18,1) 0%, rgba(179,104,25,0.5) 100%);
+    border-radius: 50% 50% 36% 64% / 68% 28% 72% 32% ;
+    z-index: 1;
+    margin-top: 50px;
+    margin-right: -25px;
+    margin-left: -25px;
+    margin-bottom: -50px;
 }
 
 .blob-right {
     background: blue;
-    border-radius: 15% 85% 30% 70% / 50% 50% 50% 50%;
+    background: linear-gradient(-120deg, rgba(199,222,215,1) 0%, rgba(217,195,212,0.5) 100%);
 
-    margin-left: -50px;
+    border-radius: 56% 44% 34% 66% / 34% 41% 59% 66%;
+
+    margin-left: -100px;
     margin-right: auto;
+    margin-top: -55px;
+    z-index: 2;
 }
 
 .blob-text {

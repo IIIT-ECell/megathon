@@ -1,6 +1,6 @@
 footer{
     background: rgb(188,67,63);
-    background: linear-gradient(169deg, rgba(188,67,63,1) 0%, rgba(185,21,48,1) 100%);
+    background: linear-gradient(90deg, rgba(188,67,63,1) 0%, rgba(179,104,25,1) 100%);
     border-radius: 50% 30% 0% 0% / 52% 19% 74% 34% ;
     font-family: 'Muli', sans-serif;
     color: white;
@@ -14,4 +14,15 @@ footer{
 .list-inline-item{
     background: white;
     border-radius: 30% 70% 46% 54% / 49% 30% 70% 51% ; 
+}
+
+.row .col-md-3{
+    background: #007899;
+    background: linear-gradient(-60deg, rgba(0,120,153,0.5) 0%, rgba(103,180,111,1) 100%);
+    border-radius: 67% 33% 73% 27% / 46% 42% 58% 54%  ;
+    border: 0ch;
+    z-index: 2;
+}
+.img-fluid{
+    background: none;
 }
