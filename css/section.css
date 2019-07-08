@@ -21,12 +21,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
     flex-direction: column;
 
     text-align: center;
-
     padding: 4rem;
+
+    height: 550px !important;
+    width: 550px !important;
 }
 
 .blob-left {
@@ -68,6 +69,15 @@ body {
 }
 
 @media(max-width: 768px) {
+    .blob {
+        height: 400px !important;
+        width: 400px !important;
+    }
+
+    .row {
+        display: block !important;
+    }
+
     .blob-left, .blob-center, .blob-right {
         margin: 0 auto;
     }
