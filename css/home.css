@@ -69,16 +69,7 @@ body {
     text-align: center;
 }
 
-@media screen and (max-width: 992px){
-    .hero-parent {
-        left: 50% !important;
-        transform: translate(-50%, -50%) !important;
-    }
-    .hero-2019 {
-        right: 50% !important;
-        transform: translate(50%, -50%) !important;
-    }
-}
+
 
 @media screen and (min-width: 1500px) {
     .hero-parent {
@@ -100,6 +91,17 @@ body {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .hero-parent {
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+    }
+
+    .hero-2019 {
+        right: 50% !important;
+        transform: translate(50%, -50%) !important;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .hero-title {
@@ -138,6 +140,54 @@ body {
     .hero-2019-small {
         font-size: 19rem;
         line-height: 17rem;
+    }
+}
+
+/* BLOBS */
+#blob17{
+    position: absolute;
+    top: 53% !important;
+    transform: translateY(-50%) !important;
+    height: 33rem;
+    left: -1rem;
+}
+
+@media screen and (min-width: 1500px){
+    #blob17 {
+        left: 3rem;
+    }
+}
+
+@media screen and (min-width: 2000px){
+    #blob17 {
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    #blob17 {
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #blob17 {
+        height: 18rem;
+        left: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #blob17 {
+        height: 15rem;
+        left: 1% !important;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #blob17 {
+        height: 12rem;
+        left: -1% !important;
     }
 }
 
