@@ -31,6 +31,14 @@ body {
     color: transparent;
 }
 
+.hero-2019 {
+    font-size: 30rem!important;
+    font-weight: bold;
+    color: rgba(255,255,255,0.5);
+    line-height: 10rem;
+    letter-spacing: -5rem;
+}
+
 @media (max-width: 768px) {
     .main-heading {
         max-width: 100vw;
