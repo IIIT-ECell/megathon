@@ -100,3 +100,8 @@
     -webkit-text-fill-color: transparent;
     text-fill-color: transparent;
 }
+
+h1, h2, h3 {
+	font-family: 'Barlow', sans-serif!important;
+    font-weight: var(--font-bold);
+}
