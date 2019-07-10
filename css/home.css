@@ -7,6 +7,7 @@ body {
 .hero {
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 
 .hero-parent {
@@ -53,14 +54,20 @@ body {
     /* Vertical Centering */
     top: 50%;
     transform: translateY(-50%);
-    
 }
 
-
-
-
-
-
+.hero-2019-small {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 26rem;
+    font-weight: var(--font-extra-bold);
+    color: #313131;
+    line-height: 23rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
 @media screen and (max-width: 992px){
     .hero-parent {
@@ -95,10 +102,6 @@ body {
 
 
 @media screen and (max-width: 768px) {
-    .hero-2019 {
-        display: none;
-    }
-
     .hero-title {
         font-size: 6rem;
         line-height: 1.8rem;
@@ -128,6 +131,13 @@ body {
 
     .hero-byline {
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 380px), screen and (max-height: 730px){
+    .hero-2019-small {
+        font-size: 19rem;
+        line-height: 17rem;
     }
 }
 
