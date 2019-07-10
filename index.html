@@ -3,7 +3,6 @@ layout: home
 ---
 
 {% capture ABOUT_US %}
-
 <div class="row">
     <div class="col-md-6 col-sm-12 about-blob about-blob-left">
         <div class="about-blob-heading">
@@ -43,9 +42,44 @@ layout: home
 
 <div class="p-md-5 w-100 invisible">&nbsp;</div>
 
-{% capture PROBLEM_STATEMENT %}
-<p style="color: red">PROBLEMS :(</p>
+{% capture FORMAT %}
+<div class="p-md-3 w-100 invisible">&nbsp;</div>
+<div class="format-container">
+    <div class="row">
+        <div class="col-md-6 offset-md-6 col-sm-12">
+            <div class="format-blob" style="--seq: '1'">
+                <div class="format-blob-text">sequi commodi alias nihil ratione inventore Ea voluptatum eum modi aspernatur saepe. Aperiam placeat rerum</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <div class="format-blob" style="--seq: '2'">
+                <div class="format-blob-text">sequi commodi alias nihil ratione inventore Ea voluptatum eum modi aspernatur saepe. Aperiam placeat rerum</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 offset-md-6 col-sm-12">
+            <div class="format-blob" style="--seq: '3'">
+                <div class="format-blob-text">sequi commodi alias nihil ratione inventore Ea voluptatum eum modi aspernatur saepe. Aperiam placeat rerum</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <div class="format-blob" style="--seq: '4'">
+                <div class="format-blob-text">sequi commodi alias nihil ratione inventore Ea voluptatum eum modi aspernatur saepe. Aperiam placeat rerum</div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endcapture %}
+{% include section.html heading="Format" content=FORMAT style="format" %}
 
+<div class="p-md-5 w-100 invisible">&nbsp;</div>
+
+{% capture PROBLEM_STATEMENT %}
 <div class="row">
     <div class="col-md-4 probs-blob probs-blob-left">
         <div class="probs-blob-img">
