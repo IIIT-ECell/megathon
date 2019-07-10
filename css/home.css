@@ -4,20 +4,20 @@ body {
     overflow-x: hidden;
 }
 
-#landing {
+.hero {
     height: 100vh;
-}
-
-.fullpage {
-    min-height: 100vh;
-    width: 90%;
-    margin: auto;
+    position: relative;
 }
 
 .hero-parent {
     z-index: 10;
     position: absolute;
-    top: 43vh;
+    
+    /* Vertical Centering */
+    top: 50%;
+    transform: translateY(-50%);
+    
+    left: 4rem;
 }
 
 .hero-title {
@@ -38,6 +38,7 @@ body {
     font-family: 'Barlow', sans-serif;
     font-weight: var(--font-semi-bold);
     font-size: 2rem;
+    padding-left: 3px;
 }
 
 .hero-2019 {
@@ -45,14 +46,94 @@ body {
     font-size: 30rem;
     font-weight: var(--font-extra-bold);
     color: #313131;
-    position: absolute;
-    right: -35rem;
-    top: -13rem;
     line-height: 25rem;
+    position: absolute;
+    right: 4rem !important;
+    
+    /* Vertical Centering */
+    top: 50%;
+    transform: translateY(-50%);
+    
 }
 
-@media screen and (max-width: 1500px) and (min-width: 992px){
-    .hero-2019 {
-        right: -32rem;
+
+
+
+
+
+
+@media screen and (max-width: 992px){
+    .hero-parent {
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
     }
+    .hero-2019 {
+        right: 50% !important;
+        transform: translate(50%, -50%) !important;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .hero-parent {
+        left: 10rem !important;
+    }
+
+    .hero-2019 {
+        right: 10rem !important;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .hero-parent {
+        left: 15% !important;
+    }
+
+    .hero-2019 {
+        right: 15% !important;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero-2019 {
+        display: none;
+    }
+
+    .hero-title {
+        font-size: 6rem;
+        line-height: 1.8rem;
+    }
+
+    .hero-byline {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-title {
+        font-size: 4rem;
+        line-height: 1.7rem;
+    }
+
+    .hero-byline {
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hero-title {
+        font-size: 3.5rem;
+        line-height: 1.5rem;
+    }
+
+    .hero-byline {
+        font-size: 1rem;
+    }
+}
+
+/* WHAT IS THIS? */
+.fullpage {
+    min-height: 100vh;
+    width: 90%;
+    margin: auto;
 }
