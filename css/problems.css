@@ -1,23 +1,4 @@
-body {
-    color: white;
-}
-
-.fullpage {
-    min-height: 100vh;
-    width: 90%;
-    margin: auto;
-}
-
-.main-heading {
-    font-family: 'Muli';
-    font-weight: 900;
-    font-size: 7.5rem;
-    letter-spacing: -0.07em;
-    color: #313131;
-    line-height: 0.8em;
-}
-
-.blob {
+.probs-blob {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +11,7 @@ body {
     width: 550px !important;
 }
 
-.blob-left {
+.probs-blob-left {
     background: #007899;
     background: linear-gradient(-60deg, rgba(0,120,153,0.5) 0%, rgba(103,180,111,1) 100%);
     border-radius: 67% 33% 73% 27% / 46% 42% 58% 54%  ;
@@ -40,7 +21,7 @@ body {
     margin-top: -50px;
 }
 
-.blob-center {
+.probs-blob-center {
     background: green;
     background: linear-gradient(60deg, rgba(177,112,18,1) 0%, rgba(179,104,25,0.5) 100%);
     border-radius: 50% 50% 36% 64% / 68% 28% 72% 32% ;
@@ -51,7 +32,7 @@ body {
     margin-bottom: -50px;
 }
 
-.blob-right {
+.probs-blob-right {
     background: blue;
     background: linear-gradient(-120deg, rgba(199,222,215,1) 0%, rgba(217,195,212,0.5) 100%);
 
@@ -63,23 +44,36 @@ body {
     z-index: 2;
 }
 
-.blob-text {
+.probs-blob-text {
     width: 75%;
     padding-top: 1rem;
 }
 
-@media(max-width: 768px) {
-    .blob {
+@media(max-width: 1540px) {
+    .probs-blob {
         height: 400px !important;
         width: 400px !important;
+    }
+}
+
+@media(max-width: 1400px) {
+    .probs-blob-left, .probs-blob-center, .probs-blob-right {
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 768px) {
+    .probs-blob {
+        height: 300px !important;
+        width: 300px !important;
+    }
+
+    .probs-blob-img img {
+        width: 150px;
     }
 
     .row {
         display: block !important;
-    }
-
-    .blob-left, .blob-center, .blob-right {
-        margin: 0 auto;
     }
 
     .main-heading {

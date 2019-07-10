@@ -1,54 +1,35 @@
 ---
 layout: home
 ---
-<link href="{{ site.baseurl }}/css/section.css" rel="stylesheet">
 
 {% capture ABOUT_US %}
 <p style="color: red">HELLO</p>
 
-<section id="about">
 <div class="row">
-	<div class="col-12 col-lg-6 blob blob-about-left ">
-		<span class="px-5">
-			<h1 class="font-weight-bold pb-4">Our History</h1>
-			Dolor sit deserunt aperiam tempora sit. Aut cum sapiente aperiam et tenetur Suscipit magni alias modi officia officiis aspernatur repellat asperiores Provident laborum quaerat alias atque porro Libero mollitia maiores. Dolor sit deserunt aperiam tempora sit. Aut cum sapiente aperiam et tenetur Suscipit magni alias modi officia officiis aspernatur repellat asperiores Provident laborum quaerat alias atque porro Libero mollitia maiores.
-			Dolor sit deserunt aperiam tempora sit. Aut cum sapiente aperiam et tenetur Suscipit magni alias modi officia officiis aspernatur repellat asperiores Provident laborum quaerat alias atque porro Libero mollitia maiores.
-			Dolor sit deserunt aperiam tempora sit. Aut cum sapiente aperiam et tenetur Suscipit magni alias modi officia officiis aspernatur repellat asperiores Provident laborum quaerat alias atque porro Libero mollitia maiores.
+    <div class="col-md-6 col-sm-12 about-blob about-blob-left">
+        <div class="about-blob-heading">
+            <h1>Our History</h1>
+        </div>
+        <div class="about-blob-text">
+            Started in 2016, Megathon is an ambitious hackathon organised jointly by E-Cell IIIT Hyderabad and E-Cell IIT Hyderabad with the intention of promoting the spirit of entrepreneurship and development among the student community in and around Hyderabad. The first 2 editions of Megathon turned out to be huge successes with participation from 80 teams having around 450 participants and over 1000 aspirants from 85+ colleges in the first year which rose to over 600 participants and 1000 aspirants.
+        </div>
+        <div class="about-blob-img">
+			<iframe src="https://www.youtube.com/embed/KuaNsJj31Qw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
 
-			<div class="p-1 w-100 invisible">&nbsp;</div>
-
-			<iframe width="500" height="250" src="https://www.youtube.com/embed/KuaNsJj31Qw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</span>
-	</div>
-	<div class="col-12 col-lg-6 blob">
-		<div class="container-fluid">
-			<div class="row d-none d-lg-flex">
-				<div class="col-6">
-					&nbsp;
-				</div>
-				<div class="col-6">
-					<div class="blob blob-tiny w-50">
-						<div class="invisible">&nbsp;</div>		
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col blob blob-about-right">
-					<span class="p-5">
-						<h1 class="font-weight-bold pb-4">Join 2019!</h1>
-						Dolor sit deserunt aperiam tempora sit. Aut cum sapiente aperiam et tenetur Suscipit magni alias modi officia officiis aspernatur repellat asperiores Provident laborum quaerat alias atque porro Libero mollitia maiores. Dolor sit deserunt aperiam tempora sit. Aut cum sapiente aperiam et tenetur Suscipit magni alias modi officia officiis aspernatur repellat asperiores Provident laborum quaerat alias atque porro Libero mollitia maiores.
-						Dolor sit deserunt aperiam tempora sit. Aut cum sapiente aperiam et tenetur Suscipit magni alias modi officia officiis aspernatur repellat asperiores Provident laborum quaerat alias atque porro Libero mollitia maiores.
-						Dolor sit deserunt aperiam tempora sit. Aut cum sapiente aperiam et tenetur Suscipit magni alias modi officia officiis aspernatur repellat asperiores Provident laborum quaerat alias atque porro Libero mollitia maiores.
-					</span>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="col-md-6 col-sm-12 about-blob about-blob-right">
+        <div class="about-blob-heading">
+            <h1>Fast forward to 2019</h1>
+        </div>
+        <div class="about-blob-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        </div>
+    </div>
 </div>
-</section>
 {% endcapture %}
 
-{% include section.html heading="About us" content=ABOUT_US %}
+{% include section.html heading="About us" content=ABOUT_US style="about_us" %}
 
 <div class="p-md-5 w-100 invisible">&nbsp;</div>
 
@@ -56,33 +37,33 @@ layout: home
 <p style="color: red">PROBLEMS :(</p>
 
 <div class="row">
-    <div class="col-md-4 blob blob-left">
-        <div>
+    <div class="col-md-4 probs-blob probs-blob-left">
+        <div class="probs-blob-img">
             <img src="https://dummyimage.com/200x200/000/fff&text=P1" alt="PROB1">
         </div>
-        <div class="blob-text">
-            Lorem quos nostrum excepturi provident consequuntur, ab? Et reprehenderit rerum esse cum consectetur? Ducimus laudantium nihil incidunt odit voluptatem. Quia quas commodi repellendus maiores minus Suscipit sed eum optio repellat
+        <div class="probs-blob-text">
+            Problem 1 title
         </div>
     </div>
 
-    <div class="col-md-4 blob blob-center">
-        <div>
+    <div class="col-md-4 probs-blob probs-blob-center">
+        <div class="probs-blob-img">
             <img src="https://dummyimage.com/200x200/000/fff&text=P2" alt="PROB2">
         </div>
-        <div class="blob-text">
-            Adipisicing consectetur quidem officia consequuntur illum. Necessitatibus veritatis aspernatur nostrum deserunt ipsa soluta distinctio Lorem ut ab culpa nihil quis? Dolorem voluptatum hic eveniet quos officiis? Non ducimus rem facilis!
+        <div class="probs-blob-text">
+            Problem 2 title
         </div>
     </div>
 
-    <div class="col-md-4 blob blob-right">
-        <div>
+    <div class="col-md-4 probs-blob probs-blob-right">
+        <div class="probs-blob-img">
             <img src="https://dummyimage.com/200x200/000/fff&text=P3" alt="PROB3">
         </div>
-        <div class="blob-text">
-            Elit doloremque quasi provident animi cumque omnis ipsa. Qui laudantium voluptatum minus in doloremque. Mollitia nulla odit dolore porro neque recusandae nam. Sunt quasi ipsa laborum odit consequuntur reiciendis sed?
+        <div class="probs-blob-text">
+            Problem 3 title
         </div>
     </div>
 </div>
 {% endcapture %}
 
-{% include section.html heading="Problem<br>Statements" content=PROBLEM_STATEMENT %}
+{% include section.html heading="Problem<br>Statements" content=PROBLEM_STATEMENT style="problems" %}

@@ -1,3 +1,20 @@
-body{
+body {
+    color: white;
     background: black;
 }
+
+.fullpage {
+    min-height: 100vh;
+    width: 90%;
+    margin: auto;
+}
+
+.main-heading {
+    font-family: 'Muli';
+    font-weight: 900;
+    font-size: 7.5rem;
+    letter-spacing: -0.07em;
+    color: #313131;
+    line-height: 0.8em;
+}
+
