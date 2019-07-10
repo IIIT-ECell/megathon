@@ -7,7 +7,7 @@ footer{
 }
 
 .fab{
-    font-size: 3rem;
+    font-size: 1.75rem;
     color: rgba(188,67,63,1);
 }
 
@@ -16,13 +16,10 @@ footer{
     border-radius: 30% 70% 46% 54% / 49% 30% 70% 51% ; 
 }
 
-.row .col-md-3{
-    background: #007899;
-    background: linear-gradient(-60deg, rgba(0,120,153,0.5) 0%, rgba(103,180,111,1) 100%);
-    border-radius: 67% 33% 73% 27% / 46% 42% 58% 54%  ;
-    border: 0ch;
-    z-index: 2;
-}
 .img-fluid{
     background: none;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: 1.5rem;
 }
