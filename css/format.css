@@ -1,0 +1,32 @@
+.format-container {
+    width: 90%;
+    margin: auto;
+}
+
+.format-blob {
+    background: linear-gradient(to right, #D0BBCB, #C6CBCD, #BED4CE);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+
+    color: #012345;
+}
+
+.row:nth-child(odd) .format-blob {
+    border-radius: 64% 36% 51% 49% / 67% 67% 33% 33%;
+    text-align: right;
+}
+
+.row:nth-child(even) .format-blob {
+    border-radius: 51% 49% 64% 36% / 67% 67% 33% 33%;
+    text-align: left;
+}
+
+.format-blob-text {
+    width: 85%;
+    margin: 1rem auto;
+    font-size: 1.25rem;
+}
