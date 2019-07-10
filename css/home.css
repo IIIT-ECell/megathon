@@ -4,52 +4,55 @@ body {
     overflow-x: hidden;
 }
 
+#landing {
+    height: 100vh;
+}
+
 .fullpage {
     min-height: 100vh;
     width: 90%;
     margin: auto;
 }
 
-.main-heading {
-    font-family: "Muli";
-    font-weight: 900;
-    font-size: 7.5rem;
-    letter-spacing: -0.07em;
-    color: #313131;
-    line-height: 0.8em;
-    margin-top: 80px;
+.hero-parent {
+    z-index: 10;
+    position: absolute;
+    top: 43vh;
 }
 
 .hero-title {
-    font-size: 7.5rem!important;
-    font-weight: bold;
+    font-size: 7.5rem;
+    font-weight: var(--font-extra-bold);
+    line-height: 3rem;
+    z-index: 10;
 }
 
 .hero-title-gradient {
-    background: linear-gradient(rgba(0, 120, 153, 0.5) 0%, rgba(103, 180, 111, 1) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
+    background: linear-gradient(45deg, #92FE9D, #00C9FF);
+    background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
 }
 
+.hero-byline {
+    font-family: 'Barlow', sans-serif;
+    font-weight: var(--font-semi-bold);
+    font-size: 2rem;
+}
+
 .hero-2019 {
-    font-size: 30rem!important;
-    font-weight: bold;
-    color: rgba(255,255,255,0.5);
-    line-height: 10rem;
-    letter-spacing: -5rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30rem;
+    font-weight: var(--font-extra-bold);
+    color: #313131;
+    position: absolute;
+    right: -35rem;
+    top: -13rem;
+    line-height: 25rem;
 }
 
-@media (max-width: 768px) {
-    .main-heading {
-        max-width: 100vw;
-        font-size: 4rem;
-        margin-top: 0;
-    }
-}
-
-@media (max-width: 450px) {
-    .main-heading {
-        font-size: 3rem;
+@media screen and (max-width: 1500px) and (min-width: 992px){
+    .hero-2019 {
+        right: -32rem;
     }
 }
