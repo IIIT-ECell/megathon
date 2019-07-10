@@ -10,11 +10,25 @@ body {
 }
 
 .main-heading {
-    font-family: 'Muli';
+    font-family: "Muli";
     font-weight: 900;
     font-size: 7.5rem;
     letter-spacing: -0.07em;
     color: #313131;
     line-height: 0.8em;
+    margin-top: 80px;
 }
 
+@media (max-width: 768px) {
+    .main-heading {
+        max-width: 100vw;
+        font-size: 4rem;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .main-heading {
+        font-size: 3rem;
+    }
+}
