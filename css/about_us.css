@@ -9,15 +9,16 @@
 }
 
 .about-blob-left {
-    background: #007899;
-    background: linear-gradient(-60deg, rgba(0, 120, 153, 0.5) 0%, rgba(103, 180, 111, 1) 100%);
-
-    border-radius: 44% 56% 36% 64% / 30% 38% 62% 70%;
-
+    
+    background: url('/assets/images/megathon-blobs/4-about-us-our-history-blob.svg');
+    background-position:center;
+    background-size: cover; 
+    background-repeat: no-repeat;
     margin-left: auto;
     margin-right: -100px;
     margin-top: -50px;
     z-index: 2;
+    background-color: transparent;
 }
 
 .about-blob-right {
@@ -30,6 +31,7 @@
     margin-right: auto;
     margin-top: 100px;
     z-index: 1;
+    background-color: transparent;
 }
 
 .about-blob-img {
@@ -74,6 +76,22 @@
     }
 }
 
+@media (max-width: 600px) {
+    .about-blob-left{
+        background: url('/assets/images/megathon-blobs/4-about-us-our-history-blob.svg');
+        background-position:center;
+        background-size: cover; 
+        border-radius: 0%;
+    }
+    .about-blob-right{
+        background: url('/assets/images/megathon-blobs/5-about-us-2019-blob.svg');
+        background-position: center;
+        background-size: cover;
+        border-radius: 0%;
+    }
+
+}
+
 @media (max-width: 450px) {
     .about-blob {
         width: 150%;
@@ -89,3 +107,4 @@
         margin-left: 25px;
     }
 }
+

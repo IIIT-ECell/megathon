@@ -45,14 +45,17 @@
     text-fill-color: transparent;
 }
 
-.modal-content {
+.modal-body {
     background-image: url('../assets/images/blobs/navbar-background-blob.svg') !important;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: transparent;
     border: none;
 }
-
+.modal-content
+{
+    background: none;
+}
 .navbar-modal-content {
     height: 80vh !important;
     display: flex;
