@@ -12,41 +12,64 @@
 }
 
 .probs-blob-left {
-    background: url('/assets/images/megathon-blobs/17-header-individual-behind-megathon-green-blob.svg');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-
+    position: relative;
+    background-color: transparent;
     z-index: 2;
     margin-left: auto;
     margin-right: -100px;
     margin-top: -50px;
 }
+.probs-blob-left::before{
+    position: absolute;
+    content: "";
+    width:35vw;
+    height:100%;
+    background: url('/assets/images/megathon-blobs/17-header-individual-behind-megathon-green-blob.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
 
 .probs-blob-center {
-
-    background: url('/assets/images/megathon-blobs/5-about-us-2019-blob.svg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    z-index: 1;
+    position: relative;
+    background-color: transparent;
     margin-top: 50px;
     margin-right: -25px;
     margin-left: -25px;
     margin-bottom: -50px;
 }
-
-.probs-blob-right {
-    background: url('/assets/images/megathon-blobs/11-problem-right-blob.svg');
+.probs-blob-center::before{
+    position: absolute;
+    content: "";
+    width: 35vw;
+    height: 100%;
+    background: url('/assets/images/megathon-blobs/5-about-us-2019-blob.svg');
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: -2;
+    
+}
 
+.probs-blob-right {
+    position: relative;
+    background-color: transparent;
     margin-left: -100px;
     margin-right: auto;
     margin-top: -55px;
-    z-index: 2;
+}
+.probs-blob-right::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url('/assets/images/megathon-blobs/11-problem-right-blob.svg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+
 }
 
 .probs-blob-text {
@@ -79,15 +102,12 @@
         display: block !important;
     }
     .probs-blob-left {
-        background: url('/assets/images/megathon-blobs/17-header-individual-behind-megathon-green-blob.svg');
-        background-position: center;
         background-size: cover;
-        border-radius: 0%;
     }
     .probs-blob-center {
         background-size: cover;
     }
-    .probs-blob-right {
-        background-size: cover;
+    .probs-blob::before{
+        width: 100vw;
     }
 }
