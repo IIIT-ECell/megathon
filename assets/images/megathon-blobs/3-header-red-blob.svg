@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="197.32" height="196.055" viewBox="0 0 197.32 196.055">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.346" y1="0.247" x2="0.595" y2="0.606" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff5858" stop-opacity="0.761"/>
+      <stop offset="1" stop-color="#ff7eb3" stop-opacity="0.678"/>
+    </linearGradient>
+  </defs>
+  <g id="blob-shape_1_" data-name="blob-shape (1)" transform="matrix(0.978, 0.208, -0.208, 0.978, 156.673, 277.04)">
+    <path id="Path_2" data-name="Path 2" d="M-24.067-204.1c15.372,22.8,16.9,50.417,7.888,71.622-9.053,21.164-28.638,35.872-50.15,44.33s-45,10.664-62.205,2.533c-17.254-8.131-28.234-26.6-37.556-49.519-9.322-22.88-16.941-50.254-5.288-72.276s42.576-38.773,72.648-38.119C-68.615-244.914-39.439-226.9-24.067-204.1Z" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
