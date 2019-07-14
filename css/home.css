@@ -11,7 +11,7 @@ body {
 }
 
 .hero-parent {
-    z-index: 10;
+    z-index: 1;
     position: absolute;
     
     /* Vertical Centering */
@@ -25,7 +25,7 @@ body {
     font-size: 7.5rem;
     font-weight: var(--font-extra-bold);
     line-height: 3rem;
-    z-index: 10;
+    z-index: 1;
 }
 
 .hero-title-gradient {
