@@ -101,3 +101,22 @@ It didn't stop there. In the 3rd edition we introduced an online event, taking t
 </div>
 {% endcapture %}
 {% include section.html heading="Problem<br />Statements" content=PROBLEM_STATEMENT style="problems" %}
+
+{% capture SPONSORS %}
+<script src="{{ site.baseurl }}/js/sponsors.js"></script>
+{% for category in site.data.sponsors.main_page %}
+<h1 class="text-center sub-heading">{{ category[0] | upcase }}</h1>
+<div class="row sponsor-container">
+    {% for sponsor in category[1] %}
+    <div class="col-lg-4 col-md-6 col-sm-12 text-center my-5">
+        <div class="sponsor">
+            <div class="sponsor-img img-fluid"><img src="{{ sponsor.image }}" alt="{{ sponsor.name }}"></div>
+            <div class="sponsor-name"><h1>{{ sponsor.name | slice: 0,10 }}</h1></div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
+{% endcapture %}
+
+{% include section.html heading="Sponsors" content=SPONSORS style="sponsors" nofullpage="true" %}

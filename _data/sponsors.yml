@@ -1,40 +1,65 @@
-- name: ace77d14a0c1713adc5554511e08be01
-  image: https://dummyimage.com/200x150/000/fff.png&text=ace77d14a0
-- name: 55ec5be372f61c13554455780ed93c8d
-  image: https://dummyimage.com/200x150/000/fff.png&text=55ec5be372
-- name: 1a53dbdff452520e0a8d8ba5cdf1e859
-  image: https://dummyimage.com/200x150/000/fff.png&text=1a53dbdff4
-- name: e6ca4c28e60700b2a86fe1c4df9d0848
-  image: https://dummyimage.com/200x150/000/fff.png&text=e6ca4c28e6
-- name: c6da0715476ec2eb58524b46e379e096
-  image: https://dummyimage.com/200x150/000/fff.png&text=c6da071547
-- name: f2fa94af5396bfc040fe6bd3ff35574e
-  image: https://dummyimage.com/200x150/000/fff.png&text=f2fa94af53
-- name: f646b44b71adb2d2c02d8da73452962f
-  image: https://dummyimage.com/200x150/000/fff.png&text=f646b44b71
-- name: d40396bac936424ba3fa54db7c87cb78
-  image: https://dummyimage.com/200x150/000/fff.png&text=d40396bac9
-- name: fc2e376a0897ea3f638ad69023fdef94
-  image: https://dummyimage.com/200x150/000/fff.png&text=fc2e376a08
-- name: 03505fd360ab7ae8378de0dfdc591360
-  image: https://dummyimage.com/200x150/000/fff.png&text=03505fd360
-- name: ce7551c4efe13b2e1dd0c0930488b3f9
-  image: https://dummyimage.com/200x150/000/fff.png&text=ce7551c4ef
-- name: d30bb3ef39a6c08906285e8643c9a52a
-  image: https://dummyimage.com/200x150/000/fff.png&text=d30bb3ef39
-- name: 70f44bb89a5f1bcf69d05917c81f1d56
-  image: https://dummyimage.com/200x150/000/fff.png&text=70f44bb89a
-- name: 90bb6f8864fd43163d7097d8f7926c7f
-  image: https://dummyimage.com/200x150/000/fff.png&text=90bb6f8864
-- name: a37bc3f638a46f51f9fcbc2d6989eb52
-  image: https://dummyimage.com/200x150/000/fff.png&text=a37bc3f638
-- name: 440e57176bcbafb88fb9f4e1f8203cba
-  image: https://dummyimage.com/200x150/000/fff.png&text=440e57176b
-- name: 1b70f0b19271d418c09d6809d494b901
-  image: https://dummyimage.com/200x150/000/fff.png&text=1b70f0b192
-- name: f1d23c06c9bb95001679116c56114884
-  image: https://dummyimage.com/200x150/000/fff.png&text=f1d23c06c9
-- name: 7be3aac9583f15620e7a097a77ca38a1
-  image: https://dummyimage.com/200x150/000/fff.png&text=7be3aac958
-- name: 523ed6e71874f840a9a7da904261b498
-  image: https://dummyimage.com/200x150/000/fff.png&text=523ed6e718
+sponsors_page:
+    - name: ace77d14a0c1713adc5554511e08be01
+      image: https://dummyimage.com/200x150/000/fff.png&text=ace77d14a0
+    - name: 55ec5be372f61c13554455780ed93c8d
+      image: https://dummyimage.com/200x150/000/fff.png&text=55ec5be372
+    - name: 1a53dbdff452520e0a8d8ba5cdf1e859
+      image: https://dummyimage.com/200x150/000/fff.png&text=1a53dbdff4
+    - name: e6ca4c28e60700b2a86fe1c4df9d0848
+      image: https://dummyimage.com/200x150/000/fff.png&text=e6ca4c28e6
+    - name: c6da0715476ec2eb58524b46e379e096
+      image: https://dummyimage.com/200x150/000/fff.png&text=c6da071547
+    - name: f2fa94af5396bfc040fe6bd3ff35574e
+      image: https://dummyimage.com/200x150/000/fff.png&text=f2fa94af53
+    - name: f646b44b71adb2d2c02d8da73452962f
+      image: https://dummyimage.com/200x150/000/fff.png&text=f646b44b71
+    - name: d40396bac936424ba3fa54db7c87cb78
+      image: https://dummyimage.com/200x150/000/fff.png&text=d40396bac9
+    - name: fc2e376a0897ea3f638ad69023fdef94
+      image: https://dummyimage.com/200x150/000/fff.png&text=fc2e376a08
+    - name: 03505fd360ab7ae8378de0dfdc591360
+      image: https://dummyimage.com/200x150/000/fff.png&text=03505fd360
+    - name: ce7551c4efe13b2e1dd0c0930488b3f9
+      image: https://dummyimage.com/200x150/000/fff.png&text=ce7551c4ef
+    - name: d30bb3ef39a6c08906285e8643c9a52a
+      image: https://dummyimage.com/200x150/000/fff.png&text=d30bb3ef39
+    - name: 70f44bb89a5f1bcf69d05917c81f1d56
+      image: https://dummyimage.com/200x150/000/fff.png&text=70f44bb89a
+    - name: 90bb6f8864fd43163d7097d8f7926c7f
+      image: https://dummyimage.com/200x150/000/fff.png&text=90bb6f8864
+    - name: a37bc3f638a46f51f9fcbc2d6989eb52
+      image: https://dummyimage.com/200x150/000/fff.png&text=a37bc3f638
+    - name: 440e57176bcbafb88fb9f4e1f8203cba
+      image: https://dummyimage.com/200x150/000/fff.png&text=440e57176b
+    - name: 1b70f0b19271d418c09d6809d494b901
+      image: https://dummyimage.com/200x150/000/fff.png&text=1b70f0b192
+    - name: f1d23c06c9bb95001679116c56114884
+      image: https://dummyimage.com/200x150/000/fff.png&text=f1d23c06c9
+    - name: 7be3aac9583f15620e7a097a77ca38a1
+      image: https://dummyimage.com/200x150/000/fff.png&text=7be3aac958
+    - name: 523ed6e71874f840a9a7da904261b498
+      image: https://dummyimage.com/200x150/000/fff.png&text=523ed6e718
+main_page:
+    Title Sponsors:
+        - name: 523ed6e71874f840a9a7da904261b498
+          image: https://dummyimage.com/200x150/000/fff.png&text=523ed6e718
+    Associate Sponsors:
+        - name: f1d23c06c9bb95001679116c56114884
+          image: https://dummyimage.com/200x150/000/fff.png&text=f1d23c06c9
+        - name: 7be3aac9583f15620e7a097a77ca38a1
+          image: https://dummyimage.com/200x150/000/fff.png&text=7be3aac958
+    Partners:
+        - name: ace77d14a0c1713adc5554511e08be01
+          image: https://dummyimage.com/200x150/000/fff.png&text=ace77d14a0
+        - name: 55ec5be372f61c13554455780ed93c8d
+          image: https://dummyimage.com/200x150/000/fff.png&text=55ec5be372
+        - name: 1a53dbdff452520e0a8d8ba5cdf1e859
+          image: https://dummyimage.com/200x150/000/fff.png&text=1a53dbdff4
+        - name: e6ca4c28e60700b2a86fe1c4df9d0848
+          image: https://dummyimage.com/200x150/000/fff.png&text=e6ca4c28e6
+        - name: c6da0715476ec2eb58524b46e379e096
+          image: https://dummyimage.com/200x150/000/fff.png&text=c6da071547
+        - name: f2fa94af5396bfc040fe6bd3ff35574e
+          image: https://dummyimage.com/200x150/000/fff.png&text=f2fa94af53
+        - name: f646b44b71adb2d2c02d8da73452962f
+          image: https://dummyimage.com/200x150/000/fff.png&text=f646b44b71

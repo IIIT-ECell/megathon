@@ -255,6 +255,16 @@ body {
     margin: auto;
 }
 
+/*
+ * added to compensate for absence of
+ *      width: 90% if include.nofullpage is set
+ * Using to align headings
+*/
+
+.w-90 {
+    width: 90%;
+}
+
 .main-heading {
     font-family: "Muli";
     font-weight: 900;
@@ -263,4 +273,13 @@ body {
     color: #313131;
     line-height: 0.8em;
     margin-top: 80px;
+}
+
+.sub-heading {
+    font-family: "Muli";
+    font-weight: 700;
+    font-size: 5rem;
+
+    color: #424242;
+    margin-top: 70px;
 }

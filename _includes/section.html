@@ -1,7 +1,14 @@
-<link href="{{ site.baseurl }}/css/{{ include.style }}.css" rel="stylesheet">
+{% if include.style %}
+    <link href="{{ site.baseurl }}/css/{{ include.style }}.css" rel="stylesheet">
+{% endif %}
 
+{% if include.nofullpage %}
+<div id="{{ include.heading }}">
+    <h1 class="text-right main-heading w-90">{{ include.heading | upcase }}</h1>
+{% else %}
 <div id="{{ include.heading }}" class="fullpage">
     <h1 class="text-right main-heading">{{ include.heading | upcase }}</h1>
+{% endif %}
     <div class="p-md-3 w-100 invisible">&nbsp;</div>
     {{ include.content }}
 </div>
