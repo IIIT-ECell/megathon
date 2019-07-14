@@ -1,3 +1,12 @@
+body {
+    background: black;
+    color: white;
+}
+
+.row {
+    justify-content: center;
+}
+
 .sponsor {
     padding: 4rem;
     width: 75%;
