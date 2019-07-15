@@ -282,4 +282,8 @@ body {
 
     color: #424242;
     margin-top: 70px;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
 }
