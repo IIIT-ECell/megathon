@@ -43,12 +43,16 @@ main_page:
     Title Sponsor:
         - name: EMBIBE
           image: /assets/images/sponsors/embibe.svg
+          url: "https://www.embibe.com/"
     Online Sponsor:
         - name: CYRRUP
           image: /assets/images/sponsors/CYRRUP.png
+          url: "https://www.cyrrup.com/"
     Internship and Training Partner:
         - name: INTERNSHALA
           image: /assets/images/sponsors/IS_Logo.svg
+          url: "https://internshala.com/"
     Outreach Partner :
         - name: HELLO INTERN
           image: /assets/images/sponsors/hellointern.png
+          url: "https://www.hellointern.com/"
