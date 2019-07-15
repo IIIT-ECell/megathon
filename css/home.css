@@ -2,6 +2,7 @@ body {
     color: white;
     background: black;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .hero {
@@ -114,7 +115,6 @@ body {
     .main-heading {
         max-width: 100vw;
         font-size: 4rem !important;
-        margin-top: 0;
     }
 }
 
@@ -272,7 +272,7 @@ body {
     letter-spacing: -0.07em;
     color: #313131;
     line-height: 0.8em;
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 .sub-heading {
@@ -282,4 +282,8 @@ body {
 
     color: #424242;
     margin-top: 70px;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
 }

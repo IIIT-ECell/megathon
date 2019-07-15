@@ -1,8 +1,8 @@
 - title: Home
-  url: /
+  url: "/#landing"
 - title: Events
-  url: "#Events"
+  url: "/#Events"
 - title: Sponsors
-  url: "#Sponsors"
+  url: "/#Sponsors"
 - title: Contact Us
-  url: "#Contact"
+  url: "/#Contact"
