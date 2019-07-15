@@ -34,7 +34,7 @@ It didn't stop there. In the 3rd edition we introduced an online event, taking t
     </div>
 </div>
 {% endcapture %}
-{% include section.html heading="About us" content=ABOUT_US style="about_us" %}
+{% include section.html heading="About us" content=ABOUT_US style="about_us" fullpage=true %}
 
 {% capture MEGATHONLINE %}
 <div class="container" style="background: url('{{site.baseurl}}/assets/images/megathon-blobs/18-header-individual-behind-megathon-red-blob.svg') center no-repeat; background-size: contain">
@@ -47,8 +47,7 @@ It didn't stop there. In the 3rd edition we introduced an online event, taking t
     </div>
 </div>
 {% endcapture %}
-
-{% include section.html heading="HOWZHACK<br/>(Online)" content=MEGATHONLINE nofullpage=true %}
+{% include section.html heading="HOWZHACK<br/>(Online)" content=MEGATHONLINE %}
 
 {% capture FORMAT %}
 <div class="format-container">
@@ -82,7 +81,7 @@ It didn't stop there. In the 3rd edition we introduced an online event, taking t
     </div>
 </div>
 {% endcapture %}
-{% include section.html heading="Events" content=FORMAT style="format" %}
+{% include section.html heading="Events" content=FORMAT style="format" fullpage=true %}
 
 {% capture PROBLEM_STATEMENT %}
 
@@ -124,7 +123,7 @@ It didn't stop there. In the 3rd edition we introduced an online event, taking t
     </div>
 </div> -->
 {% endcapture %}
-{% include section.html heading="Problem<br />Statements" content=PROBLEM_STATEMENT style="problems" nofullpage=true %}
+{% include section.html heading="Problem<br />Statements" content=PROBLEM_STATEMENT style="problems" %}
 
 {% capture SPONSORS %}
 <div class="container-fluid">
@@ -145,7 +144,7 @@ It didn't stop there. In the 3rd edition we introduced an online event, taking t
 </div>
 {% endcapture %}
 
-{% include section.html heading="Sponsors" content=SPONSORS style="sponsors" nofullpage=true %}
+{% include section.html heading="Sponsors" content=SPONSORS style="sponsors" %}
 
 {% capture CONTACT %}
 
@@ -191,4 +190,4 @@ It didn't stop there. In the 3rd edition we introduced an online event, taking t
 
 {% endcapture %}
 
-{% include section.html heading="Contact" content=CONTACT nofullpage=true %}
+{% include section.html heading="Contact" content=CONTACT %}
