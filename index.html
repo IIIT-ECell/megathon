@@ -133,7 +133,7 @@ It didn't stop there. In the 3rd edition we introduced an online event, taking t
     <div class="row sponsor-container">
         {% for sponsor in category[1] %}
         <div class="col-lg-4 col-md-6 col-sm-12 text-center my-5" style="display: block;margin:auto;">
-            <div class="sponsor">
+            <div class="p-3">
                 <div class="sponsor-img">
                     <a href="{{ sponsor.url }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}">
                         <img class="img-fluid" src="{{ sponsor.image }}" alt="{{ sponsor.name }}">
@@ -147,11 +147,9 @@ It didn't stop there. In the 3rd edition we introduced an online event, taking t
     {% endfor %}
 </div>
 {% endcapture %}
-
 {% include section.html heading="Sponsors" content=SPONSORS style="sponsors" %}
 
 {% capture CONTACT %}
-
 <div class="container hide-overflow" style="max-width: 500px;">
     <br>
     <h2 class="align-box-h grey-text lighten-4">Contact Us for more information</h2>
@@ -191,7 +189,5 @@ It didn't stop there. In the 3rd edition we introduced an online event, taking t
         </div>
     </div>
 </div>
-
 {% endcapture %}
-
 {% include section.html heading="Contact" content=CONTACT %}

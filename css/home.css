@@ -273,7 +273,13 @@ body {
     color: #313131;
     line-height: 0.8em;
     padding-top: 80px;
+
+    overflow-x: scroll;
+    scrollbar-width: none;
 }
+
+/* hide scrollbar on chrome+ */
+.main-heading::-webkit-scrollbar { display: none; }
 
 .sub-heading {
     font-family: "Muli";
