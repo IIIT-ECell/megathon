@@ -3,10 +3,10 @@
 {% endif %}
 
 {% if include.nofullpage %}
-<div id="{{ include.heading }}">
+<div id="{{ include.heading | strip_html }}">
     <h1 class="text-right main-heading w-90">{{ include.heading | upcase }}</h1>
 {% else %}
-<div id="{{ include.heading }}" class="fullpage">
+<div id="{{ include.heading | strip_html }}" class="fullpage">
     <h1 class="text-right main-heading">{{ include.heading | upcase }}</h1>
 {% endif %}
     <div class="p-md-3 w-100 invisible">&nbsp;</div>

@@ -1,10 +1,10 @@
 - title: Home
   url: /
 - title: Events
-  url: #events
+  url: "#Events"
 - title: FAQ
   url: /faq
 - title: Sponsors
-  url: #sponsors
+  url: "#Sponsors"
 - title: Contact Us
-  url: #contact
+  url: "#contactus"
