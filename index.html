@@ -88,7 +88,7 @@ It didn't stop there. In the 3rd edition we introduced an online event, taking t
 <div class="row d-flex">
     <div class="col-12 my-auto">
 
-        <h2>
+        <h2 class="text-center">
             Problems will be announced soon.
         </h2>
     </div>
@@ -134,8 +134,12 @@ It didn't stop there. In the 3rd edition we introduced an online event, taking t
         {% for sponsor in category[1] %}
         <div class="col-lg-4 col-md-6 col-sm-12 text-center my-5" style="display: block;margin:auto;">
             <div class="sponsor">
-                <div class="sponsor-img"><img class="img-fluid" src="{{ sponsor.image }}" alt="{{ sponsor.name }}"></div>
-                <div class="sponsor-name"><h1>{{ sponsor.name }}</h1></div>
+                <div class="sponsor-img">
+                    <a href="{{ sponsor.url }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}">
+                        <img class="img-fluid" src="{{ sponsor.image }}" alt="{{ sponsor.name }}">
+                    </a>
+                </div>
+                <!-- <div class="sponsor-name"><h1>{{ sponsor.name }}</h1></div> -->
             </div>
         </div>
         {% endfor %}
