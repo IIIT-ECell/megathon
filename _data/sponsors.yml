@@ -40,26 +40,15 @@ sponsors_page:
     - name: 523ed6e71874f840a9a7da904261b498
       image: https://dummyimage.com/200x150/000/fff.png&text=523ed6e718
 main_page:
-    Title Sponsors:
-        - name: 523ed6e71874f840a9a7da904261b498
-          image: https://dummyimage.com/200x150/000/fff.png&text=523ed6e718
-    Associate Sponsors:
-        - name: f1d23c06c9bb95001679116c56114884
-          image: https://dummyimage.com/200x150/000/fff.png&text=f1d23c06c9
-        - name: 7be3aac9583f15620e7a097a77ca38a1
-          image: https://dummyimage.com/200x150/000/fff.png&text=7be3aac958
-    Partners:
-        - name: ace77d14a0c1713adc5554511e08be01
-          image: https://dummyimage.com/200x150/000/fff.png&text=ace77d14a0
-        - name: 55ec5be372f61c13554455780ed93c8d
-          image: https://dummyimage.com/200x150/000/fff.png&text=55ec5be372
-        - name: 1a53dbdff452520e0a8d8ba5cdf1e859
-          image: https://dummyimage.com/200x150/000/fff.png&text=1a53dbdff4
-        - name: e6ca4c28e60700b2a86fe1c4df9d0848
-          image: https://dummyimage.com/200x150/000/fff.png&text=e6ca4c28e6
-        - name: c6da0715476ec2eb58524b46e379e096
-          image: https://dummyimage.com/200x150/000/fff.png&text=c6da071547
-        - name: f2fa94af5396bfc040fe6bd3ff35574e
-          image: https://dummyimage.com/200x150/000/fff.png&text=f2fa94af53
-        - name: f646b44b71adb2d2c02d8da73452962f
-          image: https://dummyimage.com/200x150/000/fff.png&text=f646b44b71
+    Title Sponsor:
+        - name: EMBIBE
+          image: /assets/images/sponsors/embibe.svg
+    Online Sponsor:
+        - name: CYRRUP
+          image: /assets/images/sponsors/CYRRUP.png
+    Internship and Training Partner:
+        - name: INTERNSHALA
+          image: /assets/images/sponsors/IS_Logo.svg
+    Outreach Partner :
+        - name: HELLO INTERN
+          image: /assets/images/sponsors/hellointern.png

@@ -37,43 +37,53 @@ It didn't stop there. In the 3rd edition we introduced an online event, taking t
 {% include section.html heading="About us" content=ABOUT_US style="about_us" %}
 
 {% capture MEGATHONLINE %}
+<div class="container" style="background: url('{{site.baseurl}}/assets/images/megathon-blobs/18-header-individual-behind-megathon-red-blob.svg') center no-repeat; background-size: contain">
+    <div class="row">
+        <div class="col-lg-6">
+            <p>
+                In order to extend our national reach, we had introduced an online version of Megathon. Due to it's huge popularity last time, we decided to do it again. It is aimed mainly at people who are far from Hyderabad and cannot attend the event or people who don't want to pay to participate. Yes, you heard it right. It's free to participate. With more problem statements and better goodies, it's even bigger than before! 
+
+            </p>
+        </div>
+    </div>
+</div>
 {% endcapture %}
 
-{% include section.html heading="Inno(f|v)est<br />(Megathon Online)" content=MEGATHONLINE %}
+{% include section.html heading="HOWZHACK<br/>(Online)" content=MEGATHONLINE nofulllpage=True %}
 
 {% capture FORMAT %}
 <div class="format-container">
     <div class="row">
         <div class="col-md-6 offset-md-6 col-sm-12">
             <div class="format-blob" style="--seq: '1'">
-                <div class="format-blob-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</div>
+                <div class="format-blob-text">HOWZHACK registrations open on</div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-6 col-sm-12">
             <div class="format-blob" style="--seq: '2'">
-                <div class="format-blob-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</div>
+                <div class="format-blob-text">Howzhack Final Submission on </div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-6 offset-md-6 col-sm-12">
             <div class="format-blob" style="--seq: '3'">
-                <div class="format-blob-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</div>
+                <div class="format-blob-text">HOWZHACK Results announced</div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-6 col-sm-12">
             <div class="format-blob" style="--seq: '4'">
-                <div class="format-blob-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</div>
+                <div class="format-blob-text">Megathon Onsite (Big Day) on </div>
             </div>
         </div>
     </div>
 </div>
 {% endcapture %}
-{% include section.html heading="Format" content=FORMAT style="format" %}
+{% include section.html heading="Events" content=FORMAT style="format" %}
 
 {% capture PROBLEM_STATEMENT %}
 <div class="row">
@@ -108,20 +118,22 @@ It didn't stop there. In the 3rd edition we introduced an online event, taking t
 {% include section.html heading="Problem<br />Statements" content=PROBLEM_STATEMENT style="problems" %}
 
 {% capture SPONSORS %}
-<script src="{{ site.baseurl }}/js/sponsors.js"></script>
-{% for category in site.data.sponsors.main_page %}
-<h1 class="text-center sub-heading">{{ category[0] | upcase }}</h1>
-<div class="row sponsor-container">
-    {% for sponsor in category[1] %}
-    <div class="col-lg-4 col-md-6 col-sm-12 text-center my-5">
-        <div class="sponsor">
-            <div class="sponsor-img img-fluid"><img src="{{ sponsor.image }}" alt="{{ sponsor.name }}"></div>
-            <div class="sponsor-name"><h1>{{ sponsor.name | slice: 0,10 }}</h1></div>
+<div class="container-fluid">
+    {% for category in site.data.sponsors.main_page %}
+
+    <h1 class="text-center sub-heading">{{ category[0] | upcase }}</h1>
+    <div class="row sponsor-container">
+        {% for sponsor in category[1] %}
+        <div class="col-lg-4 col-md-6 col-sm-12 text-center my-5" style="display: block;margin:auto;">
+            <div class="sponsor">
+                <div class="sponsor-img"><img class="img-fluid" src="{{ sponsor.image }}" alt="{{ sponsor.name }}"></div>
+                <div class="sponsor-name"><h1>{{ sponsor.name }}</h1></div>
+            </div>
         </div>
+        {% endfor %}
     </div>
     {% endfor %}
 </div>
-{% endfor %}
 {% endcapture %}
 
 {% include section.html heading="Sponsors" content=SPONSORS style="sponsors" nofullpage="true" %}
