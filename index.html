@@ -48,7 +48,7 @@ It didn't stop there. In the 3rd edition we introduced an online event, taking t
 </div>
 {% endcapture %}
 
-{% include section.html heading="HOWZHACK<br/>(Online)" content=MEGATHONLINE nofulllpage=True %}
+{% include section.html heading="HOWZHACK<br/>(Online)" content=MEGATHONLINE nofullpage=true %}
 
 {% capture FORMAT %}
 <div class="format-container">
@@ -119,8 +119,8 @@ It didn't stop there. In the 3rd edition we introduced an online event, taking t
 {% capture SPONSORS %}
 <div class="container-fluid">
     {% for category in site.data.sponsors.main_page %}
-
     <h1 class="text-center sub-heading">{{ category[0] | upcase }}</h1>
+
     <div class="row sponsor-container">
         {% for sponsor in category[1] %}
         <div class="col-lg-4 col-md-6 col-sm-12 text-center my-5" style="display: block;margin:auto;">
@@ -135,4 +135,4 @@ It didn't stop there. In the 3rd edition we introduced an online event, taking t
 </div>
 {% endcapture %}
 
-{% include section.html heading="Sponsors" content=SPONSORS style="sponsors" nofullpage="true" %}
+{% include section.html heading="Sponsors" content=SPONSORS style="sponsors" nofullpage=true %}
