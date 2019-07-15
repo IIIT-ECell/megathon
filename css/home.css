@@ -272,6 +272,8 @@ body {
     letter-spacing: -0.07em;
     color: #313131;
     line-height: 0.8em;
+    margin-top: 80px;
+    overflow:hidden;
     padding-top: 80px;
 }
 
@@ -279,7 +281,7 @@ body {
     font-family: "Muli";
     font-weight: 700;
     font-size: 4rem;
-
+    overflow-wrap: break-word;
     color: #424242;
     margin-top: 70px;
 

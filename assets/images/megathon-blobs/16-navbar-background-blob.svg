@@ -1,11 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="657.311" height="795.835" viewBox="0 0 657.311 795.835">
-  <defs>
-    <linearGradient id="linear-gradient" x1="0.346" y1="0.247" x2="0.595" y2="0.606" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#e3fdf5"/>
-      <stop offset="1" stop-color="#ffe6fa"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="657.311"
+   height="795.835"
+   viewBox="0 0 657.311 795.835"
+   version="1.1"
+   id="svg11"
+   sodipodi:docname="16-navbar-background-blob.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     id="namedview13"
+     showgrid="false"
+     inkscape:zoom="1.1861755"
+     inkscape:cx="392.8081"
+     inkscape:cy="225.43825"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg11" />
+  <defs
+     id="defs7">
+    <linearGradient
+       id="linear-gradient"
+       x1="229.33772"
+       y1="168.11565"
+       x2="380.22116"
+       y2="385.65441"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="scale(0.86255272,1.1593494)">
+      <stop
+         offset="0"
+         stop-color="#e3fdf5"
+         id="stop2" />
+      <stop
+         offset="1"
+         stop-color="#ffe6fa"
+         id="stop4" />
     </linearGradient>
   </defs>
-  <g id="blob-shape_1_" data-name="blob-shape (1)" transform="matrix(0.978, 0.208, -0.208, 0.978, 133.906, -24.445)">
-    <path id="Path_2" data-name="Path 2" d="M484.982,220.484c53.87,101.4,66.3,219.311,44.407,306.9-22.048,87.4-78.441,144.313-142.536,174.079S250.821,733.841,195.377,694.3c-55.582-39.558-94.672-121.271-129.884-221.447-35.2-100-66.4-218.629-36.559-308.933S149.625,11.285,242.715,22.739C335.932,34.033,431.111,119.083,484.982,220.484Z" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+  <g
+     id="blob-shape_1_"
+     data-name="blob-shape (1)"
+     transform="matrix(1.0940979,0.23269158,-0.23269158,1.0940979,103.58327,-69.520292)">
+    <path
+       id="Path_2"
+       data-name="Path 2"
+       d="m 484.982,220.484 c 53.87,101.4 66.3,219.311 44.407,306.9 -22.048,87.4 -78.441,144.313 -142.536,174.079 C 322.758,731.229 250.821,733.841 195.377,694.3 139.795,654.742 100.705,573.029 65.493,472.853 30.293,372.853 -0.907,254.224 28.934,163.92 58.775,73.616 149.625,11.285 242.715,22.739 c 93.217,11.294 188.396,96.344 242.267,197.745 z"
+       style="fill:url(#linear-gradient)"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
