@@ -1,12 +1,10 @@
 - title: Home
   url: /
-- title: Format
-  url: /format
 - title: Events
-  url: /events
+  url: #events
 - title: FAQ
   url: /faq
 - title: Sponsors
-  url: /sponsors
+  url: #sponsors
 - title: Contact Us
-  url: /index.html#contact
+  url: #contact
