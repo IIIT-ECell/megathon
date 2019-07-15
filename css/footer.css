@@ -1,25 +1,23 @@
+---
+---
 footer{
-    background: rgb(188,67,63);
-    background: linear-gradient(90deg, rgba(188,67,63,1) 0%, rgba(179,104,25,1) 100%);
-    border-radius: 50% 30% 0% 0% / 52% 19% 74% 34% ;
+    background: url('{{site.baseurl}}/assets/images/megathon-blobs/13-footer-background-blob.svg');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: 'Muli', sans-serif;
     color: white;
 }
 
 .fab{
     font-size: 1.75rem;
-    color: rgba(188,67,63,1);
+    color: white;
 }
 
 .list-inline-item{
-    background: white;
-    border-radius: 30% 70% 46% 54% / 49% 30% 70% 51% ; 
+    position: relative;
 }
 
-.img-fluid{
-    background: none;
-}
-
-.list-inline-item:not(:last-child) {
+.list-inline-item:not(:last-child){
     margin-right: 1.5rem;
 }
