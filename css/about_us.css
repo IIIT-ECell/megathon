@@ -89,3 +89,22 @@
         margin-left: 25px;
     }
 }
+
+@media (max-width: 769px) {
+    .about-blob-left{
+        background: url('/assets/images/megathon-blobs/22-about-us-individual-side-red-blob.svg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 0px;
+    }
+}
+@media (max-width: 425px){
+    .about-blob-right{
+        background: url('/assets/images/megathon-blobs/4-about-us-our-history-blob.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius:0px; 
+    }
+}
