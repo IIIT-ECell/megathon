@@ -4,7 +4,7 @@
 
 {% if include.nofullpage %}
 <div id="{{ include.heading | strip_html }}">
-    <h1 class="text-right main-heading w-90">{{ include.heading | upcase }}</h1>
+    <h1 class="text-right main-heading w-90 mx-auto">{{ include.heading | upcase }}</h1>
 {% else %}
 <div id="{{ include.heading | strip_html }}" class="fullpage">
     <h1 class="text-right main-heading">{{ include.heading | upcase }}</h1>
