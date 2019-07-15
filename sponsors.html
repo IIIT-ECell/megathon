@@ -1,0 +1,22 @@
+---
+layout: page
+---
+
+<link rel="stylesheet" href="{{ site.baseurl }}/css/sponsors.css">
+
+<div class="py-5"></div>
+
+<div class="row sponsor-container">
+    {% for sponsor in site.data.sponsors.sponsors_page %}
+    <div class="col-lg-4 col-md-6 col-sm-12 text-center my-5">
+        <div class="sponsor">
+            <div class="sponsor-img img-fluid"><img src="{{ sponsor.image }}" alt="{{ sponsor.name }}"></div>
+            <div class="sponsor-name"><h1>{{ sponsor.name | slice: 0,10 }}</h1></div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="py-5"></div>
+
+<script src="{{ site.baseurl }}/js/sponsors.js"></script>

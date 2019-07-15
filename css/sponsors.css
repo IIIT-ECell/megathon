@@ -1,0 +1,47 @@
+body {
+    background: black;
+    color: white;
+}
+
+.sponsor-container {
+    justify-content: center;
+}
+
+.sponsor {
+    padding: 4rem;
+    width: 75%;
+    margin: auto;
+}
+
+.sponsor > img {
+    width: auto;
+}
+
+.sponsor-container {
+    margin: auto;
+    width: 95%;
+}
+
+@media (max-width: 1500px) {
+    .sponsor {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .sponsor {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .sponsor {
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .sponsor {
+        width: 95%;
+    }
+}

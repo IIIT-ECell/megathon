@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,400i,700,700i|Barlow:400,400i,600,600i,700,700i,800,800i|Muli:300,300i,400,400i,700,700i&display=swap');
+
+:root {
+    --font-light: 300;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+}
