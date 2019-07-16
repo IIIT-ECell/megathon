@@ -49,8 +49,13 @@
 }
 
 .modal-content {
+    background: transparent;
+}
+
+.modal-body {
     background-image: url("{{ site.baseurl }}/assets/images/megathon-blobs/navbar-background-blob.svg") !important;
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
     background-color: transparent;
     border: none;

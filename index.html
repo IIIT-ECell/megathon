@@ -134,10 +134,7 @@ It didn't stop there. In the 3rd edition we introduced an online event, taking t
     <div class="row sponsor-container">
         {% for sponsor in category[1] %}
         <div class="col-lg-4 col-md-6 col-sm-12 text-center my-5" style="display: block;margin:auto;">
-            <div class="sponsor">
-                <div class="sponsor-img"><img class="img-fluid" src="{{ sponsor.image }}" alt="{{ sponsor.name }}"></div>
-                <div class="sponsor-name"><h1>{{ sponsor.name }}</h1></div>
-            </div>
+            <img class="img-fluid" src="{{ sponsor.image }}" alt="{{ sponsor.name }}">
         </div>
         {% endfor %}
     </div>
