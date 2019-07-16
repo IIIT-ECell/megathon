@@ -22,7 +22,7 @@
 
 .about-blob-right {
     background: blue;
-    background: linear-gradient(-120deg, rgba(199, 222, 215, 1) 0%, rgba(217, 195, 212, 0.5) 100%);
+    background: linear-gradient(-120deg, rgb(103, 186, 119) 0%, rgb(14, 149, 190) 100%);
 
     border-radius: 56% 44% 34% 66% / 34% 41% 59% 66%;
 
