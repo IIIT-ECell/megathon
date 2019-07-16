@@ -2,9 +2,7 @@
   url: /
 - title: Events
   url: "#Events"
-- title: FAQ
-  url: /faq
 - title: Sponsors
   url: "#Sponsors"
 - title: Contact Us
-  url: "#contactus"
+  url: "#Contact"
