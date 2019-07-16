@@ -1,6 +1,5 @@
 .howzhack {
     border-radius: 0px;
-    width: 70%;
 }
 
 .howzhack .row > div {
@@ -30,8 +29,13 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
     .howzhack .row > div {
         padding-top: 20%;
+    }
+}
+@media (min-width: 768px) {
+    .howzhack .row > div {
+        font-size: 1.3rem;
     }
 }
