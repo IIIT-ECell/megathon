@@ -1,0 +1,13 @@
+.howzhack {
+    background: url("/assets/images/megathon-blobs/18-header-individual-behind-megathon-red-blob.svg") center no-repeat;
+    border-radius: 0px;
+    background-size: contain;
+    height: 500px;
+    width: 70%;
+}
+
+.howzhack .row > div {
+    margin: 0 auto;
+    margin-top: 15%;
+    width: 40%;
+}
