@@ -1,48 +1,22 @@
 .howzhack {
-    border-radius: 0px;
+    height: 50vh;
 }
 
-.howzhack .row > div {
+.howzhack-blob {
     margin: 0 auto;
     background: url("/assets/images/megathon-blobs/18-header-individual-behind-megathon-red-blob.svg") center no-repeat;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 500px;
-    padding-top: 11%;
+    height: 100%;
 }
 
-.howzhack .row > div > p {
-    width: 70%;
-    display: block;
-    margin: 0 auto;
-}
-
-@media (max-width: 450px) {
-    .howzhack {
-        width: 95%;
+@media (min-width: 600px) {
+    .howzhack-blob {
+        background-size: contain;
     }
 
-    .howzhack .row > div {
-        height: 600px;
-        padding-top: 30%;
-    }
-}
-
-@media (max-width: 767px) {
-    .howzhack .row > div {
-        padding-top: 20%;
-    }
-}
-
-@media (max-width: 400px) {
-    .howzhack .row > div {
-        padding-top: 30%;
-    }
-}
-
-@media (min-width: 768px) {
-    .howzhack .row > div {
-        font-size: 1.3rem;
+    .howzhack-blob .about-blob-text {
+        width: 40%;
     }
 }
