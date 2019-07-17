@@ -26,3 +26,9 @@
         height: 75vh;
     }
 }
+
+@media (max-width: 400px) {
+    [id^="HOWZHAC"] .main-heading {
+        font-size: 3.5rem !important  ;
+    }
+}
