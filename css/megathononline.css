@@ -20,3 +20,9 @@
         width: 40%;
     }
 }
+
+@media (max-height: 900px) {
+    .howzhack {
+        height: 75vh;
+    }
+}
