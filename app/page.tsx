@@ -10,7 +10,7 @@ const MEGATHON_START = "2026-10-24T09:00:00+05:30";
 export default function Home() {
   return (
     <div className="relative flex flex-1 flex-col items-center justify-center overflow-hidden bg-white font-sans dark:bg-black">
-      <Image
+      {/* <Image
         src="/hands.webp"
         alt=""
         aria-hidden
@@ -18,12 +18,12 @@ export default function Home() {
         priority
         sizes="100vw"
         className="pointer-events-none select-none object-cover object-center dark:invert"
-      />
+      /> */}
 
       {/* Sits under the scrims — above them, the screen blend would undo the
           darkening the copy relies on. */}
-      <PrismCorners />
-      <RefractionOverlay />
+      {/* <PrismCorners /> */}
+      {/* <RefractionOverlay /> */}
 
       {/* Two scrims so the copy stays readable: a flat veil and a radial fade
           that keeps the outer edges of the artwork vivid. Same values at every
@@ -50,7 +50,7 @@ export default function Home() {
         />
 
         <p className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-500 sm:text-xs dark:text-zinc-400">
-          E-Cell · IIIT Hyderabad
+          join the singularity
         </p>
 
         {/* <h1 className="text-5xl font-semibold leading-[1.05] tracking-tight text-black sm:text-7xl dark:text-white">
