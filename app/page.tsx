@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="relative flex flex-1 flex-col items-center justify-center overflow-hidden bg-white font-sans dark:bg-black">
       <Image
-        src="/hands.png"
+        src="/hands.webp"
         alt=""
         aria-hidden
         fill
