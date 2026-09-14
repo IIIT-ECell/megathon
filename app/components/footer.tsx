@@ -32,7 +32,7 @@ const columns = [
 
 export default function Footer() {
   return (
-    <footer className="relative w-full overflow-hidden bg-zinc-50 font-sans dark:bg-black">
+    <footer className="relative w-full shrink-0 overflow-hidden bg-zinc-50 font-sans dark:bg-black">
       {/* Spectral hairline in place of a plain top border. */}
       <div
         aria-hidden
@@ -47,7 +47,7 @@ export default function Footer() {
             height={160}
             className="h-20 w-20 object-contain"
           />
-          <p className="max-w-xs text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+          <p className="max-w-xs text-base leading-7 text-zinc-600 sm:text-sm sm:leading-6 dark:text-zinc-400">
             Megathon is the flagship hackathon of E-Cell, IIIT Hyderabad
           </p>
         </div>
@@ -55,7 +55,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 gap-10 sm:grid-cols-3 sm:gap-16">
           {columns.map((column) => (
             <div key={column.title} className="flex flex-col gap-4">
-              <h2 className="text-xs font-medium uppercase tracking-[0.14em] text-zinc-400 dark:text-zinc-500">
+              <h2 className="text-sm font-medium uppercase tracking-[0.14em] text-zinc-400 sm:text-xs dark:text-zinc-500">
                 {column.title}
               </h2>
               <ul className="flex flex-col gap-3">
@@ -63,7 +63,7 @@ export default function Footer() {
                   <li key={link.label}>
                     <a
                       href={link.href}
-                      className="text-sm text-zinc-600 transition-colors hover:text-black dark:text-zinc-400 dark:hover:text-white"
+                      className="text-base text-zinc-600 transition-colors hover:text-black sm:text-sm dark:text-zinc-400 dark:hover:text-white"
                     >
                       {link.label}
                     </a>
@@ -75,7 +75,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-6 pb-10 text-xs text-zinc-500 sm:flex-row sm:items-center sm:justify-between sm:px-10 dark:text-zinc-500">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-6 pb-10 text-sm text-zinc-500 sm:text-xs sm:flex-row sm:items-center sm:justify-between sm:px-10 dark:text-zinc-500">
         <p>© {new Date().getFullYear()} Megathon · E-Cell, IIIT Hyderabad</p>
         <div className="flex gap-6">
           <a href="#privacy" className="hover:text-black dark:hover:text-white">

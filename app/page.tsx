@@ -17,7 +17,7 @@ export default function Home() {
         fill
         priority
         sizes="100vw"
-        className="pointer-events-none select-none object-contain object-center sm:object-cover dark:invert"
+        className="pointer-events-none select-none object-cover object-center dark:invert"
       />
 
       {/* Sits under the scrims — above them, the screen blend would undo the
@@ -25,19 +25,19 @@ export default function Home() {
       <PrismCorners />
       <RefractionOverlay />
 
-      {/* Two scrims so the copy stays readable: a flat veil (heavier on narrow
-          screens, where the image crops in tight) and a radial fade that keeps
-          the outer edges of the artwork vivid. */}
+      {/* Two scrims so the copy stays readable: a flat veil and a radial fade
+          that keeps the outer edges of the artwork vivid. Same values at every
+          width so phones get the desktop composition. */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-white/30 sm:bg-white/20 dark:bg-black/30 dark:sm:bg-black/20"
+        className="pointer-events-none absolute inset-0 bg-white/25 dark:bg-black/25"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_100%_26%_at_50%_33%,rgba(255,255,255,0.94),rgba(255,255,255,0)_72%)] sm:bg-[radial-gradient(ellipse_58%_46%_at_50%_48%,rgba(255,255,255,0.94),rgba(255,255,255,0)_72%)] dark:bg-[radial-gradient(ellipse_100%_26%_at_50%_33%,rgba(0,0,0,0.94),rgba(0,0,0,0)_72%)] dark:sm:bg-[radial-gradient(ellipse_58%_46%_at_50%_48%,rgba(0,0,0,0.94),rgba(0,0,0,0)_72%)]"
+        className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_72%_46%_at_50%_48%,rgba(255,255,255,0.94),rgba(255,255,255,0)_72%)] dark:bg-[radial-gradient(ellipse_72%_46%_at_50%_48%,rgba(0,0,0,0.94),rgba(0,0,0,0)_72%)]"
       />
 
-      <main className="relative flex min-h-svh w-full max-w-3xl flex-col items-center justify-center gap-8 px-6 py-24 text-center sm:px-10">
+      <main className="relative flex min-h-[78svh] w-full max-w-3xl flex-col items-center justify-center gap-8 px-6 py-12 text-center sm:min-h-svh sm:px-10 sm:py-24">
         {/* The mark is pale iridescent art built for a dark ground, so in light
             mode it gets inverted with a hue rotation to keep its violet cast. */}
         <Image
@@ -46,10 +46,10 @@ export default function Home() {
           width={800}
           height={677}
           priority
-          className="h-24 w-auto invert-[0.88] hue-rotate-180 sm:h-32 dark:invert-0 dark:hue-rotate-0"
+          className="h-28 w-auto invert-[0.88] hue-rotate-180 sm:h-32 dark:invert-0 dark:hue-rotate-0"
         />
 
-        <p className="text-xs font-medium uppercase tracking-[0.2em] text-zinc-500 dark:text-zinc-400">
+        <p className="text-sm font-medium uppercase tracking-[0.2em] text-zinc-500 sm:text-xs dark:text-zinc-400">
           E-Cell · IIIT Hyderabad
         </p>
 
