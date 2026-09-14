@@ -52,7 +52,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-10 sm:grid-cols-3 sm:gap-16">
+        {/* <div className="grid grid-cols-2 gap-10 sm:grid-cols-3 sm:gap-16">
           {columns.map((column) => (
             <div key={column.title} className="flex flex-col gap-4">
               <h2 className="text-sm font-medium uppercase tracking-[0.14em] text-zinc-400 sm:text-xs dark:text-zinc-500">
@@ -72,7 +72,7 @@ export default function Footer() {
               </ul>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
 
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-6 pb-10 text-sm text-zinc-500 sm:text-xs sm:flex-row sm:items-center sm:justify-between sm:px-10 dark:text-zinc-500">
