@@ -5,20 +5,20 @@ import RefractionOverlay from "./components/refraction-overlay";
 
 // When Megathon starts. Edit this one line to move the countdown.
 // ISO 8601 with an explicit offset — +05:30 is IST.
-const MEGATHON_START = "2026-10-24T09:00:00+05:30";
+const MEGATHON_START = "2026-09-16T14:00:00+05:30";
 
 export default function Home() {
   return (
     <div className="relative flex flex-1 flex-col items-center justify-center overflow-hidden bg-white font-sans dark:bg-black">
-      {/* <Image
-        src="/hands.webp"
+      <Image
+        src="/hands.png"
         alt=""
         aria-hidden
         fill
         priority
         sizes="100vw"
         className="pointer-events-none select-none object-cover object-center dark:invert"
-      /> */}
+      />
 
       {/* Sits under the scrims — above them, the screen blend would undo the
           darkening the copy relies on. */}
