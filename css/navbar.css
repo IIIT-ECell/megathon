@@ -20,12 +20,12 @@
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: var(--font-bold);
     color: white !important;
-    margin-left: 60px;
+    margin-left: 30px;
 }
 
 @media screen and (max-width: 992px) {
     .navbar-content a {
-        margin-left: 30px;
+        margin-left: 16px;
     }
 }
 

@@ -23,10 +23,49 @@ body {
 }
 
 .hero-title {
-    font-size: 7.5rem;
+    font-size: clamp(3rem, 8vw, 7.5rem);
     font-weight: var(--font-extra-bold);
-    line-height: 3rem;
+    line-height: 1.1;
     z-index: 1;
+}
+
+/* Event information shared by the homepage, sponsors and countdown. */
+.event-content { width: min(1120px, 90%); margin: auto; }
+.event-section { padding: 5rem 0; scroll-margin-top: 5rem; }
+.event-section + .event-section { border-top: 1px solid #303030; }
+.event-section h2 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1.5rem; }
+.event-section p { max-width: 70ch; line-height: 1.8; }
+.event-content a { color: #92fe9d; }
+.eyebrow { color: #92fe9d; letter-spacing: .12em; text-transform: uppercase; font-size: .85rem; }
+.event-button { display: inline-block; padding: .9rem 1.5rem; background: #92fe9d; color: #111 !important; border-radius: .35rem; font-weight: 700; }
+.event-button:hover { background: #b8ffc0; text-decoration: none; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid #00c9ff; outline-offset: 5px; }
+.event-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr)); gap: 1.5rem; }
+.event-card { padding: 2rem; border: 1px solid #343434; border-radius: .75rem; background: #121212; }
+.event-card h3 { color: #92fe9d; }
+.event-note { margin-top: 2rem; }
+.sponsor-category { margin: 2rem 0 1rem; font-size: 1.25rem; }
+.sponsor-card { display: flex; align-items: center; justify-content: center; background: white; border-radius: .75rem; padding: 2.5rem; max-width: 420px; min-height: 160px; }
+.sponsor-card img { width: 100%; max-width: 300px; max-height: 100px; object-fit: contain; }
+.aftermovie { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; margin: 1.5rem 0; }
+details { padding: 1.25rem 0; border-bottom: 1px solid #343434; }
+summary { cursor: pointer; font-size: 1.1rem; }
+details p { margin: 1rem 0 0; }
+.ecell-logo { max-width: 180px; height: auto; margin-bottom: 2rem; }
+.megathon-logo { display: block; width: clamp(100px, 13vw, 170px); height: auto; margin-bottom: 1rem; }
+.hero-details { font-size: 1.25rem; line-height: 1.7; margin: 1.5rem 0; }
+.hero-parent { width: max-content; max-width: 90%; }
+.hero-title { white-space: nowrap; }
+.hero { min-height: 660px; }
+.countdown-page { min-height: 85vh; padding: 8rem 0 4rem; text-align: center; }
+.countdown-page .megathon-logo { margin: 0 auto 1rem; }
+.countdown-page h1 { font-size: clamp(3rem, 8vw, 6rem); }
+.countdown-page h2 { font-size: 1.4rem; margin-top: 2rem; }
+.countdown { font-size: clamp(2rem, 7vw, 5rem); font-variant-numeric: tabular-nums; color: #92fe9d; }
+@media (max-width: 767px) {
+    .hero-parent { text-align: center; }
+    .hero-parent .megathon-logo { margin-inline: auto; }
+    .event-section { padding: 3rem 0; }
 }
 
 .hero-title-gradient {
@@ -104,8 +143,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .hero-title {
-        font-size: 6rem;
-        line-height: 1.8rem;
+        font-size: 3.5rem;
     }
 
     .hero-byline {
@@ -120,8 +158,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .hero-title {
-        font-size: 4rem;
-        line-height: 1.7rem;
+        font-size: 3rem;
     }
 
     .hero-byline {
@@ -131,8 +168,7 @@ body {
 
 @media screen and (max-width: 400px) {
     .hero-title {
-        font-size: 3.5rem;
-        line-height: 1.5rem;
+        font-size: 2.5rem;
     }
 
     .hero-byline {

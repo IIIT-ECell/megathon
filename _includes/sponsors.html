@@ -1,0 +1,10 @@
+{% for category in site.data.sponsors.main_page %}
+<h3 class="sponsor-category">{{ category[0] }}</h3>
+<div class="event-grid">
+    {% for sponsor in category[1] %}
+    <a class="sponsor-card" href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer">
+        <img src="{{ site.baseurl }}{{ sponsor.image }}" alt="{{ sponsor.name }}" loading="lazy">
+    </a>
+    {% endfor %}
+</div>
+{% endfor %}
