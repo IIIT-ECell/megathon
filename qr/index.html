@@ -2,16 +2,17 @@
 layout: page
 title: Countdown | Megathon X
 ---
-<link href="{{ site.baseurl }}/css/home.css" rel="stylesheet">
-<main class="countdown-page event-content">
-    <img class="megathon-logo" src="{{ site.baseurl }}/assets/images/logos/megathon-white.png" alt="Megathon" width="800" height="677">
-    <p class="eyebrow">Meet. Ideate. Hack.</p>
-    <h1>Megathon X</h1>
-    <p>10–11 October 2026 · IIIT Hyderabad</p>
-    <h2>Counting down to 10 October</h2>
-    <p id="countdown" class="countdown" role="timer" aria-label="Time until 10 October 2026 in India">10 October 2026, 00:00 IST</p>
-    <p id="countdown-status">A weekend of ideas, collaboration and innovation awaits.</p>
-    <a class="event-button" href="{{ site.registration_url }}">Register on KonfHub &rarr;</a>
-    <p class="event-note"><a href="{{ site.baseurl }}/">Explore Megathon X</a></p>
-</main>
-<script src="{{ site.baseurl }}/js/countdown.js" defer></script>
+<section class="hero hero-standalone">
+    <img class="hero-art" src="{{ site.baseurl }}/assets/images/hands.webp" alt="" aria-hidden="true" fetchpriority="high">
+    <div class="hero-scrim" aria-hidden="true"></div>
+    <span class="hero-year" aria-hidden="true">2026</span>
+    <div class="hero-content">
+        <img class="hero-mark" src="{{ site.baseurl }}/assets/images/logos/megathon-white.png" alt="" width="800" height="677">
+        <p class="hero-byline">meet · ideate · hack</p>
+        <h1 class="hero-title">Megathon <span class="hero-x">X</span></h1>
+        <p class="hero-lede">10–11 October 2026<br>IIIT Hyderabad</p>
+        {% include countdown.html %}
+        <a class="button" href="{{ site.registration_url }}">Register on KonfHub</a>
+        <p class="hero-more"><a href="{{ site.baseurl }}/">About Megathon X</a></p>
+    </div>
+</section>

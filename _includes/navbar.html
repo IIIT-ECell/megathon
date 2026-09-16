@@ -1,60 +1,15 @@
-<!-- Begin Navbar -->
-<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/navbar.css">
-<script src="{{ site.baseurl }}/js/navbar.js"></script>
-
-<nav id="navbar" class="navbar navbar-dark navbar-expand fixed-top d-none d-md-flex">
-    <!-- No need of toggler, or .collapse.navbar-collapse classes as it is a completely different element on mobile -->
-    <a class="navbar-brand" href="{{ site.baseurl }}/">
-        <img src="{{ site.baseurl }}/assets/images/logos/ecell.png" height="48" alt="E-Cell IIIT Hyderabad">
-        <span class="navbar-heading">Megathon X</span>
+<header class="nav" id="nav">
+    <a class="nav-brand" href="{{ site.baseurl }}/">
+        <img src="{{ site.baseurl }}/assets/images/logos/megathon-white.png" alt="" width="800" height="677">
+        <span>Megathon X</span>
     </a>
-    <div class="navbar-content navbar-nav ml-auto">
-        <!-- No need of lists as no dropdowns -->
-        {% assign links = site.data.navigation %}
-        {% for link in links %}
-            {% assign class = nil %}
-            {% assign scrtext = nil %}
-            {% if page.url contains link.url %}
-                {% assign class = active %}
-                {% assign scrtext = '<span class="sr-only">(current)</span>' %}
-            {% endif %}
-            <a class="nav-item nav-link {{ class }}" href="{{ site.baseurl }}{{ link.url }}">
-                {{ link.title | upcase }}{{ scrtext }}
-            </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+        <span></span><span></span>
+    </button>
+    <nav class="nav-menu" id="nav-menu">
+        {% for link in site.data.navigation %}
+        <a href="{{ site.baseurl }}/{{ link.url }}">{{ link.title }}</a>
         {% endfor %}
-    </div>
-</nav>
-
-<button type="button" class="btn navbar-button d-md-none" data-toggle="modal" data-target="#navbar-modal">
-    <img src="{{ site.baseurl }}/assets/images/logos/ecell.png" height="40" alt="Open navigation">
-</button>
-
-<div class="modal" id="navbar-modal" role="navigation" aria-hidden="true" aria-label="menu">
-    <div class="modal-dialog" role="navigation">
-        <div class="modal-content">
-            <div class="modal-body">
-                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <div class="navbar-modal-content text-center">
-                    <img src="{{ site.baseurl }}/assets/images/logos/ecell.png" width="100" alt="E-Cell IIIT Hyderabad">
-                    <div class="navbar-modal-links">
-                        {% assign links = site.data.navigation %}
-                        {% for link in links %}
-                            {% assign class = nil %}
-                            {% assign scrtext = nil %}
-                            {% if page.url contains link.url %}
-                                {% assign class = active %}
-                                {% assign scrtext = '<span class="sr-only">(current)</span>' %}
-                            {% endif %}
-                            <a class="{{ class }}" href="{{ site.baseurl }}{{ link.url }}">
-                                {{ link.title | upcase }}{{ scrtext }}
-                            </a>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Navbar -->
+        <a class="button button-small" href="{{ site.registration_url }}">Register</a>
+    </nav>
+</header>

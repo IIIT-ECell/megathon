@@ -1,0 +1,433 @@
+/* Megathon X — one stylesheet for the whole site. */
+
+:root {
+    --bg: #000;
+    --fg: #fff;
+    --fg-2: #a1a1aa;
+    --fg-3: #71717a;
+    --line: #27272a;
+    --accent: #c4b5fd;
+    --font: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+    --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    --measure: 62ch;
+    --gutter: clamp(1.25rem, 5vw, 3rem);
+    --nav-height: 4rem;
+    --hero-inset: clamp(1.25rem, 8vw, 9rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--nav-height);
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+h1, h2, h3 { margin: 0; font-weight: 600; letter-spacing: -0.02em; line-height: 1.15; }
+h2 { font-size: clamp(2rem, 1.2rem + 2.8vw, 3.5rem); letter-spacing: -0.035em; line-height: 1.05; text-wrap: balance; }
+h3 { font-size: 1rem; font-weight: 500; color: var(--fg-2); }
+
+p { margin: 0 0 1em; max-width: var(--measure); }
+p:last-child { margin-bottom: 0; }
+strong { font-weight: 600; color: var(--fg); }
+
+a {
+    color: var(--fg);
+    text-decoration: underline;
+    text-decoration-color: var(--fg-3);
+    text-underline-offset: 0.2em;
+    transition: text-decoration-color 150ms;
+}
+a:hover { text-decoration-color: var(--accent); }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.4rem;
+    background: var(--fg);
+    color: var(--bg);
+    border-radius: 999px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-decoration: none;
+    transition: background-color 150ms;
+}
+.button:hover { background: var(--accent); text-decoration: none; }
+.button-small { padding: 0.5rem 1rem; font-size: 0.875rem; }
+
+/* Navigation */
+.nav {
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--nav-height);
+    padding: 0 var(--gutter);
+    transition: background-color 200ms, border-color 200ms;
+    border-bottom: 1px solid transparent;
+}
+.nav.is-scrolled {
+    background: rgba(0, 0, 0, 0.7);
+    border-color: var(--line);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.nav-brand img { width: auto; height: 1.5rem; }
+.nav-menu { display: flex; align-items: center; gap: 1.75rem; }
+.nav-menu a { text-decoration: none; color: var(--fg-2); font-size: 0.9375rem; transition: color 150ms; }
+.nav-menu a:hover { color: var(--fg); }
+.nav-menu .button { color: var(--bg); }
+.nav-toggle {
+    display: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    position: relative;
+}
+.nav-toggle span {
+    position: absolute;
+    left: 0.6rem;
+    right: 0.6rem;
+    height: 1.5px;
+    background: var(--fg);
+    transition: transform 200ms, top 200ms;
+}
+.nav-toggle span:first-child { top: calc(50% - 4px); }
+.nav-toggle span:last-child { top: calc(50% + 3px); }
+.nav-toggle[aria-expanded="true"] span:first-child { top: 50%; transform: rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:last-child { top: 50%; transform: rotate(-45deg); }
+
+@media (max-width: 720px) {
+    .nav-toggle { display: block; }
+    .nav-menu {
+        display: none;
+        position: fixed;
+        inset: var(--nav-height) 0 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding: 1.5rem var(--gutter);
+        background: var(--bg);
+    }
+    .nav-menu.is-open { display: flex; }
+    .nav-menu a { font-size: 1.5rem; padding: 0.4rem 0; }
+    .nav-menu .button { margin-top: 1rem; font-size: 1rem; padding: 0.8rem 1.4rem; }
+    .nav.is-open { background: var(--bg); border-color: var(--line); }
+}
+
+/* Hero. The megathon-2026 hands artwork behind the original site's composition:
+   byline, oversized title on the left, the year ghosted behind on the right. */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100svh;
+    padding: calc(var(--nav-height) + 2rem) var(--hero-inset) 3rem;
+    overflow: hidden;
+}
+.hero-art {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 60% center;
+    pointer-events: none;
+    user-select: none;
+}
+/* Flat veil plus a fade from the left, so the type sits on near-black and the artwork stays vivid on the right. */
+.hero-scrim {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.92) 0%, rgba(0, 0, 0, 0.7) 45%, rgba(0, 0, 0, 0.15) 100%),
+        rgba(0, 0, 0, 0.3);
+}
+.hero-year {
+    position: absolute;
+    right: var(--hero-inset);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: clamp(10rem, 22vw, 24rem);
+    font-weight: 600;
+    line-height: 0.8;
+    letter-spacing: -0.04em;
+    color: rgba(255, 255, 255, 0.06);
+    pointer-events: none;
+    user-select: none;
+}
+.hero-content {
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    animation: hero-in 900ms ease-out both;
+}
+@keyframes hero-in {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: none; }
+}
+.hero-mark { width: auto; height: clamp(4rem, 7vw, 5.5rem); margin-bottom: 1.5rem; }
+.hero-byline {
+    margin: 0;
+    font-size: clamp(1.25rem, 1rem + 1.2vw, 1.75rem);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--fg);
+}
+.hero-title {
+    margin: 0 0 0.75rem;
+    font-size: clamp(3.25rem, 1.5rem + 9vw, 9rem);
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    line-height: 0.95;
+    white-space: nowrap;
+}
+/* The X takes the mark's iridescent violet. */
+.hero-x { color: #b8a6ff; }
+.hero-lede { margin: 0 0 1.25rem; font-size: 1.25rem; line-height: 1.45; color: var(--fg-2); }
+.hero-content .countdown { justify-content: flex-start; margin-top: 3rem; }
+.hero-content .countdown-digits { font-size: clamp(2rem, 5vw, 3rem); }
+.hero-more { margin: 1rem 0 0; }
+.hero-standalone .hero-content .countdown { margin: 1.5rem 0; }
+@media (max-width: 720px) {
+    .hero { padding-bottom: 2.5rem; }
+    .hero-art { object-position: 50% 30%; }
+    .hero-scrim { background: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.9) 60%); }
+    .hero-year { right: auto; left: 50%; top: 42%; transform: translate(-50%, -50%); font-size: 44vw; }
+    .hero { padding-inline: var(--gutter); }
+    .hero-content { width: 100%; }
+    .hero-content .countdown { width: 100%; margin: 2.25rem 0 0; justify-content: center; }
+}
+
+/* Countdown. Each digit pair is a 1-line window over a 00–99 column drawn in
+   ::before; shifting the column by --value lines rolls the next number in.
+   lh units keep the window and the step identical at any size. */
+.countdown { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem clamp(1.5rem, 5vw, 2.5rem); }
+.countdown-unit { display: flex; flex-direction: column; align-items: center; }
+.countdown-digits {
+    display: inline-block;
+    height: 1lh;
+    overflow: hidden;
+    font-family: var(--mono);
+    font-size: clamp(2.5rem, 8vw, 3.75rem);
+    font-weight: 600;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+}
+.countdown-digits:not(.is-plain)::before {
+    content: "00\A 01\A 02\A 03\A 04\A 05\A 06\A 07\A 08\A 09\A 10\A 11\A 12\A 13\A 14\A 15\A 16\A 17\A 18\A 19\A 20\A 21\A 22\A 23\A 24\A 25\A 26\A 27\A 28\A 29\A 30\A 31\A 32\A 33\A 34\A 35\A 36\A 37\A 38\A 39\A 40\A 41\A 42\A 43\A 44\A 45\A 46\A 47\A 48\A 49\A 50\A 51\A 52\A 53\A 54\A 55\A 56\A 57\A 58\A 59\A 60\A 61\A 62\A 63\A 64\A 65\A 66\A 67\A 68\A 69\A 70\A 71\A 72\A 73\A 74\A 75\A 76\A 77\A 78\A 79\A 80\A 81\A 82\A 83\A 84\A 85\A 86\A 87\A 88\A 89\A 90\A 91\A 92\A 93\A 94\A 95\A 96\A 97\A 98\A 99\A";
+    display: block;
+    position: relative;
+    top: calc(var(--value, 0) * -1lh);
+    white-space: pre;
+    text-align: center;
+    transition: top 1s cubic-bezier(1, 0, 0, 1);
+}
+.countdown-label {
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--fg-2);
+}
+.countdown-live { flex-basis: 100%; margin: 0; color: var(--accent); font-weight: 500; }
+
+/* Page content */
+.content {
+    width: min(1040px, 100% - 2 * var(--gutter));
+    margin: 0 auto;
+}
+.section { padding: clamp(3.5rem, 8vw, 6rem) 0; border-top: 1px solid var(--line); scroll-margin-top: var(--nav-height); }
+.section:first-child { border-top: 0; }
+.section-split { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 2rem clamp(2rem, 6vw, 5rem); align-items: start; }
+.section-body { color: var(--fg-2); font-size: 1.0625rem; }
+.section-body strong { color: var(--fg); }
+.section-body p + p { margin-top: 1em; }
+.section-split-reverse { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
+.section-split-reverse > h2 { order: 1; }
+.section > h2 + .sponsor-tiers, .section > h2 + .faq { margin-top: 2.5rem; }
+@media (max-width: 720px) {
+    .section-split, .section-split-reverse { grid-template-columns: 1fr; }
+    .section-split-reverse > h2 { order: 0; }
+}
+
+/* Aftermovie: a poster that swaps for the player on click, so the page never loads YouTube until asked. */
+.video {
+    position: relative;
+    display: block;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    background: var(--line);
+    margin-bottom: 1rem;
+}
+.video img, .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border: 0; }
+.video img { transition: transform 400ms ease, opacity 200ms; }
+.video:hover img { transform: scale(1.02); }
+.video-play {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transition: background-color 150ms;
+}
+.video-play::after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-width: 0.7rem 0 0.7rem 1.2rem;
+    border-color: transparent transparent transparent var(--fg);
+}
+.video:hover .video-play { background: rgba(0, 0, 0, 0.75); }
+
+/* Facts row: one definition list, hairline-separated — these are the four numbers people ask for first. */
+.facts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin: 0;
+}
+.facts > div + div { border-left: 1px solid var(--line); padding-left: 1.25rem; }
+@media (max-width: 720px) { .facts > div:nth-child(3) { border-left: 0; padding-left: 0; } }
+.facts dt { font-size: 0.875rem; color: var(--fg-2); margin-bottom: 0.25rem; }
+.facts dd { margin: 0; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.01em; }
+@media (max-width: 720px) { .facts { grid-template-columns: repeat(2, 1fr); } .facts dd { font-size: 1.125rem; } }
+
+.aftermovie { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 0.5rem; margin-bottom: 1rem; background: var(--line); }
+
+/* Sponsors */
+.sponsor-tiers { display: flex; flex-wrap: wrap; gap: 2.5rem clamp(2rem, 6vw, 5rem); }
+.sponsor-tier { flex: 1 1 18rem; max-width: 24rem; }
+.sponsor-tier h3 { margin-bottom: 1rem; }
+.section > .sponsor-tiers + p { margin-top: 2.5rem; }
+.sponsor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 24rem;
+    min-height: 9rem;
+    padding: 2rem 2.5rem;
+    margin-bottom: 1rem;
+    background: var(--fg);
+    border-radius: 0.5rem;
+    transition: transform 200ms;
+}
+.sponsor:hover { transform: translateY(-2px); }
+.sponsor img { width: 100%; max-height: 4.5rem; object-fit: contain; }
+
+/* FAQ */
+.faq details { border-bottom: 1px solid var(--line); }
+.faq details:first-child { border-top: 1px solid var(--line); }
+.faq summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 1.1rem 0;
+    cursor: pointer;
+    color: var(--fg);
+    font-weight: 500;
+    list-style: none;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+    content: "+";
+    flex: none;
+    font-weight: 400;
+    color: var(--fg-3);
+    transition: transform 200ms;
+}
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq-answer { overflow: hidden; color: var(--fg-2); }
+.faq-answer p { padding: 0 0 1.25rem; max-width: 62ch; }
+
+/* Footer */
+.footer { position: relative; margin-top: clamp(3rem, 8vw, 6rem); overflow: hidden; }
+.footer::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #22d3ee, #a78bfa, #f472b6, #fb923c, #facc15, transparent);
+    opacity: 0.7;
+}
+.footer-inner {
+    width: min(1040px, 100% - 2 * var(--gutter));
+    margin: 0 auto;
+    padding: 4rem 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.footer-about img { width: auto; height: 3.5rem; margin-bottom: 1rem; }
+.footer-about p { max-width: 28ch; color: var(--fg-2); font-size: 0.9375rem; }
+.footer-social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 0.75rem 2.5rem;
+    align-content: start;
+}
+.footer-social a { color: var(--fg-2); text-decoration: none; font-size: 0.9375rem; transition: color 150ms; }
+.footer-social a:hover { color: var(--fg); }
+.footer-copy {
+    width: min(1040px, 100% - 2 * var(--gutter));
+    max-width: none;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+    font-size: 0.8125rem;
+    color: var(--fg-3);
+}
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .hero-content { animation: none; }
+    .countdown-digits::before, .faq summary::after, .sponsor, .nav-toggle span, .video img { transition: none; }
+}
+
+/* Standalone pages that have no hero sit below the fixed nav. */
+.content-page { padding-top: var(--nav-height); }
+.content-page .section:first-child { border-top: 0; }
