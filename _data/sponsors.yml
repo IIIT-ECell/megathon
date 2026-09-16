@@ -1,9 +1,4 @@
 main_page:
-  Title Sponsor:
-    # Official website logo is a placeholder until the event artwork arrives.
-    - name: Lloyds Bank
-      image: /assets/images/sponsors/lloyds.svg
-      url: https://www.lloydsbank.com/
   Challenge Sponsor:
     - name: Qualcomm
       image: /assets/images/sponsors/qualcomm.png
