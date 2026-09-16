@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Megathon X at IIIT Hyderabad, 10–11 October 2026. Meet. Ideate. Hack.
   Compete for a prize pool of ₹4.5 Lakhs+. Register on KonfHub.
 # GitHub Pages project site. For megathon.in, build with --baseurl="" --url="https://megathon.in".
-baseurl: "/megathon-old"
+baseurl: "/megathon"
 url: "https://iiit-ecell.github.io"
 twitter_username: jekyllrb
 github_username:  jekyll
