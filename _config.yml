@@ -19,9 +19,10 @@ registration_url: https://konfhub.com/megathon-26
 description: >- # this means to ignore newlines until "baseurl:"
   Megathon X at IIIT Hyderabad, 10–11 October 2026. Meet. Ideate. Hack.
   Compete for a prize pool of ₹4.5 Lakhs+. Register on KonfHub.
-# GitHub Pages project site. For megathon.in, build with --baseurl="" --url="https://megathon.in".
-baseurl: "/megathon"
-url: "https://iiit-ecell.github.io"
+# Served at megathon.in via the CNAME file. To preview at
+# iiit-ecell.github.io/megathon/ instead, build with --baseurl="/megathon".
+baseurl: ""
+url: "https://megathon.in"
 
 # Build settings
 markdown: kramdown
