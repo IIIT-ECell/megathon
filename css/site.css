@@ -1,5 +1,20 @@
 /* Megathon X — one stylesheet for the whole site. */
 
+/* Monument Extended (Pangram Pangram) for display type. The files in assets/fonts are the
+   free personal-use weights; swap in the licensed ones before launch. */
+@font-face {
+    font-family: "Monument Extended";
+    src: url("../assets/fonts/MonumentExtended-Ultrabold.otf") format("opentype");
+    font-weight: 800;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Monument Extended";
+    src: url("../assets/fonts/MonumentExtended-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-display: swap;
+}
+
 :root {
     --bg: #000;
     --fg: #fff;
@@ -9,6 +24,7 @@
     --accent: #c4b5fd;
     --font: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
     --mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    --display: "Monument Extended", "Geist", ui-sans-serif, system-ui, sans-serif;
     --measure: 62ch;
     --gutter: clamp(1.25rem, 5vw, 3rem);
     --nav-height: 4rem;
@@ -37,7 +53,7 @@ body {
 img { max-width: 100%; height: auto; display: block; }
 
 h1, h2, h3 { margin: 0; font-weight: 600; letter-spacing: -0.02em; line-height: 1.15; }
-h2 { font-size: clamp(2rem, 1.2rem + 2.8vw, 3.5rem); letter-spacing: -0.035em; line-height: 1.05; text-wrap: balance; }
+h2 { font-family: var(--display); font-weight: 800; font-size: clamp(1.375rem, 0.9rem + 1.5vw, 2.25rem); letter-spacing: 0; line-height: 1.15; text-wrap: balance; }
 h3 { font-size: 1rem; font-weight: 500; color: var(--fg-2); }
 
 p { margin: 0 0 1em; max-width: var(--measure); }
@@ -93,7 +109,9 @@ a:hover { text-decoration-color: var(--accent); }
     display: flex;
     align-items: center;
     gap: 0.6rem;
-    font-weight: 600;
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 0.875rem;
     text-decoration: none;
 }
 .nav-brand img { width: auto; height: 1.5rem; }
@@ -176,11 +194,12 @@ a:hover { text-decoration-color: var(--accent); }
     right: var(--hero-inset);
     top: 50%;
     transform: translateY(-50%);
-    font-size: clamp(10rem, 22vw, 24rem);
-    font-weight: 600;
+    font-family: var(--display);
+    font-size: clamp(8rem, 17vw, 18rem);
+    font-weight: 800;
     line-height: 0.8;
-    letter-spacing: -0.04em;
-    color: rgba(255, 255, 255, 0.06);
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.14);
     pointer-events: none;
     user-select: none;
 }
@@ -199,18 +218,19 @@ a:hover { text-decoration-color: var(--accent); }
 }
 .hero-mark { width: auto; height: clamp(4rem, 7vw, 5.5rem); margin-bottom: 1.5rem; }
 .hero-byline {
-    margin: 0;
+    margin: 0 0 0.25rem;
     font-size: clamp(1.25rem, 1rem + 1.2vw, 1.75rem);
     font-weight: 500;
     letter-spacing: -0.01em;
     color: var(--fg);
 }
 .hero-title {
-    margin: 0 0 0.75rem;
-    font-size: clamp(3.25rem, 1.5rem + 9vw, 9rem);
-    font-weight: 600;
-    letter-spacing: -0.05em;
-    line-height: 0.95;
+    margin: 0 0 1rem;
+    font-family: var(--display);
+    font-size: clamp(2.25rem, 1rem + 6vw, 6rem);
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 1;
     white-space: nowrap;
 }
 /* The X takes the mark's iridescent violet. */
@@ -330,16 +350,17 @@ a:hover { text-decoration-color: var(--accent); }
 .facts > div + div { border-left: 1px solid var(--line); padding-left: 1.25rem; }
 @media (max-width: 720px) { .facts > div:nth-child(3) { border-left: 0; padding-left: 0; } }
 .facts dt { font-size: 0.875rem; color: var(--fg-2); margin-bottom: 0.25rem; }
-.facts dd { margin: 0; font-size: 1.75rem; font-weight: 600; letter-spacing: -0.01em; }
+.facts dd { margin: 0; font-size: 1.75rem; font-weight: 600; font-weight: 600; letter-spacing: -0.01em; }
 @media (max-width: 720px) { .facts { grid-template-columns: repeat(2, 1fr); } .facts dd { font-size: 1.125rem; } }
 
 .aftermovie { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 0.5rem; margin-bottom: 1rem; background: var(--line); }
 
 /* Sponsors */
-.sponsor-tiers { display: flex; flex-wrap: wrap; gap: 2.5rem clamp(2rem, 6vw, 5rem); }
-.sponsor-tier { flex: 1 1 18rem; max-width: 24rem; }
+.sponsor-tiers { display: flex; flex-direction: column; align-items: center; gap: 2.5rem; text-align: center; }
+.sponsor-tier { width: 100%; max-width: 24rem; }
+.sponsor-tier .sponsor { margin-inline: auto; }
 .sponsor-tier h3 { margin-bottom: 1rem; }
-.section > .sponsor-tiers + p { margin-top: 2.5rem; }
+.section > .sponsor-tiers + p { margin-top: 2.5rem; margin-inline: auto; text-align: center; }
 .sponsor {
     display: flex;
     align-items: center;
@@ -431,3 +452,28 @@ a:hover { text-decoration-color: var(--accent); }
 /* Standalone pages that have no hero sit below the fixed nav. */
 .content-page { padding-top: var(--nav-height); }
 .content-page .section:first-child { border-top: 0; }
+
+/* Terms and conditions */
+.terms { max-width: 46rem; }
+.terms-header { padding: 3rem 0 2.5rem; border-bottom: 1px solid var(--line); }
+.terms-kicker { margin: 0 0 0.75rem; color: var(--fg-2); }
+.terms h1 { font-family: var(--display); font-weight: 800; font-size: clamp(1.75rem, 1.2rem + 2vw, 2.75rem); margin-bottom: 1rem; }
+.terms-header p:last-child { color: var(--fg-2); }
+.terms-toc { padding: 2rem 0; border-bottom: 1px solid var(--line); }
+.terms-toc ol { margin: 0; padding-left: 1.5rem; columns: 2; column-gap: 2rem; }
+.terms-toc li { break-inside: avoid; padding: 0.15rem 0; }
+.terms-toc a { color: var(--fg-2); text-decoration: none; }
+.terms-toc a:hover { color: var(--fg); }
+.terms-sections { margin: 0; padding: 0; list-style: none; counter-reset: section; }
+.terms-sections > li { padding: 2.5rem 0; border-bottom: 1px solid var(--line); scroll-margin-top: calc(var(--nav-height) + 1rem); }
+.terms-sections > li > h2 { display: flex; gap: 0.75em; align-items: baseline; font-size: clamp(1.125rem, 0.9rem + 0.8vw, 1.5rem); margin-bottom: 1.25rem; }
+.terms-sections > li > h2::before { counter-increment: section; content: counter(section); color: var(--fg-3); font-size: 0.7em; }
+.terms-sections ul { margin: 0; padding-left: 1.25rem; color: var(--fg-2); list-style: disc; }
+.terms-sections li li { margin: 0.5rem 0; }
+.terms-sections ul ul { margin-top: 0.5rem; }
+.terms code { font-family: var(--mono); font-size: 0.875em; color: var(--fg); }
+@media (max-width: 720px) { .terms-toc ol { columns: 1; } }
+
+/* Terms link under the FAQ */
+.faq-terms { margin-top: 2rem; display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; color: var(--fg-2); }
+.faq-terms p { margin: 0; }
