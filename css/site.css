@@ -412,7 +412,7 @@ a:hover { text-decoration-color: var(--accent); }
 }
 .problem-sponsor { color: var(--accent); }
 .problem-track { color: var(--fg-3); }
-.problem-title { margin: 0; font-size: 1.125rem; font-weight: 600; color: var(--fg); letter-spacing: -0.01em; }
+.problem-title { margin: 0; font-size: 1.125rem; font-weight: 600; color: var(--fg); letter-spacing: -0.01em; text-wrap: balance; }
 .problem-title a { text-decoration-color: var(--fg-3); }
 .problem-summary { margin: 0; color: var(--fg-2); font-size: 0.9375rem; }
 

@@ -1,38 +1,73 @@
 # Last year's problem statements, shown on the homepage so teams can see the
-# kind of brief they will get. Nothing here is live copy yet — every value
-# below is a placeholder to be replaced with the real 2024 set.
+# kind of brief they will get. Transcribed from the 2025 sponsor decks:
+# https://drive.google.com/drive/folders/1KhrXhRkAvNzRG5t1qfSb7XFaSe7H_Whv
 #
 # Each entry renders one card. `sponsor` and `title` are required; `track`,
 # `summary` and `url` are all optional and are simply left out of the card when
 # blank, so a half-filled entry still renders cleanly.
 #
-#   sponsor: who set the brief, as it should appear on the card
-#   track:   optional one- or two-word label, e.g. "Computer vision"
-#   title:   the problem statement's own name
-#   summary: one or two sentences, plain text
-#   url:     optional link to the full brief (PDF or page)
+# The `url`s point at the shared Drive folder. If that folder is ever unshared
+# or tidied up, the links die — worth hosting copies under assets/problems/
+# instead, as earlier editions of this site did.
 #
 # To drop the section from the homepage entirely, empty the `statements` list.
 
-year: 2024
+year: 2025
 statements:
-  - sponsor: TODO — sponsor name
-    track: TODO — short track label
-    title: TODO — problem statement title
+  - sponsor: Bhashini
+    track: Multilingual AI
+    title: Indian language toolkits
     summary: >-
-      TODO — one or two sentences describing what teams were asked to build.
-    url:
+      Build a deployable mobile or mobile-responsive app on Bhashini's ASR, MT,
+      TTS and OCR models, covering at least four scenarios in one domain —
+      tourism, healthcare, agriculture or banking. It had to be multi-modal and
+      hold together as one product rather than joined-up parts.
+    url: https://drive.google.com/file/d/1QBcMvzro4ZqoOJ9Oojgl3_tfWLZTkZ3M/view
 
-  - sponsor: TODO — sponsor name
-    track: TODO — short track label
-    title: TODO — problem statement title
+  - sponsor: Qualcomm
+    track: On-device AI
+    title: Generative art from a camera feed
     summary: >-
-      TODO — one or two sentences describing what teams were asked to build.
-    url:
+      An Android app that turns camera snapshots into generative art from a
+      text prompt — restyling a photo as vintage, repainting it, and so on.
+      Every model had to run on the device NPU through the Qualcomm Innovators
+      Development Kit, with no cloud APIs at all.
+    url: https://drive.google.com/file/d/13D_Ji6lkATVAsbkgHqNWKjv0EwLvBApx/view
 
-  - sponsor: TODO — sponsor name
-    track: TODO — short track label
-    title: TODO — problem statement title
+  - sponsor: Chubb
+    track: Applied ML
+    title: Multimodal claims assessment and fraud intelligence
     summary: >-
-      TODO — one or two sentences describing what teams were asked to build.
-    url:
+      Read vehicle damage from images — detection, severity and a cost band —
+      alongside text claims, and flag tampered photographs. Public datasets
+      only, separate vision, text and fraud components, and explainability
+      through Grad-CAM or saliency maps.
+    url: https://drive.google.com/file/d/1Ob9V-6MYbATkmRgQouC0a2oTLvUZoOOS/view
+
+  - sponsor: Chubb
+    track: Applied ML
+    title: Churn reasoning and retention insights for auto insurance
+    summary: >-
+      Score each customer's churn probability from historical policy and
+      demographic data, then surface the reasons and regional trends in a
+      dashboard a non-technical user can explore. Reason codes via SHAP or LIME,
+      inference in seconds.
+    url: https://drive.google.com/file/d/1Ob9V-6MYbATkmRgQouC0a2oTLvUZoOOS/view
+
+  - sponsor: SARAL
+    track: Research tooling
+    title: Turning research papers into video presentations
+    summary: >-
+      Work on SARAL, the Democratise Research pipeline that reads a paper,
+      drafts slides, generates voiceover narration and produces a shareable
+      video. Presented as an open brief around the existing open-source tool.
+    url: https://drive.google.com/file/d/1TU-tCJ8vRQOX8M5E5HJ0Unu4dj9hp5Ps/view
+
+  - sponsor: OSDG
+    track: Systems
+    title: A collaborative rich text editor, in C
+    summary: >-
+      Multiple people editing one document at once, with live cursors and
+      highlights, authorised read and write, sane conflict handling, and offline
+      edits that merge on reconnect. The whole thing had to be written in C.
+    url: https://drive.google.com/file/d/1IsI1vJ9payVfLGa_Aq1_yvslgXOohiKU/view
