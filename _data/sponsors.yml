@@ -1,5 +1,17 @@
 main_page:
+  Title Sponsor:
+    # LTC's own domain, lloydstechnologycentre.com, would not respond when this
+    # was written, so the tile links to the group page that definitely resolves.
+    - name: Lloyds Technology Centre
+      image: /assets/images/sponsors/lloyds-technology-centre.svg
+      url: https://www.lloydsbankinggroup.com/who-we-are/lloyds-technology-centre.html
   Challenge Sponsor:
     - name: Qualcomm
       image: /assets/images/sponsors/qualcomm.png
       url: https://www.qualcomm.com/
+    - name: Vanguard
+      image: /assets/images/sponsors/vanguard.svg
+      url: https://corporate.vanguard.com/
+    - name: Bhashini
+      image: /assets/images/sponsors/bhashini.png
+      url: https://bhashini.gov.in/

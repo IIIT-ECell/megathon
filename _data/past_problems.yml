@@ -1,0 +1,38 @@
+# Last year's problem statements, shown on the homepage so teams can see the
+# kind of brief they will get. Nothing here is live copy yet — every value
+# below is a placeholder to be replaced with the real 2024 set.
+#
+# Each entry renders one card. `sponsor` and `title` are required; `track`,
+# `summary` and `url` are all optional and are simply left out of the card when
+# blank, so a half-filled entry still renders cleanly.
+#
+#   sponsor: who set the brief, as it should appear on the card
+#   track:   optional one- or two-word label, e.g. "Computer vision"
+#   title:   the problem statement's own name
+#   summary: one or two sentences, plain text
+#   url:     optional link to the full brief (PDF or page)
+#
+# To drop the section from the homepage entirely, empty the `statements` list.
+
+year: 2024
+statements:
+  - sponsor: TODO — sponsor name
+    track: TODO — short track label
+    title: TODO — problem statement title
+    summary: >-
+      TODO — one or two sentences describing what teams were asked to build.
+    url:
+
+  - sponsor: TODO — sponsor name
+    track: TODO — short track label
+    title: TODO — problem statement title
+    summary: >-
+      TODO — one or two sentences describing what teams were asked to build.
+    url:
+
+  - sponsor: TODO — sponsor name
+    track: TODO — short track label
+    title: TODO — problem statement title
+    summary: >-
+      TODO — one or two sentences describing what teams were asked to build.
+    url:

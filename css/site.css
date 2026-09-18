@@ -297,7 +297,9 @@ a:hover { text-decoration-color: var(--accent); }
 .section-body p + p { margin-top: 1em; }
 .section-split-reverse { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
 .section-split-reverse > h2 { order: 1; }
-.section > h2 + .sponsor-tiers, .section > h2 + .faq { margin-top: 2.5rem; }
+.section > h2 + .sponsor-tiers, .section > h2 + .faq, .section > h2 + .problems { margin-top: 2.5rem; }
+.section > h2 + .section-body { margin-top: 1.25rem; }
+.section > .section-body + .problems { margin-top: 2.5rem; }
 @media (max-width: 720px) {
     .section-split, .section-split-reverse { grid-template-columns: 1fr; }
     .section-split-reverse > h2 { order: 0; }
@@ -355,27 +357,64 @@ a:hover { text-decoration-color: var(--accent); }
 
 .aftermovie { display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 0.5rem; margin-bottom: 1rem; background: var(--line); }
 
-/* Sponsors */
+/* Sponsors. Tiles are white, so every logo in _data/sponsors.yml has to be a
+   dark or full-colour mark — reverse/white artwork disappears here. */
 .sponsor-tiers { display: flex; flex-direction: column; align-items: center; gap: 2.5rem; text-align: center; }
-.sponsor-tier { width: 100%; max-width: 24rem; }
-.sponsor-tier .sponsor { margin-inline: auto; }
+.sponsor-tier { width: 100%; }
 .sponsor-tier h3 { margin-bottom: 1rem; }
+/* One tile centred, several wrapped in a row — tiers grow without turning into a tower. */
+.sponsor-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
 .section > .sponsor-tiers + p { margin-top: 2.5rem; margin-inline: auto; text-align: center; }
 .sponsor {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    flex: 1 1 20rem;
     max-width: 24rem;
     min-height: 9rem;
     padding: 2rem 2.5rem;
-    margin-bottom: 1rem;
     background: var(--fg);
     border-radius: 0.5rem;
     transition: transform 200ms;
 }
 .sponsor:hover { transform: translateY(-2px); }
 .sponsor img { width: 100%; max-height: 4.5rem; object-fit: contain; }
+/* Title sponsor leads the wall, so its tile sits a size above the rest. */
+.sponsor-tier:first-child .sponsor { flex-basis: 26rem; max-width: 26rem; min-height: 11rem; }
+.sponsor-tier:first-child .sponsor img { max-height: 5.5rem; }
+
+/* Last year's problem statements: one card per brief, filled from
+   _data/past_problems.yml. Cards carry no image, so a tier of three reads as a
+   plain hairline grid rather than a logo wall. */
+.problems {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    gap: 1px;
+    margin: 0;
+    padding: 0;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.problem { display: flex; flex-direction: column; gap: 0.5rem; padding: 1.75rem; background: var(--bg); }
+.problem-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem 0.75rem;
+    margin: 0;
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.problem-sponsor { color: var(--accent); }
+.problem-track { color: var(--fg-3); }
+.problem-title { margin: 0; font-size: 1.125rem; font-weight: 600; color: var(--fg); letter-spacing: -0.01em; }
+.problem-title a { text-decoration-color: var(--fg-3); }
+.problem-summary { margin: 0; color: var(--fg-2); font-size: 0.9375rem; }
 
 /* FAQ */
 .faq details { border-bottom: 1px solid var(--line); }

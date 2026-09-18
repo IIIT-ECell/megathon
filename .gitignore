@@ -1,3 +1,7 @@
 _site
 .sass-cache
 .jekyll-metadata
+
+# Raw brand packages dropped in for logo extraction — the extracted logos live
+# in assets/images/sponsors/ and these archives should never ship.
+*.zip

@@ -2,11 +2,13 @@
 {% for category in site.data.sponsors.main_page %}
     <div class="sponsor-tier">
         <h3>{{ category[0] }}</h3>
+        <div class="sponsor-row">
         {% for sponsor in category[1] %}
-        <a class="sponsor" href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer">
-            <img src="{{ site.baseurl }}{{ sponsor.image }}" alt="{{ sponsor.name }}" loading="lazy">
-        </a>
+            <a class="sponsor" href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer">
+                <img src="{{ site.baseurl }}{{ sponsor.image }}" alt="{{ sponsor.name }}" loading="lazy">
+            </a>
         {% endfor %}
+        </div>
     </div>
 {% endfor %}
 </div>

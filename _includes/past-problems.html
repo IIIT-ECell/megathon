@@ -1,0 +1,17 @@
+<!-- Cards for site.data.past_problems. Every field except sponsor and title is
+     optional, so a partly filled entry in the data file still renders. -->
+{% assign past = site.data.past_problems %}
+<ul class="problems">
+{% for statement in past.statements %}
+    <li class="problem">
+        <p class="problem-meta">
+            <span class="problem-sponsor">{{ statement.sponsor }}</span>
+            {% if statement.track %}<span class="problem-track">{{ statement.track }}</span>{% endif %}
+        </p>
+        <h3 class="problem-title">
+            {% if statement.url %}<a href="{{ statement.url }}" target="_blank" rel="noopener noreferrer">{{ statement.title }}</a>{% else %}{{ statement.title }}{% endif %}
+        </h3>
+        {% if statement.summary %}<p class="problem-summary">{{ statement.summary }}</p>{% endif %}
+    </li>
+{% endfor %}
+</ul>
